@@ -21,10 +21,6 @@ public class findCycle {
 	    head1.next.next.next = new Node(4);
 	    head1.next.next.next.next = new Node(5);
 	   // head1.next.next.next.next.next = head1.next.next.next;
-	  
-	    
-
-	    
 	    detectCycle(head1);
 	}
 	
@@ -33,10 +29,10 @@ public class findCycle {
 		s=head1;
 		f=head1;
 		
-                if(s == s.next){
-                    System.out.println("There is a cycle");
-                    return;
-                }
+       if(s == s.next){
+          System.out.println("There is a cycle");
+          return;
+       }
                 
 		while(s!=null && f.next!=null)
 		{
@@ -52,9 +48,6 @@ public class findCycle {
 				System.out.println("There is a cycle");
 				return;
 			}
-		 
-		
-			
 		}
 		System.out.println("No Cycles");
 	}

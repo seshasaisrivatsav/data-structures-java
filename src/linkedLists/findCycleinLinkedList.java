@@ -13,10 +13,6 @@ public class findCycleinLinkedList {
 	    head1.next.next.next = new Node(4);
 	    head1.next.next.next.next = new Node(5);
 	   // head1.next.next.next.next.next = head1.next.next.next;
-	  
-	    
-
-	    
 	    detectCycle(head1);
 	}
 	

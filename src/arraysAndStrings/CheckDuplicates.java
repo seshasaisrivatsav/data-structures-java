@@ -25,21 +25,17 @@ public class CheckDuplicates {
     }
     
     public static boolean checkDups(int[] A){
-         
-        for(int i=0; i< A.length-1; i++){
+         for(int i=0; i< A.length-1; i++){
             if (A[i]==A[i+1]){
                 return true;
             }
         }
-        
         return false;      
       
     }
     
     public static int[] bubbleSort(int[] A){
-        
-        
-        for(int i=0; i<A.length-1; i++){
+       for(int i=0; i<A.length-1; i++){
             if(A[i]>A[i+1]){
                 int temp = A[i];
                 A[i+1] = A[i];
@@ -48,10 +44,4 @@ public class CheckDuplicates {
         }
         return A;
     }
-    
-    
-    
-   
-    
-    
 }

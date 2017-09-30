@@ -10,11 +10,11 @@ package linkedLists;
  * @author seshasai
  */
 public class LinkedList {
-   static Node head;  // head of list
+    Node head;  // head of list
  
     /* Linked list Node.  This inner class is made static so that
        main() can access it */
-    static class Node {
+    public static class Node {
         int data;
         Node next;
         // Constructor
@@ -24,7 +24,7 @@ public class LinkedList {
         } 
     }
     
-    public static int getLinkedListLength(Node head){
+    public  int getLinkedListLength(Node head){
         int count = 0;
         while(head!=null){
             count++;
@@ -34,9 +34,9 @@ public class LinkedList {
     }
     
  
-    public static Node listToLinkedList(int[] A){
-        head = new Node (A[0]);
-        Node temp1= head;
+    public Node listToLinkedList(int[] A){
+        Node h = new Node (A[0]);
+        Node temp1= h;
         Node temp2 = temp1;
         
         for(int i=1; i<A.length; i++){
@@ -48,9 +48,12 @@ public class LinkedList {
     }
     
     public static void main(String[] args){
-        head = new Node(10);
+        Node head = new Node(10);
         head.next = new Node(6);
         head.next.next = new Node(7);
+        
+        
+        
      
       
      }

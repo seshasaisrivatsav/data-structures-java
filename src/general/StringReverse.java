@@ -1,7 +1,6 @@
 package general;
 
 public class StringReverse {
-    
     public static void main(String[] args){
        String s = "abcdd";
        char[] array1 = s.toCharArray();
@@ -14,6 +13,5 @@ public class StringReverse {
         }
       String c = array2.toString();
       System.out.println(array2);
- //
     }
 }

@@ -7,6 +7,7 @@ public class CheckAnagram {
     public static void main(String[] args){
         CheckAnagram CA = new CheckAnagram();
         CA.CheckAnagram("baa", "aab");
+        
     }
     
     
@@ -17,7 +18,7 @@ public class CheckAnagram {
 	
 	   char[] a = str1.toCharArray();
 	   char[] b = str2.toCharArray();
-	
+	  
 	   Arrays.sort(a);
 	   Arrays.sort(b);
 	
