@@ -13,50 +13,62 @@ public class MergeSort
 {
 	public static void main(String[] args)
 	{
-		Integer[] a = {2, 6, 3, 5, 1};
-		mergeSort(a);
-		System.out.println(Arrays.toString(a));
+		int[] a = {2,3,9,4,8,7,1,11,10};
+		int[] res= mergeSort(a, 0, a.length-1);
+		System.out.println(Arrays.toString(res));
 	}
 
-	public static void mergeSort(Comparable [ ] a)
-	{
-		Comparable[] tmp = new Comparable[a.length];
-		mergeSort(a, tmp,  0,  a.length - 1);
-	}
+	// Dividing the array 
+	public static int[] mergeSort (int[] a, int s, int e) {
+		 
+		if(s<e) {
+			int mid = (s+e)/2;
+			int[] l = mergeSort(a, s, mid );
+			int[] r = mergeSort(a, mid+1, e);
 
-
-	private static void mergeSort(Comparable [ ] a, Comparable [ ] tmp, int left, int right)
-	{
-		if( left < right )
-		{
-			int center = (left + right) / 2;
-			mergeSort(a, tmp, left, center);
-			mergeSort(a, tmp, center + 1, right);
-			merge(a, tmp, left, center + 1, right);
+			 return merge(l,r);
+			
+		}else {
+			return new int[] {a[s]};
 		}
+		 
+			
+		
+		
+	} 
+	
+	public static int[] merge(int[] l, int[] r) {
+		
+		int i=0, j=0,k=0;
+		int res[] = new int[l.length+r.length];
+		
+		while(i<l.length && j<r.length) {
+			if(l[i]<r[j]) {
+				res[k] = l[i];
+				i++; k++;
+			}else {
+				res[k] = r[j];
+				j++; k++;
+			}
+		}
+		
+		while(j<r.length) {
+			res[k] = r[j];
+			j++;k++;
+		}
+		
+		while(i<l.length) {
+			res[k]=l[i];
+			k++;i++;
+		}
+		
+		return res;
+		
 	}
-
-
-    private static void merge(Comparable[ ] a, Comparable[ ] tmp, int left, int right, int rightEnd )
-    {
-        int leftEnd = right - 1;
-        int k = left;
-        int num = rightEnd - left + 1;
-
-        while(left <= leftEnd && right <= rightEnd)
-            if(a[left].compareTo(a[right]) <= 0)
-                tmp[k++] = a[left++];
-            else
-                tmp[k++] = a[right++];
-
-        while(left <= leftEnd)    // Copy rest of first half
-            tmp[k++] = a[left++];
-
-        while(right <= rightEnd)  // Copy rest of right half
-            tmp[k++] = a[right++];
-
-        // Copy tmp back
-        for(int i = 0; i < num; i++, rightEnd--)
-            a[rightEnd] = tmp[rightEnd];
-    }
+	
+	
+	
+	
+	
+	// Merge the array 
  }

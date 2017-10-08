@@ -6,7 +6,11 @@ public class Test {
 	public static void main(String[] args) {
 		Test nan = new Test();
 		nan.add(20);
-		System.out.println(nan.add(20));
+		//System.out.println(nan.add(20));
+		
+		String s = "12312312.csv";
+		
+		System.out.println(s.replaceAll(".csv", ""));
 	}
 	
 	

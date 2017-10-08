@@ -9,8 +9,7 @@ public class AmazingStrings {
 	 */
 	  public static void main(String[] args){
 	       
-        
-          ;
+         
 	     String[] s = {"aabbaac", "abaaaba"};
 	     
 	     int[] sol = new int[s.length];
@@ -19,8 +18,7 @@ public class AmazingStrings {
 	    	  	sol[i] = amazingCheck(s[i]);
 	    	  	System.out.println(sol[i]);
 	      }
-	        
-	        
+	         
 	    }
 	  
 	  /*
