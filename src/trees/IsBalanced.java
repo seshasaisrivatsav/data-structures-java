@@ -20,7 +20,7 @@ public class IsBalanced {
 		System.out.println(isBalanced(root));
 		
 		
-	};
+	}
 	
 	public static boolean isBalanced(Node root) {
 		System.out.println("Height "+ Height(root));

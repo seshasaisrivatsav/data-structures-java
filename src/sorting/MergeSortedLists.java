@@ -1,4 +1,4 @@
-package arraysAndStrings;
+package sorting;
 
 public class MergeSortedLists {
 	
