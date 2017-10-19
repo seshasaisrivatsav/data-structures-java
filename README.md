@@ -8,20 +8,7 @@
 <ol>
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/arraysAndStrings"> Arrays and Strings </a></li>
-  <ul>
-    
-    <li>
-      <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/AmazingStrings.java">
-        Amazing Strings
-      </a>
-  </li>
-    
-  <li>
-   <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/CheckAnagramHashMap.java">
-    Check Anagrams (Using HashMap)
-    </a>
-  </li>
-  </ul>
+   
   
   
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/general">General Problems </a></li>
