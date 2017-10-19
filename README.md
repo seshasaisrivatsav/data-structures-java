@@ -9,7 +9,7 @@
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/arraysAndStrings"> Arrays and Strings </a></li>
   <ul>
-    <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/AmazingStrings.java">Amazing Strings</a>
+    <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/AmazingStrings.java">Amazing Strings</a><li>
   </ul>
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/general"> Array </a>General Problems</li>
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/graphs">Graphs </a></li>
