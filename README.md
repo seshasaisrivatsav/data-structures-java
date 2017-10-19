@@ -14,13 +14,13 @@
   </ul>
   
   
-<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/general"> Array </a>General Problems</li>
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/general">General Problems </a></li>
 
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/graphs">Graphs </a></li>
 
 
-<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/linkedLists"> Array </a>Linked Lists</li>
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/linkedLists">Linked Lists </a></li>
 
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/newLinkedLists">More Linked Lists </a></li>
