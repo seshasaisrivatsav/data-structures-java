@@ -10,14 +10,29 @@
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/arraysAndStrings"> Arrays and Strings </a></li>
   <ul>
     <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/AmazingStrings.java">Amazing Strings</a><li>
+  <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/CheckAnagramHashMap.java">Check Anagrams (Using HashMap)</a></li>
   </ul>
+  
+  
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/general"> Array </a>General Problems</li>
+
+
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/graphs">Graphs </a></li>
+
+
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/linkedLists"> Array </a>Linked Lists</li>
-<li><a href=""> Array </a></li>
-<li><a href=""> Array </a></li>
-<li><a href=""> Array </a></li>
-<li><a href=""> Array </a></li>
+
+
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/newLinkedLists">More Linked Lists </a></li>
+
+
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/oopsConcepts">OOP Concepts </a></li>
+
+
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/sorting">Sorting </a></li>
+
+
+<li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/stacks">Stacks </a></li>
 </ol>
   
   
