@@ -15,7 +15,7 @@ public class IsBalanced {
 		root.rightChild.rightChild = new Node(35);		
 	
 		root.rightChild.rightChild.rightChild = new Node (40);
-		root.rightChild.rightChild.rightChild.rightChild = new Node (45);
+		//root.rightChild.rightChild.rightChild.rightChild = new Node (45);
 		
 		System.out.println(isBalanced(root));
 		

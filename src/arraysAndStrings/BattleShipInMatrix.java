@@ -1,0 +1,42 @@
+package arraysAndStrings;
+
+/*
+ * Goal = Find number of battleships in matrix
+ * Battleship = "* * * * * " (horizontal or vertical)
+ * Two battleships won't intersect
+ */
+
+public class BattleShipInMatrix {
+
+	public static void main(String[] args) {
+
+		String[][] bsm = { 
+				{ "*", ".", ".", "*" }, 
+				{ ".", ".", ".", "*" }, 
+				{ "*", ".", ".", "." },
+				{ ".", ".", ".", "*" } };
+ 
+		System.out.println(findShips(bsm));
+
+	}
+	
+	public static int findShips(String[][] bsm) {
+		int count = 0;
+		int m = bsm.length;
+		int n = bsm[0].length;
+		
+		for(int i=0; i<m;i++) {
+			for(int j=0; j<n;j++) {
+				if(bsm[i][j]==".") continue;
+				if(i>0 && bsm[i-1][j]=="*") continue;
+				if(j>0 && bsm[i][j-1]=="*") continue;
+				count++;
+			}
+		}
+		
+		return count;
+ 
+		
+	}
+
+}
