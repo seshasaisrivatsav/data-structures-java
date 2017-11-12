@@ -4,8 +4,12 @@ import java.util.Arrays;
 
 public class QuickSort {
 	public static void main(String[] args) {
-		int[] a = { 2, 3, 9, 4, 8, 7, 1, 11, 10 };
-		quickSort(a, 0, a.length - 1);
+		int[] aa = { 2, 3, 9, 4, 8, 7, 1, 11, 10 };
+		  
+		Integer i=1, j=1;
+		i++; 
+		System.out.println(i==j);
+		 //quickSort(a, 0, a.length - 1);
 		//System.out.println(Arrays.toString(quickSort(a, 0, a.length - 1)));
 	}
 	
