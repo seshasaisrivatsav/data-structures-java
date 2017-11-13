@@ -17,7 +17,7 @@
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/MedianOfSortedArrays.java">Median of sorted arrays</a> |  
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/MergeTwoArraysInSameArray.java">Merge Sorted arrays</a> |  In the same array
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/NumberOfIslands.java">Number of islands</a> |  Find number of islands in matrix
-| Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/TwoSum.java">2 Sum</a> |  
+| Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/TwoSum.java">2 Sum</a> 
 
 
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/BinaryTree.java">Tree and traversal</a> |  Binary Tree, Pre, In, Post order traversal
