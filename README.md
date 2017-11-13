@@ -11,9 +11,9 @@
 | Graphs  | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/DFS/DFS.java">DFS</a>  | Tree Traversal 
 | Arrays | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/BattleShipInMatrix.java">BattleShips</a> |   Find the number of battleships in a 2D Matrix 
 | Arrays | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/CheckAnagramHashMap.java">Check Anagram HashMap</a> | Check if two strings are anagrams using HashMap
-| | <a href=""></a> |  
-| | <a href=""></a> |  
-| | <a href=""></a> |  
+| Arrays | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/ConvertLettersToNumbersLikeExcel.java">Excel column name to number</a> |  Given a column like "AA" or "AB" convert it to number 27 , 28 etc
+| Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/IsUniqueString.java">Check String Unique</a> |  Check if a string is unique
+| Rotate Array| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/LeftRotate.java">Rotate Array</a> | Rotate an array by given number of positions
 | | <a href=""></a> |  
 | | <a href=""></a> |  
 | | <a href=""></a> |  
