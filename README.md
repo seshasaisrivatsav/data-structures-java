@@ -18,15 +18,31 @@
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/MergeTwoArraysInSameArray.java">Merge Sorted arrays</a> |  In the same array
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/NumberOfIslands.java">Number of islands</a> |  Find number of islands in matrix
 | Arrays| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/TwoSum.java">2 Sum</a> | Two Sum
-
-
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/BinaryTree.java">Tree and traversal</a> |  Binary Tree, Pre, In, Post order traversal
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/LevelOrderTraversal.java">Level Order Traversal</a> |  
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/LowestCommonAncestor.java">LCA</a> |  Lowest Common Ancestor
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/PrintTopViewOfTree.java"></a> |  Print top view of a tree
-| | <a href=""></a> |  
-
-
+| LinkedList | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/LinkedList.java"></a> |  LinkedList 
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/findCycle.java"></a> | Find cycle in linked list
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/AddNodeAtEnd.java">Add node at end</a> | add a node at end of a linked list
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/CompareTwoLinkedLists.java">Compare Linked List</a> | Return true iff they have same values
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/FindLoopsAndLength.java">Find Loops</a> | Find loops and return length of loop in linked list
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
+| | <a href=""></a> | 
 <ol>
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/arraysAndStrings"> Arrays and Strings </a></li>
