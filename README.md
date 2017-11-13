@@ -43,5 +43,11 @@
 </ul>
 
 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 <h1>License</h1>
 <p><a href="https://github.com/seshasaisrivatsav/srivatsav-resume/blob/master/LICENSE">License</a></p>
