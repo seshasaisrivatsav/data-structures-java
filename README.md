@@ -44,10 +44,10 @@
 
 
 
-| First Header  | Second Header |
+| Topic | Problem |Description
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Graphs  | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/BFS/BFS.java">BFS</a> | Tree Traversal | 
+| Graphs  | <a hreg="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/DFS/DFS.java">DFS</a>  | Tree Traversal |
 
 <h1>License</h1>
 <p><a href="https://github.com/seshasaisrivatsav/srivatsav-resume/blob/master/LICENSE">License</a></p>
