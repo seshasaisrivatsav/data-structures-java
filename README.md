@@ -5,6 +5,26 @@
 </p>
 
 
+ | Topic | Problem |Description
+| ------------- | ------------- | ------------- |
+| Graphs  | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/BFS/BFS.java">BFS</a> | Tree Traversal 
+| Graphs  | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/DFS/DFS.java">DFS</a>  | Tree Traversal 
+| Arrays | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/BattleShipInMatrix.java">BattleShips</a> |   Find the number of battleships in a 2D Matrix 
+| Arrays | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/arraysAndStrings/CheckAnagramHashMap.java">Check Anagram HashMap</a> | Check if two strings are anagrams using HashMap
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+| | <a href=""></a> |  
+
+
 <ol>
 
 <li><a href="https://github.com/seshasaisrivatsav/data-structures-java/tree/master/src/arraysAndStrings"> Arrays and Strings </a></li>
@@ -44,10 +64,7 @@
 
 
 
-| Topic | Problem |Description
-| ------------- | ------------- | ------------- |
-| Graphs  | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/BFS/BFS.java">BFS</a> | Tree Traversal 
-| Graphs  | <a hreg="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/DFS/DFS.java">DFS</a>  | Tree Traversal 
+
 
 <h1>License</h1>
 <p><a href="https://github.com/seshasaisrivatsav/srivatsav-resume/blob/master/LICENSE">License</a></p>
