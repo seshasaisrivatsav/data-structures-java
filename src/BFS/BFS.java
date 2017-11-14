@@ -26,23 +26,36 @@ public class BFS {
 	}
 	
 	public static void  bfs(Graph g, int start) {
+		
+		// Keep a visited array that initially has visited = false for each node
 		boolean[] visited = new boolean[g.size()];
 		
+		// mark visited=true for the starting node
 		visited[start] = true;
 		System.out.println(start);
-		LinkedList<Integer> q = new LinkedList();
+		
+		// Initialize a queue;
+		LinkedList<Integer> q = new LinkedList<>();
+		
+		// Add the start node to the LinkedList
 		q.add(start);
 		
+		// As long as a queue is not empty
 		while(!q.isEmpty()) {
-			int i=0;
+			// Hold the element of the queue
 			int element = q.pop();
+			
+			int i=0; // loop variable
+			
+			// For each neighbor of the element
 			while(i < g.getNeighbors(element).size()) {
+				// If a neighbor is not visited
 				if(!visited[g.getNeighbors(element).get(i)]) {
-					System.out.println(g.getNeighbors(element).get(i));
-					q.add(g.getNeighbors(element).get(i));
-					visited[g.getNeighbors(element).get(i)] = true;
+					System.out.println(g.getNeighbors(element).get(i)); // Return the element
+					q.add(g.getNeighbors(element).get(i)); // Add the element to the queue
+					visited[g.getNeighbors(element).get(i)] = true; // and mark it as visited
 				}
-				i++;
+				i++; // loop ends
 			}
 		}
 		
