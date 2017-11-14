@@ -17,7 +17,7 @@ public class DFS {
 		g.addEdge(3, 3);
 		
 		 
-		g.printGraph();
+		//g.printGraph();
 		//g.printGraph();
 		 dfs(2, g );
 		
@@ -25,24 +25,25 @@ public class DFS {
 	
 	public static void dfs(int node, Graph g) {
 		boolean[] visited = new boolean[g.size()]; // set all nodes to not visited (false)
-		dfsUtil(node, visited, g);
+		dfsUtil(node, visited, g); // pass the start node, visited array and graph to dfsUtil
 		
 	}
 	
 	public static void dfsUtil(int node, boolean[] visited, Graph g) {
-		visited[node] = true;
-		System.out.print(node + " ");
+		visited[node] = true; // Mark the node as visited
+		System.out.print(node + " "); // Return the node
+
+		 
+		int i=0; // Loop variable
 		
-		// Neighbors of node 
-		int i=0;
-		
-		// for each neighbor
+		// for each neighbor of the input node
 		while(i< g.getNeighbors(node).size()) {
 			// if neighbor is not visited
 			if(!visited[g.getNeighbors(node).get(i)]) {
+				// Send it to the dfsUtil function
 				dfsUtil(g.getNeighbors(node).get(i), visited, g);
 			}
-			i++;
+			i++; // Increment loop variable
 		}
 		 
 		
