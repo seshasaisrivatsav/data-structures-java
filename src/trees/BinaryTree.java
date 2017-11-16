@@ -1,4 +1,20 @@
 package trees;
+
+
+class Node{
+    int key;
+    Node leftChild;
+    Node rightChild;
+    Node(int key){
+            this.key = key;
+    }
+
+    public int printNode(){
+            return key;
+    }
+}
+
+
 public class BinaryTree{
     Node root;
     // * LATEST *//
@@ -97,25 +113,10 @@ public class BinaryTree{
 
             System.out.println("Search for 30");
 
-            System.out.println(theTree.findNode(30));
-
     }
 
 }
 
-
-class Node{
-    int key;
-    Node leftChild;
-    Node rightChild;
-    Node(int key){
-            this.key = key;
-    }
-
-    public  int printNode(){
-            return key;
-    }
-}
 
 
     

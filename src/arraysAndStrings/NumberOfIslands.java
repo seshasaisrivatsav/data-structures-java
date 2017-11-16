@@ -22,7 +22,6 @@ public class NumberOfIslands {
 				if (grid[i][j] == '1') {
 					DFS(grid, i, j);
 					count++;
-
 				}
 			}
 		}

@@ -29,7 +29,8 @@ public class LevelOrderTraversal {
 			System.out.println("Nothing to do here (goes on a rocket)");
 		}
 		q.add(root);
-		while(!q.isEmpty()) {Node polledNode=q.poll();
+		while(!q.isEmpty()) {
+			Node polledNode=q.poll();
 			System.out.print(polledNode.key+" ");
 			if(polledNode.leftChild !=null)
 				q.add(polledNode.leftChild);
