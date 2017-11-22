@@ -25,6 +25,10 @@ public class BFS {
 		bfs(g, 2);
 	}
 	
+	// Keep a visited array that has initial values as false. Mark the starting node as false.
+	// In a queue, add the start node. As long as queue is not empty, add element to queue.
+	// pick each element from queue, while it has neighbors that are not visited, add them to queue and mark them visited
+	
 	public static void  bfs(Graph g, int start) {
 		
 		// Keep a visited array that initially has visited = false for each node

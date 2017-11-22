@@ -23,6 +23,9 @@ public class DFS {
 		
 	}
 	
+	// Create a Util function, send a node, visited array
+	// In Util Function - First mark the node as visited, for each neighbor, if not visited send it to Util again
+	
 	public static void dfs(int node, Graph g) {
 		boolean[] visited = new boolean[g.size()]; // set all nodes to not visited (false)
 		dfsUtil(node, visited, g); // pass the start node, visited array and graph to dfsUtil

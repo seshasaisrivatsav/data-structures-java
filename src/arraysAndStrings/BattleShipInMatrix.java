@@ -20,6 +20,13 @@ public class BattleShipInMatrix {
 
 	}
 	
+	/*
+	 for a MXN matrix; iterate M, N 
+	 	if(Mat[i][j]==".") continue
+	 	if(i>0 && Mat[i-1][j]=="*") continue
+	 	if(j>0 && Mat[i][j-1]=="*") continue
+	 	count++
+	 */
 	public static int findShips(String[][] bsm) {
 		int count = 0;
 		int m = bsm.length;

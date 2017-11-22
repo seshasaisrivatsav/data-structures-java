@@ -15,6 +15,18 @@ public class NumberOfIslands {
 		System.out.println(numIslands(bsm));
 	}
 
+	/*
+	 Two for loops iterate on MxN
+	 	if(Mat[i][j]==1)
+	 		DFS(Mat, i, j)
+	 		count++
+	 
+	 DFS - Same as dfs - identify corner cases and return. make an element to 0 ofter
+	 Call the same function on all 4 directions
+	 if(i<0 or i>=Mat.length or j<0 or j>=Mat[0].length or Mat[i][j]!=1) return
+	 Mat[i][j]==0
+	 call the same fun on 4 sides
+	 */
 	public static int numIslands(char[][] grid) {
 		int count = 0;
 		for (int i = 0; i < grid.length; i++) {
