@@ -52,13 +52,13 @@ public class AddNumbers {
 //        head2.next = new Node(9);
 //        head2.next.next = new Node(9);
 //        head2.next.next.next = new Node(9);
-        Node head1 = new Node(2);
-        head1.next = new Node(4);
-        head1.next.next = new Node(3);
+        Node head1 = new Node(9);
+        head1.next = new Node(9);
+        head1.next.next = new Node(9);
 
-        Node head2 = new Node(5);
-        head2.next = new Node(6);
-        head2.next.next = new Node(4);
+        Node head2 = new Node(9);
+        head2.next = new Node(9);
+        head2.next.next = new Node(9);
 
         Node res = addTwoNumbers(head1, head2);
         while(res !=null) {
@@ -87,6 +87,7 @@ public class AddNumbers {
                 l2 = l2.next;
             }
 
+            // If there is a carry over in previous iteration, increment
             if (carryOver) {
                 loopNodeValueTotal ++;
             }
@@ -112,7 +113,7 @@ public class AddNumbers {
         }
         // For the last carry
         if (carryOver) {
-            referenceNode.next.val = 1;
+            referenceNode.next = new Node(1);
         }
         return result;
     }
