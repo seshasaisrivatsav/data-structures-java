@@ -2,7 +2,6 @@ package arraysAndStrings;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 
 /**
@@ -18,9 +17,9 @@ import java.util.HashSet;
 class TwoSum {
 	public static void main(String[] args) {
 		int[] nums = {3,3};
-		int target = 9;
-        System.out.println(Arrays.toString(twoSumsPointers(nums, target)));
-        System.out.println(Arrays.toString(twoSumsHashSet(nums, target)));
+		int target = 6;
+        System.out.println(Arrays.toString(twoSumsHashMap(nums, target))); // THIS IS THE CORRECT ONE!
+        System.out.println(Arrays.toString(twoSumsPointers(nums, target))); // TODO: Fix an issue where it returns
 	}
 
     /**
@@ -73,7 +72,7 @@ class TwoSum {
      * @param target
      * @return int[]
      */
-    public static int[] twoSumsHashSet(int[] nums, int target) {
+    public static int[] twoSumsHashMap(int[] nums, int target) {
         if (nums == null || nums.length<2) {
             return new int[]{0,0};
         }
