@@ -7,7 +7,6 @@ import java.util.HashMap;
 /**
  * Given an `nums` array and a `target`, return array of indices that match the target
  * https://web.stanford.edu/class/cs9/sample_probs/TwoSum.pdf
- *
  * Constraints
  *  - can have any arbitrary integers +ve, -ve or 0
  *  - Can have duplicates
