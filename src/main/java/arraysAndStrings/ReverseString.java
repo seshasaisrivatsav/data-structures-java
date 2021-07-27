@@ -25,9 +25,9 @@ public class ReverseString {
             //answer.append(str.charAt(str.length()-i-1).toString);
             answer = answer + str.charAt(str.length()-1-i);
         }
-        if(str.charAt(length) == ' '){
+        if (str.charAt(length) == ' '){
                  return answer = answer.substring(1);
-            }else {
+            } else {
                 return answer;
             }
     }
