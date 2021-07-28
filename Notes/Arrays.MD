@@ -9,3 +9,28 @@
 | xxx | [xx](xx.java) | Desc |
 
 
+## Notes
+
+### Iterating a hashmap
+- For keys and values  (.entrySet => entry.getKey, entry.getValue)
+```java
+for (Map.Entry<String, Integer> entry: hashMap.entrySet()) {
+    sysout(entry.getKey() + " " + entry.getValue);
+}
+```
+
+- For keys (.keyset)
+```java
+for (String key: hashMap.keySet()) {
+    sysout(entry.getKey() + " " + key);
+}
+```
+
+- For values
+```java
+
+for (Integer value: hashMap.values()) {
+    sysout(entry.getKey() + " " + value);
+}
+
+```
