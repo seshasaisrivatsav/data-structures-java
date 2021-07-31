@@ -3,18 +3,16 @@ package arraysAndStrings;
 public class SeggregateOddEven {
 	
 	
-	public static void main (String[] args)
-    {
-        int arr[] = {13,10,21,20};
+	public static void main (String[] args) {
+        int arr[] = {13,10,21,20, 22, 23, 24, 25, 26};
  
         segregateEvenOdd(arr);
- 
         System.out.print("Array after segregation ");
         for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i]+" ");
     }
 	
-	 static void segregateEvenOdd(int arr[]) {
+	 static int[] segregateEvenOdd(int arr[]) {
 		 
 		 int count = 0 ;
 	        /* Initialize left and right indexes */
@@ -42,6 +40,8 @@ public class SeggregateOddEven {
 	        }
 	        
 	        System.out.println("Number of Swaps "+ count);
+
+	        return arr;
 	    }
 	
 

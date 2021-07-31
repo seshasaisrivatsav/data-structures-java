@@ -5,8 +5,12 @@
 | checkPermutation | [CheckPermutation](../src/main/java/arraysAndStrings/CheckPermutation.java) | Return true if two strings are permutations of one other |
 | urlify | [URLify](../src/main/java/arraysAndStrings/URLify.java) | In place replacement of spaces with %20 |
 | palindromePermutation | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome |
-| xxx | [Urlify](../src/main/java/arraysAndStrings/URLify.java) | Desc |
-| xxx | [xx](xx.java) | Desc |
+| OneAway | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
+| StringCompression | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count |
+| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
+| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
+| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
+| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
 
 
 ## Notes
