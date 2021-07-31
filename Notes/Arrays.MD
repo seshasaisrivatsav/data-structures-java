@@ -7,7 +7,7 @@
 | palindromePermutation | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome |
 | OneAway | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
 | StringCompression | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count |
-| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
+| RotateMatrix | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
 | xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
 | xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
 | xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
@@ -38,3 +38,7 @@ for (Integer value: hashMap.values()) {
 }
 
 ```
+
+## Notes
+- For rotating an array (transpose + vertical flip)
+![image](https://user-images.githubusercontent.com/19309898/127751865-418eff9f-0a88-4527-89bd-9bdfc5ad4e51.png)
