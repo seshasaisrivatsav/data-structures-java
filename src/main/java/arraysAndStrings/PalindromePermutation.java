@@ -1,7 +1,6 @@
 package arraysAndStrings;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Given a string write a function to check if it's a permutation of a palindrome
