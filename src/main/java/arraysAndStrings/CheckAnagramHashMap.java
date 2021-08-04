@@ -1,65 +1,45 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arraysAndStrings;
+
 import java.util.*;
 
-/**
- *
- * @author seshasai
- */
 public class CheckAnagramHashMap {
 
- public static void main(String[] args) {
-  String str1 = "manasa";
-  String str2 = "asanam";
-
-
-  if (isAnagram(str1, str2)) {
-   System.out.println("they are anagrams");
-  } else {
-   System.out.println("they are not anagram");
-  }
- }
-
- public static boolean isAnagram(String str1, String str2) {
-  int s = 0;
-  /* create a hashmap for string str1 */
-  HashMap < Character, Integer > myMap = new HashMap < > ();
-  for (int i = 0; i < str1.length(); i++) {
-   if (myMap.containsKey(str1.charAt(i))) {
-    myMap.put(str1.charAt(i), myMap.get(str1.charAt(i)) + 1);
-   } else {
-    myMap.put(str1.charAt(i), 1);
-   }
-  }
-
-  for (int i = 0; i < str2.length(); i++) {
-   if (myMap.containsKey(str2.charAt(i))) {
-    if (myMap.get(str2.charAt(i)) < 0) {
-     return false;
-    } else {
-     myMap.put(str2.charAt(i), myMap.get(str1.charAt(i)) - 1);
+    public static void main(String[] args) {
+        System.out.println(isAnagram("manasa", "asanam"));
     }
-   }
-  }
 
-  for (int i = 0; i < str2.length(); i++) {
+    /**
+     * @param str1 string
+     * @param str2 string
+     * @return boolean indicating if strings are anagrams
+     */
+    public static boolean isAnagram(String str1, String str2) {
+        int s = 0;
+        HashMap<Character, Integer> str1HashMap = new HashMap<>();
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1HashMap.containsKey(str1.charAt(i))) {
+                str1HashMap.put(str1.charAt(i), str1HashMap.get(str1.charAt(i)) + 1);
+            } else {
+                str1HashMap.put(str1.charAt(i), 1);
+            }
+        }
 
-   s = s + myMap.get(str1.charAt(i));
-  }
+        for (int i = 0; i < str2.length(); i++) {
+            if (str1HashMap.containsKey(str2.charAt(i))) {
+                if (str1HashMap.get(str2.charAt(i)) < 0) {
+                    return false;
+                } else {
+                    str1HashMap.put(str2.charAt(i), str1HashMap.get(str1.charAt(i)) - 1);
+                }
+            }
+        }
 
-  if (s == 0) {
-   return true;
-  } else {
-   return false;
-  }
+        for (int i = 0; i < str2.length(); i++) {
+            s = s + str1HashMap.get(str1.charAt(i));
+            if (s > 0) return false;
+        }
 
-
- }
-
-
+        return true;
+    }
 
 }

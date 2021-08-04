@@ -28,10 +28,6 @@ public class RotateArray {
 			A[i]=A[i+1];
 		}
 		A[i]=temp;
-		 
-		
-		
-		
 	}
 
 }
