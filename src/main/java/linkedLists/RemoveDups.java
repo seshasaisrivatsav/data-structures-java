@@ -1,4 +1,4 @@
-package newLinkedLists;
+package linkedLists;
 
 import java.util.HashSet;
 

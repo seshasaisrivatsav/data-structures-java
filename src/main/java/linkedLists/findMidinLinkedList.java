@@ -1,5 +1,4 @@
 package linkedLists;
-import java.util.*;
 
 public class findMidinLinkedList{
 	public static void main(String []args) {

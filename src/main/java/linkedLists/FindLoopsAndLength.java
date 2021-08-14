@@ -1,4 +1,4 @@
-package newLinkedLists;
+package linkedLists;
 
 public class FindLoopsAndLength {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class FindLoopsAndLength {
 			slow=slow.next;
 			fast=fast.next.next;
 			
-			if(slow==fast )  {
+			if(slow==fast)  {
 //				System.out.println("Loop found at");
 //				System.out.println("when loop found" + slow.data + " " + fast.data);
 				slow=slow.next;

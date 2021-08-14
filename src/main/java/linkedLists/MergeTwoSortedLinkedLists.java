@@ -1,4 +1,4 @@
-package newLinkedLists;
+package linkedLists;
 
 public class MergeTwoSortedLinkedLists {
 	
@@ -24,11 +24,16 @@ public class MergeTwoSortedLinkedLists {
 	// else res = N2 res.next = fn(N1, N2.next)
 	
     public static Node mergeTwoLists(Node l1, Node l2) {
-        if(l1==null)return l2;
-        if(l2==null)return l1;
+        if (l1==null) return l2;
+        if (l2==null) return l1;
         Node res;
-        if(l1.data < l2.data){ res = l1; res.next=mergeTwoLists(l1.next, l2);}
-        else{ res=l2; res.next=mergeTwoLists(l1, l2.next);}
+        if (l1.data < l2.data) {
+        	res = l1;
+        	res.next=mergeTwoLists(l1.next, l2);
+        } else {
+        	res=l2;
+        	res.next=mergeTwoLists(l1, l2.next);
+        }
         return res;
         
     }
