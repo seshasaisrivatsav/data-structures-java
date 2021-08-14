@@ -24,9 +24,9 @@
 | Tree| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/trees/PrintTopViewOfTree.java"></a> |  Print top view of a tree
 | LinkedList | <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/LinkedList.java"></a> |  LinkedList 
 | LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/findCycle.java"></a> | Find cycle in linked list
-| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/AddNodeAtEnd.java">Add node at end</a> | add a node at end of a linked list
-| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/CompareTwoLinkedLists.java">Compare Linked List</a> | Return true iff they have same values
-| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/newLinkedLists/FindLoopsAndLength.java">Find Loops</a> | Find loops and return length of loop in linked list
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/AddNodeAtEnd.java">Add node at end</a> | add a node at end of a linked list
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/CompareTwoLinkedLists.java">Compare Linked List</a> | Return true iff they have same values
+| LinkedList| <a href="https://github.com/seshasaisrivatsav/data-structures-java/blob/master/src/linkedLists/FindLoopsAndLength.java">Find Loops</a> | Find loops and return length of loop in linked list
 | | <a href=""></a> | 
 | | <a href=""></a> | 
 | | <a href=""></a> | 

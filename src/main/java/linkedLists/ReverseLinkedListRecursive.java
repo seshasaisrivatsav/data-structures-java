@@ -1,4 +1,4 @@
-package newLinkedLists;
+package linkedLists;
 
 public class ReverseLinkedListRecursive {
 	public static void main(String[] args) {
