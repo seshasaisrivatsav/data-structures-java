@@ -18,17 +18,13 @@ public class ReverseLinkedListIterative {
 		Node prev = null;
 		Node curr = head;
 		Node forward = head.next;
-		
 		while(curr!=null) {
 			curr.next = prev;
 			prev = curr;
 			curr = forward;
 			if(forward!=null)
 				forward = forward.next;
-			 
-			 
 		}
-		
 		return prev;
 		 
 	}
@@ -40,7 +36,6 @@ public class ReverseLinkedListIterative {
 			head = head.next;
 		}
 	}
-	
 	
 }
 
