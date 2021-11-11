@@ -41,7 +41,7 @@ class TwoSum {
 	public static int[] twoSumsPointers(int[] nums, int target) {
         int[] res = new int[2];
 	    int sortedNums[] = nums.clone(); // Copies an array
-        Arrays.sort(sortedNums);
+        Arrays.sort(sortedNums); // (n log n) or O(1) log 8 = 3
 
         int leftPointer = 0, rightPointer = sortedNums.length - 1;
 
@@ -76,6 +76,12 @@ class TwoSum {
             return new int[]{0,0};
         }
 
+        // nums = { 3, 5, 4,}
+        // target = 7
+        // HM => Difference, Index
+        // 4, 0
+        // 2, 1
+
         HashMap<Integer, Integer> numsHashMap = new HashMap<Integer, Integer>();
 
         for (int i=0; i<nums.length; i++) {
@@ -101,7 +107,7 @@ class TwoSum {
     }
 
     /**
-     * Approach 2: Brute Force
+     * Approach 3: Brute Force
      * Time Complexity: O(n2)
      * Space Complexity: O(1)
      * @param nums integer array

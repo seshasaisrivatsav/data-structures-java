@@ -8,28 +8,18 @@ public class ReverseLinkedListRecursive {
 		head.next.next.next = new Node(4);
 		head.next.next.next.next = new Node(5);
 		head.next.next.next.next.next = new Node(6);
-		reverseLinkedListRecursive(head);
-		
-		//printLinkedList(reverseLinkedListRecursive(head));
-		
+
+		System.out.println("before reversal: " + Node.print(head));
+		System.out.println("after reversal: " + Node.print(reverseLinkedListRecursive(head)));
+
 	}
-	
-	public static void reverseLinkedListRecursive(Node head){
-		if(head.next!=null) {
+
+	// TODO: Fix this
+	public static Node reverseLinkedListRecursive(Node head) {
+		if (head.next!=null) {
 			reverseLinkedListRecursive(head.next);
 			head = head.next;
 		}
-		
-	 
-		
-		
+		return head;
 	}
-	
-	public static void printLinkedList(Node head) {
-		while(head!=null) {
-			System.out.println(head.data);
-			head = head.next;
-		}
-	}
-
 }
