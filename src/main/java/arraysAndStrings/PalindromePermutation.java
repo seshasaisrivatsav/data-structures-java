@@ -37,7 +37,7 @@ public class PalindromePermutation {
             }
         }
 
-        int odds = 0; int evens = 0;
+        int odds = 0;
         for (Integer counts: stringCount.values()) {
             // Increment odds count if we find one
             if (counts%2 != 0) {
@@ -50,5 +50,16 @@ public class PalindromePermutation {
         return true;
     }
 
-
+    public static boolean palindromePermutation_iterate(String str) {
+        if (str.length() == 1) {
+            return true;
+        }
+        String str1 = str.replaceAll("\\s", "");
+        for (int i=0; i<str1.length()/2; i++) {
+            if (str1.charAt(i) != str1.charAt(str1.length() - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

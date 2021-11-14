@@ -21,8 +21,10 @@ public class URLify {
      *  Space Complexity: O(1)
      *
      * Approach 1: Do this in-place
-     *          We first count number of spaces.
-     *          By tripling it we get the spaces required for %20
+     *          In the first pass, in correct order:
+     *              We first count number of spaces.
+     *              We get final index by adding twice the amount of spaces to trueLength
+     *              By tripling it we get the spaces required for %20
      *          In the second pass, in reverse order, we edit the string as we replace it with %20, by using 2 pointers
      *              pointer 1: will be at the end of actual text
      *                          if the first pointer finds a space, we will make %20 string as position of second pointer
@@ -60,21 +62,21 @@ public class URLify {
         }
 
         // Second counter
-        int finalIndex = trueLength + (spaceCount * 2);
+        int reverseIndex = trueLength + (spaceCount * 2);
 
         // Iterate from reverse (and start from trueLength - 1 as final index goes to + 1)
-        for (int stringIndex = trueLength - 1; stringIndex >= 0; stringIndex--) {
-            if (str[stringIndex] == ' ') { // if we encounter a space
-                str[finalIndex - 1] = '0';
-                str[finalIndex - 2] = '2';
-                str[finalIndex - 3] = '%';
-                finalIndex = finalIndex - 3; // decrement by 3
+        for (int stringEndIndex = trueLength - 1; stringEndIndex >= 0; stringEndIndex--) {
+            if (str[stringEndIndex] == ' ') { // if we encounter a space
+                str[reverseIndex - 1] = '0';
+                str[reverseIndex - 2] = '2';
+                str[reverseIndex - 3] = '%';
+                reverseIndex = reverseIndex - 3; // decrement by 3
             } else {
-                str[finalIndex - 1] = str[stringIndex];
-                finalIndex --; // decrement by 1
+                str[reverseIndex - 1] = str[stringEndIndex];
+                reverseIndex --; // decrement by 1
             }
         }
-        return new String(str);
+        return new String(str).trim();
     }
 
     /**

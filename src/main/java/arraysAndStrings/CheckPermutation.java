@@ -3,6 +3,7 @@ package arraysAndStrings;
 import java.util.Arrays;
 
 /**
+ * Source: Cracking the Coding Interview (C.T.C.I)
  * Given two strings write a method to decide if one is a permutation of the other
  *  Assumptions
  *      - Two strings are permutations IFF they've same characters
@@ -21,7 +22,8 @@ public class CheckPermutation {
 
     /**
      * Given two strings, we convert
-     *
+     *      Time Complexity: O(n)
+     *      Space Complexity: O(n)
      * @param str1 String
      * @param str2 String
      * @return boolean
@@ -48,14 +50,17 @@ public class CheckPermutation {
                 return false;
             }
         }
-
         return true;
-
-
-
     }
 
-    // Approach 2:
+    /**
+     * Time Complexity O(n log(n))
+     *           Sort takes - O(n log(n))
+     *           String equals - O(n)
+     * @param str1
+     * @param str2
+     * @return
+     */
     public static boolean isPermutationSortApproach(String str1, String str2) {
         str1 = str1.replaceAll("\\s", ""); // Replace all spaces
         str2 = str2.replaceAll("\\s", ""); // Replace all spaces

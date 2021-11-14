@@ -23,6 +23,8 @@ public class StringCompression {
         StringBuilder stringBuilder = new StringBuilder();
         int counter = 1;
         for (int i=0; i<str.length(); i++) {
+            // If the characters next to one another aren't matching, append counter, reset counter to 1
+            // handle edge case of last character
             if ((i+1) >= str.length() || str.charAt(i) != str.charAt(i+1)) {
                 stringBuilder.append(str.charAt(i)).append(counter);
                 counter = 1;

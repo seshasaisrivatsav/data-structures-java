@@ -92,6 +92,7 @@ public class RotateMatrix {
             }
         }
 
+        // STEP 2: horizontal flip the matrix
         for (int i=0; i<array.length/2; i++) {
             for (int j=0; j<array.length; j++) {
                 int temp = array[i][j];

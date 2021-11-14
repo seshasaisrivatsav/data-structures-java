@@ -2,7 +2,7 @@ package arraysAndStrings;
 
 
 /**
- * Source: Cracking the Coding Interview (CTCI)
+ * Source: Cracking the Coding Interview (C.T.C.I)
  * Implement an algorithm to determine if a string is unique without using any datastructures
  * Assumption:
  *  = string contains characters from `a` to `z`
@@ -16,14 +16,11 @@ package arraysAndStrings;
 public class IsUniqueString {
     
     public static void main(String[] args){
-        String str = "abcd1a";
+        // Approach 1 - Without additional data structure
+        System.out.println(isUnique("zfgadzd"));
 
-        // Approach 1
-        System.out.println(1 << 5);
-        System.out.println(isUnique("csd"));
-
-        // Approach 2
-        if (IsUniqueString.isUniqueAdditionalDataStructure(str)) {
+        // Approach 2 - With additional data structure
+        if (IsUniqueString.isUniqueAdditionalDataStructure("abcd1a")) {
             System.out.println("is unique");
         } else {
             System.out.println("is not unique");
@@ -32,8 +29,14 @@ public class IsUniqueString {
 
     /**
      * Approach 1:
-     *  Here, instead of creating a boolean array, we use int to represent series of buts where each position initially false
+     *  Here, instead of creating a boolean array, we use int to represent series of bits where each position initially false
      *      and return false if we already find a true somewhere
+     *
+     *      Left Shift Example:
+     *             5 in binary is 101
+     *             5 << 1 => 1010
+     *             5 << 2 => 10100
+     *             5 << 3 => 101000
      *
      *      1 << diff ===> creates an int value that has all bits zero except for the val-th bit
      *      We then use bitwise AND to AND this value with `checker`
@@ -45,6 +48,8 @@ public class IsUniqueString {
      *
      *  Space Complexity: O(1)
      *  Time Complexity: O(n)
+     *
+     *  notes: https://mkyong.com/java/java-and-bitwise-shift-operator/
      * @param str string to check
      * @return true if the string is unique
      */
@@ -57,10 +62,15 @@ public class IsUniqueString {
         int checker = 0;
         for (int i = 0; i < str.length(); i++) {
             int val = str.charAt(i) - 'a';
-            if ((checker & (1 << val)) > 0) {
+            /*
+            System.out.println("val: " + Integer.toBinaryString(val));
+            System.out.println("checker: " + Integer.toBinaryString(checker));
+            System.out.println("1<<val: " + Integer.toBinaryString(1<<val));
+            */
+            if ((checker & (1 << val)) > 0) { // if a bit is found, it means we've previously seen the value
                 return false;
             }
-            checker |= (1 << val);
+            checker |= (1 << val); // change checker to also have the diff checker = checker || (1<<str.charAt(i)-'a')
         }
         return true;
     }
