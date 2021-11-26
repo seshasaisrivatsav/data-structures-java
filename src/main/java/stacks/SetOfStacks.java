@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class SetOfStacks {
 	
-	ArrayList<Stack> stacks= new ArrayList<Stack>();
-	Stack currStack;
+	ArrayList<Stack<Number>> stacks= new ArrayList<Stack<Number>>();
+	Stack<Number> currStack;
 	int capacity;
 	
 	SetOfStacks(int capacity){
 		this.capacity=capacity;
-		currStack = new Stack(capacity);
+		currStack = new Stack<Number>(capacity);
 		stacks.add(currStack);
 	}
 	
 	public void push(int element) {
 		if(currStack.isFull()) {
-			currStack = new Stack(capacity);
+			currStack = new Stack<Number>(capacity);
 			stacks.add(currStack);
 		} 
 		currStack.push(element);

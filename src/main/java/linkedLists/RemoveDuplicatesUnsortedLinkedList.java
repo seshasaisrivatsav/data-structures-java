@@ -23,9 +23,13 @@ public class RemoveDuplicatesUnsortedLinkedList {
 	}
 
 	/**
+	 * Approach 1:
+	 * 		Preserving the order, this removes duplicates
+	 * 		Take two pointers `current` and `runner`
+	 *
 	 * Time Complexity: O(n2)
 	 * Space Complexity: O(1)
-	 * Take two pointers `current` and `runner`
+	 *
 	 * @param head Node with duplicates
 	 * @return Node with duplicates removed
 	 */
@@ -59,9 +63,10 @@ public class RemoveDuplicatesUnsortedLinkedList {
 	}
 
 	/**
-	 * Time Complexity: O(n2)
-	 * Space Complexity: O(1)
 	 * Approach 2: Using a hashset, remove
+	 * 	Time Complexity: O(n2)
+	 * 	Space Complexity: O(1)
+	 *
 	 * @param head Node
 	 * @return Node with duplicates removed
 	 */

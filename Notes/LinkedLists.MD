@@ -2,12 +2,17 @@
 
 | Problem  | URL| Description|
 | :------------ |:---------------| :-----|
-| RemoveDuplicatesSortedLL | [RemoveDuplicatesSortedLL](../src/main/java/linkedLists/RemoveDuplicatesSortedLL.java) | Desc |
 | RemoveDuplicatesUnsortedLinkedList | [RemoveDuplicatesUnsortedLinkedList](../src/main/java/linkedLists/RemoveDuplicatesUnsortedLinkedList.java) | Given linked list remove duplicates |
-| FindMidInLL | [FindMidInLL](../src/main/java/linkedLists/FindMidInLL.java) | Two pointer technique to find mid |
-| ReverseLinkedListIterative | [ReverseLinkedListIterative](../src/main/java/linkedLists/ReverseLinkedListIterative.java) | Reverse |
-| Compare linked list | [CompareLinkedLists](../src/main/java/linkedLists/CompareLinkedLists.java) | Return true if 2 LL are equal values |
+| RemoveDuplicatesSortedLL | [RemoveDuplicatesSortedLL](../src/main/java/linkedLists/RemoveDuplicatesSortedLL.java) | Desc |
+| ReturnKthToLast | [ReturnKthToLast](../src/main/java/linkedLists/ReturnKthToLast.java) | Algo to find ktch to last element of singly linked list |
 | DeleteMiddleNode | [DeleteMiddleNode](../src/main/java/linkedLists/DeleteMiddleNode.java) | Delete middle node of given LL and given middle node, delete it |
+| PartitionLL | [PartitionLinkedList](../src/main/java/linkedLists/PartitionLinkedList.java) | Use Two new initialized linked lists to partition given one around a number   |
+| ReverseLinkedList | [ReverseLinkedList](../src/main/java/linkedLists/ReverseLinkedList.java) | Iterative and Recursive approach to reverse a LL|
+| SumLists | [SumLists](../src/main/java/linkedLists/SumLists.java) | Forward and reverse sum of linked lists|
+| Palindrome | [Palindrome](../src/main/java/linkedLists/Palindrome.java) | Check if a given list is palindrome|
+| Intersection | [Intersection](../src/main/java/linkedLists/Intersection.java) | Given two LLs find the intersection point  |
+| FindCycle | [FindCycle](../src/main/java/linkedLists/FindCycle.java) | Find cycle if it's present in LL |
+| FindMidInLL | [FindMidInLL](../src/main/java/linkedLists/FindMidInLL.java) | Two pointer technique to find mid |
 | Compare linked list | [CompareLinkedLists](../src/main/java/linkedLists/CompareLinkedLists.java) | Return true if 2 LL are equal values |
 | DeleteNodeAtPosition | [DeleteNodeAtPosition](../src/main/java/linkedLists/DeleteNodeAtPosition.java) | Delete node at given position |
 | Add Node at end | [InsertNodeAtEnd](../src/main/java/linkedLists/InsertNodeAtEnd.java) | Add Node at end of linked List |
@@ -52,3 +57,5 @@ class Node {
 		return res.substring(0, res.length()-2);
 	}
 ```
+
+![IMG_0126 (1)](https://user-images.githubusercontent.com/19309898/142739696-9325deb4-25d9-4e4f-9108-0cb23c51b338.png)

@@ -2,7 +2,7 @@ package stacks;
 
 /// Implements queue using two stacks
 public class MyQueue {
-	Stack sNew, sOld;
+	Stack<Number> sNew, sOld;
 	
 	/*
 	 * Add

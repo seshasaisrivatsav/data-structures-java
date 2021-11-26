@@ -2,7 +2,7 @@ package stacks;
 
 
 // Also returns min in O[1]
-public class Stack {
+public class Stack<I extends Number> {
 	
 	public int top;
 	public int size;
