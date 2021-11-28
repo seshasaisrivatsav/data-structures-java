@@ -11,8 +11,6 @@
 | StringRotation | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another |
 | ReverseStringAndSentence | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence |
 | twoSum | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
-| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
-| xxx | [xxx](../src/main/java/arraysAndStrings/xxx.java) | Desc |
 
 
 ## Notes
