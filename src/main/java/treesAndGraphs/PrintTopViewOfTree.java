@@ -1,10 +1,8 @@
-package trees;
+package treesAndGraphs;
  
 
 public class PrintTopViewOfTree {
 	public static void main(String[] args) {
-		   
-
 		   	Node root = new Node(5);
 		   	root.leftChild = new Node(10);
 		   	root.rightChild = new Node(15);
@@ -14,7 +12,6 @@ public class PrintTopViewOfTree {
 		   	root.rightChild.rightChild = new Node(35);		
 		   	root.rightChild.leftChild.leftChild = new Node(31);
 		   	root.rightChild.rightChild.rightChild = new Node(39);
-		   	
            
 			/*				   5
 			 * 			10	      	15
@@ -32,23 +29,20 @@ public class PrintTopViewOfTree {
 	 * To print the left side
 	 */
 	public static void printLeft(Node root) {
-		if(root !=null){
+		if (root !=null) {
 			printLeft(root.leftChild);
-            System.out.println(root.key);
-       
-    }
-
+            System.out.println(root.value);
+    	}
 	}
 	
 	/*
 	 * Print right side with root
 	 */
 	public static void printRight(Node root) {
-		if(root!=null) {
-			System.out.println(root.key);
+		if (root!=null) {
+			System.out.println(root.value);
 			printRight(root.rightChild);
 		}
-	
 	}
 	
 	

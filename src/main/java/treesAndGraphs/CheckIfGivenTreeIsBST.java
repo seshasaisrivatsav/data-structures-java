@@ -1,5 +1,9 @@
-package trees;
+package treesAndGraphs;
 
+/**
+ * Check if a given Tree is a Binary Search Tree
+ * BST = left node < parent < right
+ */
 public class CheckIfGivenTreeIsBST {
 	public static void main(String[] args) {
 
@@ -19,9 +23,6 @@ public class CheckIfGivenTreeIsBST {
 	
 		 */
 		Node root1 = new Node(10);
-		
-		 
-
 		System.out.println(check(root1));
 
 	}
@@ -33,11 +34,10 @@ public class CheckIfGivenTreeIsBST {
 	
 	public static boolean checkBSTUtil(Node root, int min, int max) {
 		if(root==null) return true;
-		if(root.key <= min || root.key > min) return false;
-		return checkBSTUtil(root.leftChild, min, root.key) && checkBSTUtil(root.rightChild, root.key, max);
-		
-		
-		
+		if (root.value <= min || root.value > min) {
+			return false;
+		}
+		return checkBSTUtil(root.leftChild, min, root.value) && checkBSTUtil(root.rightChild, root.value, max);
 	}
 
 }

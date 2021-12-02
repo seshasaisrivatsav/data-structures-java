@@ -1,4 +1,4 @@
-package trees;
+package treesAndGraphs;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -22,21 +22,21 @@ public class LevelOrderTraversal {
 
 	}
 
-	
+
 	public static void LevelOrder(Node root) {
-		Queue<Node> q = new LinkedList<Node>();
-		if(root==null) {
+		Queue < Node > q = new LinkedList < Node > ();
+		if (root == null) {
 			System.out.println("Nothing to do here (goes on a rocket)");
 		}
 		q.add(root);
-		while(!q.isEmpty()) {
-			Node polledNode=q.poll();
-			System.out.print(polledNode.key+" ");
-			if(polledNode.leftChild !=null)
+		while (!q.isEmpty()) {
+			Node polledNode = q.poll();
+			System.out.print(polledNode.value + " ");
+			if (polledNode.leftChild != null)
 				q.add(polledNode.leftChild);
-			if(polledNode.rightChild !=null)
+			if (polledNode.rightChild != null)
 				q.add(polledNode.rightChild);
 		}
-		
+
 	}
 }

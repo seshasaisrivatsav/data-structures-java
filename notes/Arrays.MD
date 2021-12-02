@@ -11,7 +11,8 @@
 | StringRotation | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another |
 | ReverseStringAndSentence | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence |
 | twoSum | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
-
+| longestSubstringWithoutRepeatingChars | [longestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)  | sliding window - longestSubstringWithoutRepeatingChars |
+| MaxSumContiguousArray | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum |
 
 ## Notes
 
@@ -38,7 +39,43 @@ for (Integer value: hashMap.values()) {
 }
 
 ```
+## Sliding window
+### [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java)
+### [LongestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)
+More sliding window problems - https://www.geeksforgeeks.org/tag/sliding-window/
 
+```java
+[a b c d e f g h]
+```
+
+Sliding window of size 3
+```java
+[a b c]
+  [b c d]
+    [c d e]
+      [d e f]
+        [e f g]
+          [f g h]
+```
+
+- eg 1: find number of elements needed to give a largest sum of 5 consecutive elements
+- Given array
+```java
+[ 5, 7, 1, 4, 3, 6, 2, 9, 2 ]
+
+```
+- Possible sliding windows
+- Here rather than computing all possibilities, we slide our window
+- To proceed one step ahead, we delete the first most element and add the new element
+- imagine a window of length N, and sliding pane of length K, while we move 1 increment forward, we compute the elements in 
+   each pane accordingly.
+```java
+[5, 7, 1, 4, 3] = 20
+[ 7, 1, 4, 3, 6] = 21
+[1, 4, 3, 6, 2]=16
+[4, 3, 6, 2, 9]=24
+[ 3, 6, 2, 9, 2]=22
+```
 ## Notes
 - For rotating an array (transpose + vertical flip)
 ![image](https://user-images.githubusercontent.com/19309898/127751865-418eff9f-0a88-4527-89bd-9bdfc5ad4e51.png)

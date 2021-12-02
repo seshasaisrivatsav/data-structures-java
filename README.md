@@ -8,9 +8,10 @@
 
 | TOPICS|
 | :------------ |
-| [Arrays&Strings](./Notes/Arrays.MD) |
-| [LinkedLists](./Notes/LinkedLists.MD) |
-| [StacksAndQueues](./Notes/StacksAndQueues.MD) |
+| [Arrays&Strings](notes/Arrays.MD) |
+| [LinkedLists](notes/LinkedLists.MD) |
+| [StacksAndQueues](notes/StacksAndQueues.MD) |
+| [TreesAndGraphs](notes/TreesAndGraphs.md) |
 
  
 <h1>Author</h1>
