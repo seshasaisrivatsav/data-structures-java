@@ -1,8 +1,6 @@
 package treesAndGraphs;
 
-public class LowestCommonAncestor {
-
-
+public class FirstCommonAncestor {
 	static class Node {
 		Node left;
 		Node right;
@@ -26,10 +24,16 @@ public class LowestCommonAncestor {
 		root.right.right.left = new Node(7);
 
 
-		System.out.println(lca(root, root.right, root.left.right).value);
+		System.out.println(lca(root, root.left.right.right, root.left.left ).value);
 	}
 
-
+	/**
+	 * Excellently Explained: https://youtu.be/13m9ZCB8gjw?t=267
+	 * @param root
+	 * @param N1
+	 * @param N2
+	 * @return
+	 */
 	public static Node lca(Node root, Node N1, Node N2) {
 		// If dead end, return null
 		if (root == null)

@@ -16,18 +16,27 @@
 
 ## Notes
 
+
 ### Iterating a hashmap
 - For keys and values  (.entrySet => entry.getKey, entry.getValue)
 ```java
-for (Map.Entry<String, Integer> entry: hashMap.entrySet()) {
-    sysout(entry.getKey() + " " + entry.getValue);
+    Map<String, Integer> itemMap = new HashMap<>();
+    itemMap.forEach((key, value) => {
+        System.out.println(key + " " + value);
+    })
+```
+
+- Using entrySet (for )
+```java
+for (Map.Entry<String, Integer> entry: itemMap.entrySet()) {
+     System.out.println(entry.getKey() + " " + entry.getValue);
 }
 ```
 
 - For keys (.keyset)
 ```java
 for (String key: hashMap.keySet()) {
-    sysout(entry.getKey() + " " + key);
+      System.out.println(entry.getKey() + " " + key);
 }
 ```
 

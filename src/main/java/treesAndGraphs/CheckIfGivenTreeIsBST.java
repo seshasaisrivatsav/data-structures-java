@@ -6,38 +6,40 @@ package treesAndGraphs;
  */
 public class CheckIfGivenTreeIsBST {
 	public static void main(String[] args) {
-
-		
 		/*
-		 * 			NODE 1 (false)
-		 			10
-		 		0		25
-		 	-1	   21    16  31    	
-		 	
-		 	
-		 			NODE 2 (true)
-		 			
-		 			10
-		 		-10		19
-		 	-20   0     17
-	
+		 		  7
+		 		5	 10
+		 	3   6   8   11
 		 */
-		Node root1 = new Node(10);
-		System.out.println(check(root1));
+		Node root = new Node(7);
+		root.leftChild = new Node(5);
+		root.rightChild = new Node(10);
+		root.leftChild.leftChild = new Node(3);
+		root.leftChild.rightChild = new Node(6);
+		root.rightChild.leftChild = new Node(8);
+		root.rightChild.rightChild = new Node(11);
+		System.out.println("balanced: true. Actual:" + check(root));
+		root.rightChild.rightChild.rightChild = new Node(12);
+		System.out.println("balanced: true. Actual:" + check(root));
+		root.rightChild.rightChild.rightChild.rightChild = new Node(4);
+		System.out.println("balanced: false. Actual:" + check(root));
 
 	}
 	
 	public static boolean check(Node root) {
-		  return checkBSTUtil(root,Integer.MIN_VALUE, Integer.MAX_VALUE);
+		  return checkBSTUtil(root, null, null);
 		
 	}
 	
-	public static boolean checkBSTUtil(Node root, int min, int max) {
-		if(root==null) return true;
-		if (root.value <= min || root.value > min) {
-			return false;
-		}
-		return checkBSTUtil(root.leftChild, min, root.value) && checkBSTUtil(root.rightChild, root.value, max);
+	public static boolean checkBSTUtil(Node root, Integer min, Integer max) {
+		if (root==null) return true;
+
+		if ((min!=null && root.value <= min) || (max!=null && root.value >= max)) { return false; }
+
+		boolean leftBst = checkBSTUtil(root.leftChild, min, root.value);
+		boolean rightBst = checkBSTUtil(root.rightChild, root.value, max);
+
+		return leftBst && rightBst;
 	}
 
 }

@@ -7,6 +7,10 @@
 | MinimalTree | [MinimalTree](../src/main/java/treesAndGraphs/MinimalTree.java) | Convert sorted array into BST |
 | ListOfDepths | [ListOfDepths](../src/main/java/treesAndGraphs/ListOfDepths.java) | BFS and DFS approach to return list of  levels in binary tree|
 | CheckBalanced | [CheckBalanced](../src/main/java/treesAndGraphs/CheckBalanced.java) | Check if a binary tree is balanced |
+| CheckIfGivenTreeIsBST | [CheckIfGivenTreeIsBST](../src/main/java/treesAndGraphs/CheckIfGivenTreeIsBST.java) | Check if a given tree is BST |
+| PathSum | [PathSum](../src/main/java/treesAndGraphs/PathSum.java) | return true if a path exists from head to toe that matches given sum |
+| PathsWithSum | [PathsWithSum](../src/main/java/treesAndGraphs/PathsWithSum.java) | return number of paths that add up to given sum |
+| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
 
