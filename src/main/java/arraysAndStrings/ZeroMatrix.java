@@ -31,6 +31,7 @@ public class ZeroMatrix {
      */
     public static int[][] zeroMatrix(int[][] matrix) {
         int row=-1, col=-1;
+        // O(n^2)
         for (int i=0; i<matrix.length; i++) {
             for(int j=0; j<matrix[i].length; j++) {
                 if (matrix[i][j] == 0) {

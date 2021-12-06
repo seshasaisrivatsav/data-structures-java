@@ -14,7 +14,8 @@ public class PathSum {
     public static boolean hasPathRecursion(Node root, int sum) {
         if (root == null) { return false; }
         if (root.leftChild == null && root.rightChild == null && sum - root.value == 0) { return true; }
-        return hasPathRecursion(root.leftChild, sum - root.value) || hasPathRecursion(root.rightChild, sum - root.value);
+        return hasPathRecursion(root.leftChild, sum - root.value)
+                || hasPathRecursion(root.rightChild, sum - root.value);
     }
     public static boolean hasPathSum(Node root, int sum) {
         if (root == null) { return false; }

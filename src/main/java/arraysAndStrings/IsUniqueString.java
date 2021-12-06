@@ -99,15 +99,14 @@ public class IsUniqueString {
         // We iterate through string and return false if an element's value at the ASCII position is true
         // and set the value to true if not present
         // If the whole loop is complete, we return false to indicate that the string is unique
-        for (int i=0; i < str.length(); i++){
+        for (int i=0; i < str.length(); i++) {
             int val = str.charAt(i);
             if (char_set[val]){
                 return false;
             }
-        char_set[val] = true;
+            char_set[val] = true;
         }
         return true;
-        
     }
     
 }

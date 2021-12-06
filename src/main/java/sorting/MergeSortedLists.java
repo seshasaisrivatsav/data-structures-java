@@ -20,7 +20,7 @@ public class MergeSortedLists {
 			if(A1[i]<A2[j]) {
 				res[k]=A1[i];
 				k++;i++;
-			}else {
+			} else {
 				res[k]=A2[j];
 				k++;j++;
 			}

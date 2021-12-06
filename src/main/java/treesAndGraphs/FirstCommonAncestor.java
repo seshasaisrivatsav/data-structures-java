@@ -29,9 +29,9 @@ public class FirstCommonAncestor {
 
 	/**
 	 * Excellently Explained: https://youtu.be/13m9ZCB8gjw?t=267
-	 * @param root
-	 * @param N1
-	 * @param N2
+	 * @param root Node
+	 * @param N1 Node
+	 * @param N2 Node
 	 * @return
 	 */
 	public static Node lca(Node root, Node N1, Node N2) {

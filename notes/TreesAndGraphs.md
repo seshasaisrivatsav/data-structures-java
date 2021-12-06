@@ -10,8 +10,10 @@
 | CheckIfGivenTreeIsBST | [CheckIfGivenTreeIsBST](../src/main/java/treesAndGraphs/CheckIfGivenTreeIsBST.java) | Check if a given tree is BST |
 | PathSum | [PathSum](../src/main/java/treesAndGraphs/PathSum.java) | return true if a path exists from head to toe that matches given sum |
 | PathsWithSum | [PathsWithSum](../src/main/java/treesAndGraphs/PathsWithSum.java) | return number of paths that add up to given sum |
-| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
-| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
+| FirstCommonAncestor | [FirstCommonAncestor](../src/main/java/treesAndGraphs/FirstCommonAncestor.java) | Find lowest common ancestor of 2 nodes |
+| CheckSubtree | [CheckSubtree](../src/main/java/treesAndGraphs/CheckSubtree.java) | Create algorithm to determine if T2 is a subtree of T1 |
+| RandomNode | [RandomNode](../src/main/java/treesAndGraphs/RandomNode.java) | Implement binary tree from scratch that also has a getRandomNode() method |
+| PrintTopViewOfTree | [PrintTopViewOfTree](../src/main/java/treesAndGraphs/PrintTopViewOfTree.java) | Print top view of a tree |
 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
 
 
