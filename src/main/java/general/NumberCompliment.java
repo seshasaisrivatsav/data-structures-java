@@ -2,12 +2,10 @@ package general;
 
 import java.util.Scanner;
 
+/**
+ * Given a number, convert it into bit, ignore 0s and invert bits and convert it back to number
+ */
 public class NumberCompliment {
-	/*
-	 * Given a number, convert it into bit, ignore 0s and invert bits and convert it
-	 * back into number
-	 * 
-	 */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

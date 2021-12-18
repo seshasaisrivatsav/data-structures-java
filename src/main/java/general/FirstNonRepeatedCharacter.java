@@ -2,12 +2,10 @@ package general;
 
 import java.util.HashMap;
 import java.util.Scanner;
-
+/*
+ * Return first non repeated character from a string
+ */
 public class FirstNonRepeatedCharacter {
-	/*
-	 * Return first non repeated character from a string
-	 */
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string");

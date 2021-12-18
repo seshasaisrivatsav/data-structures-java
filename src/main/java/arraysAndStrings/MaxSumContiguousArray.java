@@ -10,7 +10,6 @@ public class MaxSumContiguousArray {
         int[] arr = { 5, 7, 1, 4, 3, 6, 2, 9, 2 };
         System.out.println("Sliding window max: " + getMaxSum_windowSliding(arr, 5));
         System.out.println("Bruteforce max: " + getMaxSum_bruteForce(arr, 5));
-
     }
 
     /**
@@ -43,7 +42,7 @@ public class MaxSumContiguousArray {
     /**
      * Time complexity: O(n*k), where k = total contiguous items
      * @param arr
-     * @return
+     * @return int
      */
     public static int getMaxSum_bruteForce(int[] arr, int contiguousLength) {
         int max = Integer.MIN_VALUE;

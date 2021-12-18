@@ -8,6 +8,7 @@ package arraysAndStrings;
 public class StringCompression {
     public static void main(String[] args) {
         System.out.println(compressString("aabcccccaaa"));
+        System.out.println(compressString2("aabcccccaaa"));
     }
 
     /**
@@ -36,5 +37,22 @@ public class StringCompression {
             return str;
         }
         return stringBuilder.toString();
+    }
+
+
+    public static String compressString2(String str) {
+        StringBuilder res = new StringBuilder();
+        int ptr = 0;
+        int counter = 1;
+        while (ptr < str.length()) {
+            if (ptr+1 >= str.length() || str.charAt(ptr) != str.charAt(ptr+1)) {
+                res.append(str.charAt(ptr)).append(counter);
+                counter = 1;
+            } else {
+                counter ++;
+            }
+            ptr++;
+        }
+        return res.toString();
     }
 }

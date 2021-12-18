@@ -13,6 +13,15 @@
 | twoSum | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
 | longestSubstringWithoutRepeatingChars | [longestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)  | sliding window - longestSubstringWithoutRepeatingChars |
 | MaxSumContiguousArray | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum |
+| CustomSortArrayEvenOdd | [CustomSortArrayEvenOdd](../src/main/java/arraysAndStrings/CustomSortArrayEvenOdd.java) | given an array sort it into even half and odd half|
+| CheckAnagram | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
+| LeftRotateArray | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
+| MinimumAbsoluteDifference | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.|
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx|
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx|
+
+
+
 
 ## Notes
 
@@ -27,6 +36,7 @@
 ```
 
 - Using entrySet (for )
+IMP: Make sure you write `.entrySet` other wise we won't get iterator
 ```java
 for (Map.Entry<String, Integer> entry: itemMap.entrySet()) {
      System.out.println(entry.getKey() + " " + entry.getValue);

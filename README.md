@@ -6,12 +6,20 @@
   I hope that the problem solving skills acquired help me land a job and also improve my thinking and coding skills.
 </p>
 
-| TOPICS|
+| DS and Algo |
 | :------------ |
 | [Arrays&Strings](notes/Arrays.MD) |
 | [LinkedLists](notes/LinkedLists.MD) |
 | [StacksAndQueues](notes/StacksAndQueues.MD) |
 | [TreesAndGraphs](notes/TreesAndGraphs.md) |
+| [SortingAndSearching](notes/SortingAndSearching.md) |
+
+| Additional Topics |
+| [Java Misc](notes/additionalTopics/java.md) |
+| [ExecutorService](notes/additionalTopics/ExecutorService.md) |
+| [Spring Boot](notes/additionalTopics/spring-boot.md) |
+| [pom](notes/additionalTopics/pom.md) |
+| [garbageCollector](notes/garbageCollector.md) |
 
  
 <h1>Author</h1>

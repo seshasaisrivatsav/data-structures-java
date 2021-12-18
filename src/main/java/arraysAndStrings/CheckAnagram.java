@@ -2,10 +2,11 @@ package arraysAndStrings;
 
 import java.util.*;
 
-public class CheckAnagramHashMap {
+public class CheckAnagram {
 
     public static void main(String[] args) {
         System.out.println(isAnagram("manasa", "asanam"));
+        System.out.println(isAnagram_array("manasa", "asanam"));
     }
 
     /**
@@ -40,6 +41,15 @@ public class CheckAnagramHashMap {
         }
 
         return true;
+    }
+
+    public static boolean isAnagram_array (String str1, String str2) {
+        if (str1.length() != str2.length()) { return false; }
+        char[] a = str1.toCharArray();
+        char[] b = str2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        return Arrays.equals(a, b);
     }
 
 }
