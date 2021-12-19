@@ -13,6 +13,7 @@
 | [StacksAndQueues](notes/StacksAndQueues.MD) |
 | [TreesAndGraphs](notes/TreesAndGraphs.md) |
 | [SortingAndSearching](notes/SortingAndSearching.md) |
+| [DynamicProgramming](notes/DynamicProgramming.md) |
 
 | Additional Topics |
 | [Java Misc](notes/additionalTopics/java.md) |

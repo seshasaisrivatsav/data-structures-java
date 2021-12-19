@@ -1,4 +1,4 @@
-package arraysAndStrings;
+package dynamicProgramming;
 
 import java.util.Arrays;
 import java.util.Iterator;

@@ -1,5 +1,5 @@
-| Problem  | URL| Description|
-| :------------ |:---------------| :-----|
+| Problem  | URL | Description | Source |
+| :------------ |:---------------| :-----| :-----|
 | isUnique | [IsUniqueString](../src/main/java/arraysAndStrings/IsUniqueString.java)  | check if string is unique without using DS |
 | checkPermutation | [CheckPermutation](../src/main/java/arraysAndStrings/CheckPermutation.java) | Return true if two strings are permutations of one other |
 | urlify | [URLify](../src/main/java/arraysAndStrings/URLify.java) | In place replacement of spaces with %20 |
@@ -7,7 +7,7 @@
 | OneAway | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
 | StringCompression | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count |
 | RotateMatrix | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
-| ZeroMatrix | [xxx](../src/main/java/arraysAndStrings/ZeroMatrix.java) | If an element of matrix is  zero, make the row and column zero|
+| ZeroMatrix | [ZeroMatrix](../src/main/java/arraysAndStrings/ZeroMatrix.java) | If an element of matrix is  zero, make the row and column zero|
 | StringRotation | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another |
 | ReverseStringAndSentence | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence |
 | twoSum | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
@@ -17,8 +17,13 @@
 | CheckAnagram | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
 | LeftRotateArray | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
 | MinimumAbsoluteDifference | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.|
-| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx|
-| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx|
+| LongestCommonPrefix | [LongestCommonPrefix](../src/main/java/arraysAndStrings/LongestCommonPrefix.java) | Return longest common prefix string if an array of strings is given | LeetCode | 
+| RomanToInt | [RomanToInt](../src/main/java/arraysAndStrings/RomanToInt.java) | Given a Roman Number, convert it to Int | Leetcode |
+| ValidParentheses | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
+| RemoveDuplicatesSortedArray | [RemoveDuplicatesSortedArray](../src/main/java/arraysAndStrings/RemoveDuplicatesSortedArray.java) | Remove duplicates from sorted array (use for loop and another variable) | Leetcode |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 
 
 
