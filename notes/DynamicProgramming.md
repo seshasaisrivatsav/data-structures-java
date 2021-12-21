@@ -1,9 +1,12 @@
-## Trees And Graphs
+##  Dynamic Programming
 
-| Problem  | URL| Description|
-| :------------ |:---------------| :-----|
-| LongestCommonSubstring | [LongestCommonSubstring](../src/main/java/dynamicProgramming/LongestCommonSubstring.java) | LongestCommonSubstring |
-| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
+| Problem  | URL| Description| Source |
+| :------------ |:---------------| :-----| :----|
+| LongestCommonSubstring | [LongestCommonSubstring](../src/main/java/dynamicProgramming/LongestCommonSubstring.java) | LongestCommonSubstring | Leetcode |
+| LongestPalindromicSubstring | [LongestPalindromicSubstring](../src/main/java/dynamicProgramming/LongestPalindromicSubstring.java) | LongestPalindromicSubstring | Leetcode |
+| xxx | [xxx](../src/main/java/dynamicProgramming/xxx.java) | Desc | Source |
+| xxx | [xxx](../src/main/java/dynamicProgramming/xxx.java) | Desc | Source |
+| xxx | [xxx](../src/main/java/dynamicProgramming/xxx.java) | Desc | Source |
 
  Dynamic Programming
  - asd
