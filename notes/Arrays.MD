@@ -13,6 +13,7 @@
 | twoSum | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
 | longestSubstringWithoutRepeatingChars | [longestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)  | sliding window - longestSubstringWithoutRepeatingChars |
 | MaxSumContiguousArray | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum |
+| MaxSubarray | [MaxSubarray](../src/main/java/arraysAndStrings/MaxSubarray.java) | largest sum | Leetcode |
 | CustomSortArrayEvenOdd | [CustomSortArrayEvenOdd](../src/main/java/arraysAndStrings/CustomSortArrayEvenOdd.java) | given an array sort it into even half and odd half|
 | CheckAnagram | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
 | LeftRotateArray | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
@@ -21,6 +22,10 @@
 | RomanToInt | [RomanToInt](../src/main/java/arraysAndStrings/RomanToInt.java) | Given a Roman Number, convert it to Int | Leetcode |
 | ValidParentheses | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
 | RemoveDuplicatesSortedArray | [RemoveDuplicatesSortedArray](../src/main/java/arraysAndStrings/RemoveDuplicatesSortedArray.java) | Remove duplicates from sorted array (use for loop and another variable) | Leetcode |
+
+| IndexOfStr | [IndexOfStr](../src/main/java/arraysAndStrings/IndexOfStr.java) | Return first index of occurrence, -1 not found, 0 if empty | Leetcode |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |

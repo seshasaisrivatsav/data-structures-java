@@ -4,6 +4,7 @@ public class Node {
 	int data;
 	Node next;
 
+	public Node () {}
 	public Node(int d) {
 		data = d;
 		next = null;
@@ -27,6 +28,20 @@ public class Node {
 			head = head.next;
 		}
 		return res.substring(0, res.length()-2);
+	}
+
+	public static void main(String[] args) {
+
+		Node res = new Node();
+		Node curr = res;
+		res.data = 1;
+		res.next = new Node();
+		res = res.next;
+		res.data =2 ;
+		res.next = new Node();
+		res = res.next;
+		res.data = 3;
+		System.out.println(print(curr));
 	}
 	
 }
