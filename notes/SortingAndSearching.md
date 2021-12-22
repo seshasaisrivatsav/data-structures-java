@@ -2,8 +2,74 @@
 
 | Problem  | URL| Description| Source |
 | :------------ |:---------------| :-----| :-----|
+| Merge Sorted Lists | [MergeSortedLists](../src/main/java/sortingAndSearching/MergeSortedLists.java) | Merge Sorted Lists | Merge Sorted List |
+| MergeSort | [MergeSort](../src/main/java/sortingAndSearching/MergeSort.java) | Merge Sort | CTCI |
+| BinarySearch | [BinarySearch](../src/main/java/sortingAndSearching/BinarySearch.java) | BinarySearch | CTCI |
+| RadixSort | [RadixSort](../src/main/java/sortingAndSearching/RadixSort.java) | Radix Sort | CTCI |
 | BubbleSort | [BubbleSort](../src/main/java/sortingAndSearching/BubbleSort.java) | BubbleSort | CTCI |
-| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | |
-| xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | |
+| InsertionSort | [InsertionSort](../src/main/java/sortingAndSearching/InsertionSort.java) | InsertionSort | CTCI |
+| SelectionSort | [SelectionSort](../src/main/java/sortingAndSearching/SelectionSort.java) | SelectionSort | CTCI|
+| xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
 
+### Merge Sort
+MergeSort(A, p, r):
+    if p > r 
+        return
+    q = (p+r)/2
+    mergeSort(A, p, q)
+    mergeSort(A, q+1, r)
+    merge(A, p, q, r)
+
+### Binary Search
+- In binary search we look for an element x in a sorted array
+- If x is to left side, we search in left side
+- If x is greater, we search right half of array until we find it
+
+### Radix Sort
+- Avg: O(nk) n=number of elements, k=number of passes 
+- 
+- Sorting algorithm for integers (and some other data types)
+- Takes advantage of the fact that integers have finite number of bits
+- We iterate through each digit of the number, grouping numbers by digit
+- if we have array of integers, we sort by first digit so that 0s are grouped togerher
+- Next, we sort groupings by net digit 
+
+
+### Bubble Sort
+- O(n2)
+- Start at beginning of array , swap first two elements if first is greater
+- We go on to next pair
+
+```java
+for (int i=0; i<arr.length-1; i++) {
+    for (int j=0; j<arr.length-i-1; j++) {
+        if (arr[j] > arr[j+1]) {
+            int temp = arr[j+1];
+            arr[j+1] = arr[j];
+            arr[j] = temp;
+        }
+    }
+}
+```
  
+ ### Selection Sort
+ - O(n2)
+ - Find the smallest element using linear scan, move to the front
+ 
+ ```java
+for (int i=0; i<arr.length-1; i++) {
+    int currIndex = i;
+    for (int j=i+1; j<arr.length; j++) {
+        // Find the minimum in arr[i+1.. n]
+        if (arr[j] < arr[currIndex]) {
+            currIndex = j;
+        }
+        // swap the element
+        int temp = arr[currIndex];
+        arr[currIndex] = arr[i];
+        arr[i] = temp;
+    }
+}
+```

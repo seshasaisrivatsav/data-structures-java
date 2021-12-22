@@ -1,15 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sortingAndSearching;
 
 import java.util.*;
 
-/**
- *
- * @author seshasai
+/*
+	Split array into two equal halves
+	TC = Divide + Recursion + Merge
+	T(n) = C1 + 2T(n/2) + C.N
+
+		C* N          => Cn
+		/ \
+	  CN/2  CN/2      => Cn
+	............
+	 /         \
+	C  C  C  C  C     => Cn 	(  n leaves) (levels = 1 + logN)
+
+	T(n) = (1 + logN) * cN = N Log N
+
+	Space Complexity: O(n)
+
+ 	body:
+		- splits the array into two halves
+		- left = o to n/2 -1
+		- right = n/2-1 to n
+		-
+	merge routine:
+		- assumes you give it two sorted array
+		- The work is done in merge routing
+		(two finger algorithm)
+		- compare two elements, place smallest one in sorted array
+		- complexity of merge: O(n)
  */
 public class MergeSort {
 	public static void main(String[] args) {
@@ -18,54 +37,53 @@ public class MergeSort {
 		System.out.println(Arrays.toString(res));
 	}
 
+
+	/**
+	 * Step 1: divide the unsorted list into n sublists, each containing one element
+	 * Step 2: repeatedly merge sublists to produce new sorted sublists
+	 * @param arr
+	 * @return
+	 */
 	// Dividing the array
-	public static int[] mergeSort(int[] a, int s, int e) {
-
-		if (s < e) {
-			int mid = (s + e) / 2;
-			int[] l = mergeSort(a, s, mid);
-			int[] r = mergeSort(a, mid + 1, e);
-
-			return merge(l, r);
-
+	public static int[] mergeSort(int[] arr, int start, int end) {
+		if (start < end) {
+			int mid = (start + end) / 2;
+			int[] left = mergeSort(arr, start, mid);
+			int[] right = mergeSort(arr, mid + 1, end);
+			return mergeRoutine(left, right);
 		} else {
-			return new int[] { a[s] };
+			return new int[] { arr[start] };
 		}
-
 	}
 
-	public static int[] merge(int[] l, int[] r) {
-
+	public static int[] mergeRoutine(int[] left, int[] right) {
+		// i = index of smallest unpicked in left
+		// j = index of smallest unpicked in right
+		// k = position to be filled in result
 		int i = 0, j = 0, k = 0;
-		int res[] = new int[l.length + r.length];
-
-		while (i < l.length && j < r.length) {
-			if (l[i] < r[j]) {
-				res[k] = l[i];
+		int[] res = new int[left.length + right.length];
+		while (i < left.length && j < right.length) {
+			if (left[i] < right[j]) {
+				res[k] = left[i];
 				i++;
-				k++;
 			} else {
-				res[k] = r[j];
+				res[k] = right[j];
 				j++;
-				k++;
 			}
+			k++;
 		}
 
-		while (j < r.length) {
-			res[k] = r[j];
+		while (j < right.length) {
+			res[k] = right[j];
 			j++;
 			k++;
 		}
 
-		while (i < l.length) {
-			res[k] = l[i];
+		while (i < left.length) {
+			res[k] = left[i];
 			k++;
 			i++;
 		}
-
 		return res;
-
 	}
-
-	// Merge the array
 }

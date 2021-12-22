@@ -3,13 +3,10 @@ package sortingAndSearching;
 import java.util.Arrays;
 
 public class InsertionSort {
-
-
     public static void main(String[] args) {
         int[] a = {-9, -8, 9, 8, 7, 6, 5, 4, 3, 2, 1, -20};
         System.out.print(Arrays.toString(insertionSort(a)));
     }
-
 
     // It is like shuffle, for each iteration, the array till that iteration is sorted
     public static int[] insertionSort(int[] a) {
@@ -30,7 +27,6 @@ public class InsertionSort {
             }
             // Since j is decremented below, we increment and store key
             a[j + 1] = key;
-
         }
         return a;
 
