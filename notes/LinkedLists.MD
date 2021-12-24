@@ -4,13 +4,14 @@
 | :------------ |:---------------| :-----| :-----|
 | RemoveDuplicatesUnsortedLinkedList | [RemoveDuplicatesUnsortedLinkedList](../src/main/java/linkedLists/RemoveDuplicatesUnsortedLinkedList.java) | Given linked list remove duplicates |
 | RemoveDuplicatesSortedLL | [RemoveDuplicatesSortedLL](../src/main/java/linkedLists/RemoveDuplicatesSortedLL.java) | Desc |
-| ReturnKthToLast | [ReturnKthToLast](../src/main/java/linkedLists/ReturnKthToLast.java) | Algo to find ktch to last element of singly linked list |
+| ReturnKthToLast | [ReturnKthToLast](../src/main/java/linkedLists/ReturnKthToLast.java) | Algo to find ktch to last element of singly linked list | CTCT |
+| RemoveKthFromLast | [RemoveKthFromLast](../src/main/java/linkedLists/RemoveKthFromLast.java) | Removes Kth from Last | Leetcode |
 | DeleteMiddleNode | [DeleteMiddleNode](../src/main/java/linkedLists/DeleteMiddleNode.java) | Delete middle node of given LL and given middle node, delete it |
 | PartitionLL | [PartitionLinkedList](../src/main/java/linkedLists/PartitionLinkedList.java) | Use Two new initialized linked lists to partition given one around a number   |
 | ReverseLinkedList | [ReverseLinkedList](../src/main/java/linkedLists/ReverseLinkedList.java) | Iterative and Recursive approach to reverse a LL|
 | SumLists | [SumLists](../src/main/java/linkedLists/SumLists.java) | Forward and reverse sum of linked lists|
 | Palindrome | [Palindrome](../src/main/java/linkedLists/Palindrome.java) | Check if a given list is palindrome|
-| Intersection | [Intersection](../src/main/java/linkedLists/Intersection.java) | Given two LLs find the intersection point  |
+| Intersection | [Intersection](../src/main/java/linkedLists/Intersection.java) | Given two LLs find the intersection point  | CTCI/Leetcode |
 | FindCycle | [FindCycle](../src/main/java/linkedLists/FindCycle.java) | Find cycle if it's present in LL |
 | FindMidInLL | [FindMidInLL](../src/main/java/linkedLists/FindMidInLL.java) | Two pointer technique to find mid |
 | Compare linked list | [CompareLinkedLists](../src/main/java/linkedLists/CompareLinkedLists.java) | Return true if 2 LL are equal values |

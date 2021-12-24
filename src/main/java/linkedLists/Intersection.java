@@ -29,12 +29,35 @@ public class Intersection {
         // Where common Node = 99
 
         System.out.println(Node.print(getMergingNode(node1Head, node2Head)));
+
+
+        Node intersectingNodeTwo = Node.listToLinkedList(new int[]{4, 5, 4});
+        Node node3 = Node.listToLinkedList(new int[] {2, 2});
+        Node node4 = Node.listToLinkedList(new int[] {2, 2});
+
+        Node node3Head = node3;
+        Node node4Head = node4;
+
+        node3Head.next.next = intersectingNodeTwo;
+        node4Head.next.next = intersectingNodeTwo;
+
+        System.out.println(Node.print(getIntersectionNodeMyWay(node3Head, node4Head)));
+        System.out.println(Node.print(getMergingNode(node3Head, node4Head)));
+        System.out.println(Node.print(getMergingNodeElegant(node1Head, node2Head)));
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////
     //                      Solution
     ///////////////////////////////////////////////////////////////////////////////////////////
-
+    public static Node getMergingNodeElegant(Node head1, Node head2) {
+        Node h1 = head1;
+        Node h2 = head2;
+        while (h1 != h2) {
+            h1 = (h1 == null) ? head2 : h1.next;
+            h2 = (h2 == null) ? head1: h2.next;
+        }
+        return h1;
+    }
     /**
      * Approach:
      *  - Create a Result class (that has members tailNode, and length)
@@ -86,11 +109,46 @@ public class Intersection {
         int length = 1;
         // 1 -> 2 -> 3
         // h    h   h
-
         while (head.next != null) {
             length ++;
             head = head.next;
         }
         return new Result(length, head);
+    }
+
+    public static Node getIntersectionNodeMyWay(Node headA, Node headB) {
+        Node n1 = headA;
+        Node n2 = headB;
+        int n1Size = getSize(n1);
+        int n2Size = getSize(n2);
+
+        Node bigger = n1Size > n2Size ? n1: n2;
+        Node smaller = n1Size <= n2Size ? n1: n2;
+
+        int diff = Math.abs(n1Size-n2Size);
+        while (diff > 0) {
+            bigger = bigger.next;
+            diff--;
+        }
+
+
+        while(bigger!=null && smaller!=null ) {
+            if (bigger == smaller) {
+                return bigger;
+            }
+            bigger = bigger.next;
+            smaller = smaller.next;
+        }
+
+        return null;
+    }
+
+    public static int getSize(Node head) {
+        int res = 0;
+        while(head!=null) {
+            res = res + 1;
+            head = head.next;
+        }
+        return res;
     }
 }

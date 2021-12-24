@@ -2,7 +2,8 @@
 
 | Problem  | URL| Description| Source |
 | :------------ |:---------------| :-----| :-----|
-| Merge Sorted Lists | [MergeSortedLists](../src/main/java/sortingAndSearching/MergeSortedLists.java) | Merge Sorted Lists | Merge Sorted List |
+| MergeTwoSortedArraysInPlace | [MergeTwoSortedArraysInPlace](../src/main/java/sortingAndSearching/MergeTwoSortedArraysInPlace.java) | Given 2 sorted arrays one with extra space, merge in the first | CTCI/Leetcode |
+| MedianOfSortedArrays | [MedianOfSortedArrays](../src/main/java/sortingAndSearching/MedianOfSortedArrays.java) | Find Median of Sorted arrays | Source |
 | MergeSort | [MergeSort](../src/main/java/sortingAndSearching/MergeSort.java) | Merge Sort | CTCI |
 | BinarySearch | [BinarySearch](../src/main/java/sortingAndSearching/BinarySearch.java) | BinarySearch | CTCI |
 | RadixSort | [RadixSort](../src/main/java/sortingAndSearching/RadixSort.java) | Radix Sort | CTCI |

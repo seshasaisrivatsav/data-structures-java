@@ -31,7 +31,6 @@ public class MaxSumContiguousArray {
         for (int i=0; i<windowSize; i++) {
             maxSum = maxSum + arr[i];
         }
-
         int windowSum = maxSum; // use windowSum variable to arrive at solution
         for (int i=windowSize; i<arrayLength; i++) {
             windowSum = windowSum + (arr[i] - arr[i-windowSize]);

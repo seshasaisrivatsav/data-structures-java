@@ -1,7 +1,7 @@
 ## Trees And Graphs
 
-| Problem  | URL| Description|
-| :------------ |:---------------| :-----|
+| Problem  | URL| Description| Source |
+| :------------ |:---------------| :-----|:-----|
 | BinaryTree.java | [BinaryTree.java](../src/main/java/treesAndGraphs/BinaryTree.java) | Implementation of Binary Tree, Node, Graph Traversal, Find element, Delete element |
 | RouteBetweenNodes | [RouteBetweenNodes](../src/main/java/treesAndGraphs/RouteBetweenNodes.java) | Checks if a route exists in a directed graph between two nodes |
 | MinimalTree | [MinimalTree](../src/main/java/treesAndGraphs/MinimalTree.java) | Convert sorted array into BST |
@@ -14,7 +14,13 @@
 | CheckSubtree | [CheckSubtree](../src/main/java/treesAndGraphs/CheckSubtree.java) | Create algorithm to determine if T2 is a subtree of T1 |
 | RandomNode | [RandomNode](../src/main/java/treesAndGraphs/RandomNode.java) | Implement binary tree from scratch that also has a getRandomNode() method |
 | PrintTopViewOfTree | [PrintTopViewOfTree](../src/main/java/treesAndGraphs/PrintTopViewOfTree.java) | Print top view of a tree |
+| InOrderTraversal | [InOrderTraversal](../src/main/java/treesAndGraphs/InOrderTraversal.java) | Recursive and Iterative Inoder traversal | Leetcode |
+| PreOrderTraversal | [PreOrderTraversal](../src/main/java/treesAndGraphs/PreOrderTraversal.java) | PreOrderTraversal | CTCI/Leetcode |
+| PostOrderTraversal | [PostOrderTraversal](../src/main/java/treesAndGraphs/PostOrderTraversal.java) | PostOrderTraversal | CTCI/Leetcode |
+| LevelOrderTraversal | [LevelOrderTraversal](../src/main/java/treesAndGraphs/LevelOrderTraversal.java) | Level order traversal | CTCI/Leetcode |
+| SymmetricTree | [SymmetricTree](../src/main/java/treesAndGraphs/SymmetricTree.java) | Check if a given tree is symmetric around center | Leetcode |
 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc |
+
 
 
 ### Complete Binary Tree
@@ -161,3 +167,9 @@ BFS
 - Used to find shortest path between source and destination
 - It runs two simultaneous BFS 
 - When searches collide we find the path
+
+
+### Tree traversals
+- [in order](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/)
+- [pre order](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/)
+- [post order](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/)
