@@ -3,7 +3,8 @@
 | isUnique | [IsUniqueString](../src/main/java/arraysAndStrings/IsUniqueString.java)  | check if string is unique without using DS |
 | checkPermutation | [CheckPermutation](../src/main/java/arraysAndStrings/CheckPermutation.java) | Return true if two strings are permutations of one other |
 | urlify | [URLify](../src/main/java/arraysAndStrings/URLify.java) | In place replacement of spaces with %20 |
-| palindromePermutation | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome |
+| palindromePermutation | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome | CTCI |
+| CheckPalindromeNumberNoSpace | [CheckPalindromeNumberNoSpace](../src/main/java/arraysAndStrings/CheckPalindromeNumberNoSpace.java)  | Check if a number is palindrome without using extra space | Leetcode |
 | OneAway | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
 | StringCompression | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count |
 | RotateMatrix | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
@@ -25,6 +26,8 @@
 | IndexOfStr | [IndexOfStr](../src/main/java/arraysAndStrings/IndexOfStr.java) | Return first index of occurrence, -1 not found, 0 if empty | Leetcode |
 | BestTimeToBuyStock | [BestTimeToBuyStock](../src/main/java/arraysAndStrings/BestTimeToBuyStock.java) | Given array, find max profit | Leetcode |
 | HappyNumber | [HappyNumber](../src/main/java/arraysAndStrings/HappyNumber.java) | Determine if happy number | leetcode |
+| SingleNumber | [SingleNumber](../src/main/java/arraysAndStrings/SingleNumber.java) | Find the number that occurs only once in an array | Leetcode |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |

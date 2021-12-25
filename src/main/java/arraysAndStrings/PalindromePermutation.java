@@ -1,7 +1,5 @@
 package arraysAndStrings;
 
-import java.util.HashMap;
-
 /**
  * Given a string write a function to check if it's a permutation of a palindrome
  *
@@ -10,51 +8,49 @@ import java.util.HashMap;
 public class PalindromePermutation {
 
     public static void main(String[] args) {
-        System.out.println(palindromePermutation_hashmap("appa"));
+        System.out.println(palindromePermutation_iterate("aa"));
+        System.out.println(palindromePermutation_iterate("abb"));
+        System.out.println(checkPalindrome_string_ignoreSpecialCharsOof1("A man, a plan, a canal: Panama"));
+
     }
 
-    /**
-     * Approach : Converts the given string into a hashmap excluding spaces
-     *           We iterate over hashmap values keeping count of the number of times we saw an odd number
-     *           If we see an odd number more than once, it's not a palindrome
-     *
-     * Time Complexity: O(N)
-     * Space Complexity: O(N)
-     * @param str String
-     * @return boolean representing if the given number is palindrome
-     *
-     * // TODO: Improvements - ignore `'`, ','  , '?'
-     */
-    public static boolean palindromePermutation_hashmap(String str) {
-        HashMap<Character, Integer> stringCount = new HashMap<Character, Integer>();
-        for (char c: str.toCharArray()) {
-            if (c != ' ') {
-                if (stringCount.containsKey(c)) {
-                    stringCount.put(c, stringCount.get(c)+1);
-                } else {
-                    stringCount.put(c, 1);
-                }
-            }
-        }
+    // isLetterOrDigit
+    public static boolean checkPalindrome_string_ignoreSpecialCharsOof1(String s) {
+        if (s.isEmpty()) { return true; }
+        int head = 0;
+        int tail = s.length()-1;
 
-        int odds = 0;
-        for (Integer counts: stringCount.values()) {
-            // Increment odds count if we find one
-            if (counts%2 != 0) {
-                odds ++;
-            }
-            if (odds > 1) {
-                return false;
+        while (head <= tail) {
+            char headChar = s.charAt(head);
+            char tailChhar = s.charAt(tail);
+            if (!Character.isLetterOrDigit(headChar)) {
+                head ++;
+            } else if (!Character.isLetterOrDigit(tailChhar)) {
+                tail --;
+            } else {
+                if (Character.toLowerCase(headChar) != Character.toLowerCase(tailChhar)) {
+                    return false;
+                }
+                head++;
+                tail--;
             }
         }
         return true;
     }
 
+    /**
+     * With 2 pointer approach
+     * Time: O(N)
+     * Space: O(N)
+     * @param str
+     * @return
+     */
     public static boolean palindromePermutation_iterate(String str) {
         if (str.length() == 1) {
             return true;
         }
         String str1 = str.replaceAll("\\s", "");
+        String str2 = str.replaceAll("[^a-zA-Z0-9]+","").toLowerCase(); // if you want to replace all special characters;
         for (int i=0; i<str1.length()/2; i++) {
             if (str1.charAt(i) != str1.charAt(str1.length() - i - 1)) {
                 return false;
