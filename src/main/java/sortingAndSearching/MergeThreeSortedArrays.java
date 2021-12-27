@@ -10,6 +10,14 @@ public class MergeThreeSortedArrays {
         System.out.println(Arrays.toString(mergeThreeArrays_myInitialApproach(arr1, arr2, arr3)));
     }
 
+    /**
+     * Time Complexity: O(arr1.length + arr2.length + arr3.length)
+     * Space Complexity: O(arr1.length + arr2.length + arr3.length)
+     * @param arr1
+     * @param arr2
+     * @param arr3
+     * @return
+     */
     public static int[] mergeThreeArrays_myInitialApproach(int[] arr1, int[] arr2, int[] arr3) {
         int i=0; int j=0; int k=0;
 
