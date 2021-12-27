@@ -5,41 +5,57 @@ import java.util.*;
 public class CheckAnagram {
 
     public static void main(String[] args) {
-        System.out.println(isAnagram("manasa", "asanam"));
-        System.out.println(isAnagram_array("manasa", "asanam"));
+        System.out.println("Expected: true: Actual: "  + isAnagram("manasa", "asanam"));
+        System.out.println("Expected: true Actual: " + isAnagram("anagram", "nagaram"));
+        System.out.println("Expected: false Actual: " + isAnagram("rat", "car"));
+        System.out.println("Expected: true: Actual: " + isAnagram_array("manasa", "asanam"));
     }
 
+    public static boolean isAnagramOof1(String s1, String s2) {
+        if(s1.length() != s2.length()) {  return false; }
+        int[] counter = new int[26]; // for 26 letters
+        for (int i=0; i<s1.length(); i++) {
+            counter[s1.charAt(i)-'a']++;
+        }
+        for (int j=0; j<s2.length(); j++) {
+            counter[s2.charAt(j)-'a']--;
+            if (counter[s2.charAt(j)-'a']<0) {
+                return false;
+            }
+        }
+        return true;
+    }
     /**
-     * @param str1 string
-     * @param str2 string
+     * Space Complexity: O(n)
+     * Time Complexity: O(n)
+     * @param s string
+     * @param t string
      * @return boolean indicating if strings are anagrams
      */
-    public static boolean isAnagram(String str1, String str2) {
-        int s = 0;
-        HashMap<Character, Integer> str1HashMap = new HashMap<>();
-        for (int i = 0; i < str1.length(); i++) {
-            if (str1HashMap.containsKey(str1.charAt(i))) {
-                str1HashMap.put(str1.charAt(i), str1HashMap.get(str1.charAt(i)) + 1);
+    public static boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        HashMap<Character, Integer> charCount = new HashMap<>();
+        for (char c: s.toCharArray()) {
+            if (charCount.containsKey(c)) {
+                charCount.put(c, charCount.get(c)+1);
             } else {
-                str1HashMap.put(str1.charAt(i), 1);
+                charCount.put(c, 1);
             }
         }
-
-        for (int i = 0; i < str2.length(); i++) {
-            if (str1HashMap.containsKey(str2.charAt(i))) {
-                if (str1HashMap.get(str2.charAt(i)) < 0) {
-                    return false;
-                } else {
-                    str1HashMap.put(str2.charAt(i), str1HashMap.get(str1.charAt(i)) - 1);
-                }
+        for (char p: t.toCharArray()) {
+            if (charCount.containsKey(p)) {
+                charCount.put(p, charCount.get(p)-1);
+            } else {
+                return false;
             }
         }
-
-        for (int i = 0; i < str2.length(); i++) {
-            s = s + str1HashMap.get(str1.charAt(i));
-            if (s > 0) return false;
+        for (Map.Entry<Character, Integer> entry: charCount.entrySet()) {
+            if (entry.getValue() !=0) {
+                return false;
+            }
         }
-
         return true;
     }
 

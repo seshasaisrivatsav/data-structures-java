@@ -27,11 +27,14 @@
 | BestTimeToBuyStock | [BestTimeToBuyStock](../src/main/java/arraysAndStrings/BestTimeToBuyStock.java) | Given array, find max profit | Leetcode |
 | HappyNumber | [HappyNumber](../src/main/java/arraysAndStrings/HappyNumber.java) | Determine if happy number | leetcode |
 | SingleNumber | [SingleNumber](../src/main/java/arraysAndStrings/SingleNumber.java) | Find the number that occurs only once in an array | Leetcode |
+| MissingRanges | [MissingRanges](../src/main/java/arraysAndStrings/MissingRanges.java) | Return missing ranges in given sorted array | Leetcode |
+| MajorityElement | [MajorityElement](../src/main/java/arraysAndStrings/MajorityElement.java) | Return element in array which appears more than half times | Leetcode |
+| FirstUniqueCharacterInString | [FirstUniqueCharacterInString](../src/main/java/arraysAndStrings/FirstUniqueCharacterInString.java) | In a string first non repeating character | Leetcode 
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | Leetcode 
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | Leetcode 
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | Leetcode |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| xx | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-
 
 
 
