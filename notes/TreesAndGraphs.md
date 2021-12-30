@@ -1,31 +1,31 @@
 ## Trees And Graphs
 
-| #  | Problem  | URL| Description| Source |
-| :---- | :------------|:---------------| :-----|:-----|
-| 1 | BinaryTree.java | [BinaryTree.java](../src/main/java/treesAndGraphs/BinaryTree.java) | Implementation of Binary Tree, Node, Graph Traversal, Find element, Delete element |
-| 2 | RouteBetweenNodes | [RouteBetweenNodes](../src/main/java/treesAndGraphs/RouteBetweenNodes.java) | Checks if a route exists in a directed graph between two nodes |
-| 3 | MinimalTree | [MinimalTree](../src/main/java/treesAndGraphs/MinimalTree.java) | Convert sorted array into BST |
-| 4 | ListOfDepths | [ListOfDepths](../src/main/java/treesAndGraphs/ListOfDepths.java) | BFS and DFS approach to return list of  levels in binary tree|
-| 5 | CheckBalanced | [CheckBalanced](../src/main/java/treesAndGraphs/CheckBalanced.java) | Check if a binary tree is balanced |
-| 6 | CheckIfGivenTreeIsBST | [CheckIfGivenTreeIsBST](../src/main/java/treesAndGraphs/CheckIfGivenTreeIsBST.java) | Check if a given tree is BST |
-| 7 | PathSum | [PathSum](../src/main/java/treesAndGraphs/PathSum.java) | return true if a path exists from head to toe that matches given sum |
-| 8 | PathsWithSum | [PathsWithSum](../src/main/java/treesAndGraphs/PathsWithSum.java) | return number of paths that add up to given sum |
-| 9 | FirstCommonAncestor | [FirstCommonAncestor](../src/main/java/treesAndGraphs/FirstCommonAncestor.java) | Find lowest common ancestor of 2 nodes |
-| 10 | CheckSubtree | [CheckSubtree](../src/main/java/treesAndGraphs/CheckSubtree.java) | Create algorithm to determine if T2 is a subtree of T1 |
-| 11 | RandomNode | [RandomNode](../src/main/java/treesAndGraphs/RandomNode.java) | Implement binary tree from scratch that also has a getRandomNode() method |
-| 12 | PrintTopViewOfTree | [PrintTopViewOfTree](../src/main/java/treesAndGraphs/PrintTopViewOfTree.java) | Print top view of a tree |
-| 13 | InOrderTraversal | [InOrderTraversal](../src/main/java/treesAndGraphs/InOrderTraversal.java) | Recursive and Iterative Inoder traversal | Leetcode |
-| 14 | PreOrderTraversal | [PreOrderTraversal](../src/main/java/treesAndGraphs/PreOrderTraversal.java) | PreOrderTraversal | CTCI/Leetcode |
-| 15 | PostOrderTraversal | [PostOrderTraversal](../src/main/java/treesAndGraphs/PostOrderTraversal.java) | PostOrderTraversal | CTCI/Leetcode |
-| 16 | LevelOrderTraversal | [LevelOrderTraversal](../src/main/java/treesAndGraphs/LevelOrderTraversal.java) | Level order traversal | CTCI/Leetcode |
-| 17 | SymmetricTree | [SymmetricTree](../src/main/java/treesAndGraphs/SymmetricTree.java) | Check if a given tree is symmetric around center | Leetcode |
-| 18 | SortedArrayToBinarySearchTree | [SortedArrayToBinarySearchTree](../src/main/java/treesAndGraphs/SortedArrayToBinarySearchTree.java) | Convert an integer list in sorted order to BST with height | Leetcode |
-| 19 | NumberOfIslands | [NumberOfIslands](../src/main/java/treesAndGraphs/NumberOfIslands.java) | Determine the islands formed by 1s in a matrix | Leetcode |
-| 20 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
-| 21 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
-| 22 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
-| 23 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
-| 24 | xxx | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| # | Problem | Description| Source | 
+| :------------ |:---------------| :-----| :-----|
+| 1 | [BinaryTree.java](../src/main/java/treesAndGraphs/BinaryTree.java) | Implementation of Binary Tree, Node, Graph Traversal, Find element, Delete element |
+| 2 | [RouteBetweenNodes](../src/main/java/treesAndGraphs/RouteBetweenNodes.java) | Checks if a route exists in a directed graph between two nodes |
+| 3 | [MinimalTree](../src/main/java/treesAndGraphs/MinimalTree.java) | Convert sorted array into BST |
+| 4 | [ListOfDepths](../src/main/java/treesAndGraphs/ListOfDepths.java) | BFS and DFS approach to return list of  levels in binary tree|
+| 5 | [CheckBalanced](../src/main/java/treesAndGraphs/CheckBalanced.java) | Check if a binary tree is balanced |
+| 6 | [CheckIfGivenTreeIsBST](../src/main/java/treesAndGraphs/CheckIfGivenTreeIsBST.java) | Check if a given tree is BST |
+| 7 | [PathSum](../src/main/java/treesAndGraphs/PathSum.java) | return true if a path exists from head to toe that matches given sum |
+| 8 | [PathsWithSum](../src/main/java/treesAndGraphs/PathsWithSum.java) | return number of paths that add up to given sum |
+| 9 | [FirstCommonAncestor](../src/main/java/treesAndGraphs/FirstCommonAncestor.java) | Find lowest common ancestor of 2 nodes |
+| 10 | [CheckSubtree](../src/main/java/treesAndGraphs/CheckSubtree.java) | Create algorithm to determine if T2 is a subtree of T1 |
+| 11 | [RandomNode](../src/main/java/treesAndGraphs/RandomNode.java) | Implement binary tree from scratch that also has a getRandomNode() method |
+| 12 | [PrintTopViewOfTree](../src/main/java/treesAndGraphs/PrintTopViewOfTree.java) | Print top view of a tree |
+| 13 | [InOrderTraversal](../src/main/java/treesAndGraphs/InOrderTraversal.java) | Recursive and Iterative Inoder traversal | Leetcode |
+| 14 | [PreOrderTraversal](../src/main/java/treesAndGraphs/PreOrderTraversal.java) | PreOrderTraversal | CTCI/Leetcode |
+| 15 | [PostOrderTraversal](../src/main/java/treesAndGraphs/PostOrderTraversal.java) | PostOrderTraversal | CTCI/Leetcode |
+| 16 | [LevelOrderTraversal](../src/main/java/treesAndGraphs/LevelOrderTraversal.java) | Level order traversal | CTCI/Leetcode |
+| 17 | [SymmetricTree](../src/main/java/treesAndGraphs/SymmetricTree.java) | Check if a given tree is symmetric around center | Leetcode |
+| 18 | [SortedArrayToBinarySearchTree](../src/main/java/treesAndGraphs/SortedArrayToBinarySearchTree.java) | Convert an integer list in sorted order to BST with height | Leetcode |
+| 19 | [NumberOfIslands](../src/main/java/treesAndGraphs/NumberOfIslands.java) | Determine the islands formed by 1s in a matrix | Leetcode |
+| 20 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| 21 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| 22 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| 23 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| 24 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
 
 
 

@@ -1,18 +1,18 @@
 ## Sorting And Searching
 
-| # | Problem  | URL| Description| Source |
-|  :-----| :------------ |:---------------| :-----| :-----|
-| 1 | MergeTwoSortedArraysInPlace | [MergeTwoSortedArraysInPlace](../src/main/java/sortingAndSearching/MergeTwoSortedArraysInPlace.java) | Given 2 sorted arrays one with extra space, merge in the first | CTCI/Leetcode |
-| 2 | MedianOfSortedArrays | [MedianOfSortedArrays](../src/main/java/sortingAndSearching/MedianOfSortedArrays.java) | Find Median of Sorted arrays | Source |
-| 3 | MergeSort | [MergeSort](../src/main/java/sortingAndSearching/MergeSort.java) | Merge Sort | CTCI |
-| 4 | BinarySearch | [BinarySearch](../src/main/java/sortingAndSearching/BinarySearch.java) | BinarySearch | CTCI |
-| 5 | RadixSort | [RadixSort](../src/main/java/sortingAndSearching/RadixSort.java) | Radix Sort | CTCI |
-| 6 | BubbleSort | [BubbleSort](../src/main/java/sortingAndSearching/BubbleSort.java) | BubbleSort | CTCI |
-| 7 | InsertionSort | [InsertionSort](../src/main/java/sortingAndSearching/InsertionSort.java) | InsertionSort | CTCI |
-| 8 | SelectionSort | [SelectionSort](../src/main/java/sortingAndSearching/SelectionSort.java) | SelectionSort | CTCI|
-| 9 | xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
-| 10 | xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
-| 11 | xxx | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| # | Problem | Description| Source | 
+| :------------ |:---------------| :-----| :-----|
+| 1 | [MergeTwoSortedArraysInPlace](../src/main/java/sortingAndSearching/MergeTwoSortedArraysInPlace.java) | Given 2 sorted arrays one with extra space, merge in the first | CTCI/Leetcode |
+| 2 | [MedianOfSortedArrays](../src/main/java/sortingAndSearching/MedianOfSortedArrays.java) | Find Median of Sorted arrays | Source |
+| 3 | [MergeSort](../src/main/java/sortingAndSearching/MergeSort.java) | Merge Sort | CTCI |
+| 4 | [BinarySearch](../src/main/java/sortingAndSearching/BinarySearch.java) | BinarySearch | CTCI |
+| 5 | [RadixSort](../src/main/java/sortingAndSearching/RadixSort.java) | Radix Sort | CTCI |
+| 6 | [BubbleSort](../src/main/java/sortingAndSearching/BubbleSort.java) | BubbleSort | CTCI |
+| 7 | [InsertionSort](../src/main/java/sortingAndSearching/InsertionSort.java) | InsertionSort | CTCI |
+| 8 | [SelectionSort](../src/main/java/sortingAndSearching/SelectionSort.java) | SelectionSort | CTCI|
+| 9 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| 10 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| 11 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
 
 ### Merge Sort
 MergeSort(A, p, r):

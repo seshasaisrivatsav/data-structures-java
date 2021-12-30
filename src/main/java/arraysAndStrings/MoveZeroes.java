@@ -14,8 +14,8 @@ import java.util.Arrays;
  */
 public class MoveZeroes {
     public static void main(String[] args) {
-        int[] arr1 = { 0, 1, 0, 3, 12};
-        moveZeroes_initialApproach(arr1);
+        int[] arr1 = { 0, 1, 0, 3, 12 };
+        moveZeroes_initialApproach(arr1);;
         System.out.println(Arrays.toString(arr1));
     }
     public static void moveZeroes_initialApproach(int[] nums) {
