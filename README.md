@@ -16,6 +16,7 @@
 | [DynamicProgramming](notes/DynamicProgramming.md) |
 
 | Additional Topics |
+| :------------ |
 | [Java Misc](notes/additionalTopics/java.md) |
 | [ExecutorService](notes/additionalTopics/ExecutorService.md) |
 | [Spring Boot](notes/additionalTopics/spring-boot.md) |
