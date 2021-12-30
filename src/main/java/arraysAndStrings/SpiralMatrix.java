@@ -1,18 +1,22 @@
 package arraysAndStrings;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Given a matrix, return/print it in spiral form
+ */
 public class SpiralMatrix {
 
 	public static void main(String[] args) {
 		int [][] matrix = {
 		                   { 1, 2, 3, 4 },
-		                   {  5, 6, 7, 8},
+		                   { 5, 6, 7, 8},
 		                   { 9, 10, 11, 12}
 		};
-		 
-		spiralOrder(matrix).forEach(System.out::println);
+
+		System.out.println(Arrays.toString(spiralOrder(matrix).toArray()));
 	}
 
 	public static List<Integer> spiralOrder(int[][] matrix) {

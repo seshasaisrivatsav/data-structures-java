@@ -35,6 +35,35 @@ public class MissingRanges {
         System.out.println(Arrays.toString(getMissingRanges(new int[]{0, 1, 3, 50, 75}, 0, 99).toArray()));
         System.out.println(Arrays.toString(getMissingRanges(new int[]{-1}, -1, -1).toArray()));
         System.out.println(Arrays.toString(getMissingRanges(new int[]{}, 1, 1).toArray()));
+        System.out.println(Arrays.toString(findMissingRanges(new int[]{0, 1, 3, 50, 75}, 0, 99).toArray()));
+        System.out.println(Arrays.toString(findMissingRanges(new int[]{-1}, -1, -1).toArray()));
+        System.out.println(Arrays.toString(findMissingRanges(new int[]{}, 1, 1).toArray()));
+    }
+
+    public static List<String> findMissingRanges(int[] nums, int lower, int upper) {
+        List<String> res = new ArrayList<>();
+
+        // Base case: if length is 0 of if array is empty
+        if (nums.length == 0) {
+            res.add(formatRange(lower, upper));
+            return res;
+        }
+
+        // Step 1: Find the range between lower and first element
+        if (lower < nums[0]) {
+            res.add(formatRange(lower, nums[0]-1));
+        }
+        // Step 2: construct ranges between adjacent elements
+        for (int i=0; i<nums.length-1; i++) {
+            if ((nums[i]!=nums[i+1]) && (nums[i]+1 < nums[i+1])) {
+                res.add(formatRange(nums[i]+1, nums[i+1]-1));
+            }
+        }
+        // Step 3: find range between last and upper
+        if (nums[nums.length-1] < upper) {
+            res.add(formatRange(nums[nums.length-1]+1, upper));
+        }
+        return res;
     }
 
     /**

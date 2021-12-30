@@ -1,11 +1,13 @@
 package arraysAndStrings;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
 public class DeleteCharactersToMakeStringsAnagrams {
+
+	public static void main(String[] args) {
+		String a = "abcadeh";
+		String b = "hea";
+		System.out.println(numberNeeded(a, b));
+	}
+
 	public static int numberNeeded(String first, String second) {
 		int res = 0;
 		int[] str1 = new int[26], str2 = new int[26];
@@ -30,9 +32,4 @@ public class DeleteCharactersToMakeStringsAnagrams {
 
 	}
 
-	public static void main(String[] args) {
-		String a = "abcadeh";
-		String b = "hea";
-		System.out.println(numberNeeded(a, b));
-	}
 }

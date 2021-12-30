@@ -1,6 +1,7 @@
 package arraysAndStrings;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,9 +9,10 @@ public class CheckDuplicates {
     
     public static void main(String[] args){
         int[] arr = {9, 1, 2, 3, 9, 3, 3, 3};
-        System.out.println("Using Bubble sort : Expected: true Actual:" + checkDupsUsingBubbleSort(arr));
-        System.out.println("Using set : Expected: true Actual:" + checkDupsUsingSet(arr));
-        System.out.println("Using inbuilt sort : Expected: true Actual:" + checkDupsInbuiltSort(arr));
+        System.out.println("Using Bubble sort : Expected: true Actual: " + checkDupsUsingBubbleSort(arr));
+        System.out.println("Using set : Expected: true Actual: " + checkDupsUsingSet(arr));
+        System.out.println("Using inbuilt sort : Expected: true Actual: " + checkDupsInbuiltSort(arr));
+        System.out.println("Using hashmap: Expected: true Actual: " + checkDupsHashMap(arr));
 
     }
     // Method 1: Use hashSet and return if value already exists
@@ -54,6 +56,20 @@ public class CheckDuplicates {
         }
         return checkDupsSortedArray(arr);
     }
+
+    public static boolean checkDupsHashMap(int[] arr) {
+        HashMap<Integer, Integer> myHashMap = new HashMap<>();
+        int count=0;
+        for (int value : arr) {
+            if (myHashMap.containsKey(value)) {
+                return true;
+            } else {
+                myHashMap.put(value, count + 1);
+            }
+        }
+        return false;
+    }
+
     public static boolean checkDupsSortedArray(int[] arr) {
          for (int i=0; i< arr.length-1; i++){
             if (arr[i]==arr[i+1]){

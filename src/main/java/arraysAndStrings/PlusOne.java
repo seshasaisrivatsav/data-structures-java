@@ -3,15 +3,18 @@ package arraysAndStrings;
 import java.util.Arrays;
 
 /*
-You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer.
-The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
-Increment the large integer by one and return the resulting array of digits
+    You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer.
+    The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+    Increment the large integer by one and return the resulting array of digits
  */
 public class PlusOne {
     public static void main(String[] args) {
         System.out.println("expected: [1, 2, 4] actual: " + Arrays.toString(plusOneMine(new int[]{1, 2, 3})));
-        System.out.println("expected: [4, 3, 2, 2] actual: " + Arrays.toString(plusOneMine(new int[]{4, 3, 2, 2})));
+        System.out.println("expected: [4, 3, 2, 3] actual: " + Arrays.toString(plusOneMine(new int[]{4, 3, 2, 2})));
         System.out.println("expected: [1, 0] actual: " + Arrays.toString(plusOneMine(new int[]{9})));
+        System.out.println("expected: [1, 2, 4] actual: " + Arrays.toString(plusOneSmarter(new int[]{1, 2, 3})));
+        System.out.println("expected: [4, 3, 2, 3] actual: " + Arrays.toString(plusOneSmarter(new int[]{4, 3, 2, 2})));
+        System.out.println("expected: [1, 0, 0, 0, 0] actual: " + Arrays.toString(plusOneSmarter(new int[]{9, 9, 9, 9})));
     }
 
     public static int[] plusOneSmarter(int[] digit) {

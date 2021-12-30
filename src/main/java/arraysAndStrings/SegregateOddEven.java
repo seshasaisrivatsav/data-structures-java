@@ -1,19 +1,19 @@
 package arraysAndStrings;
 
-public class SeggregateOddEven {
+import java.util.Arrays;
+
+public class SegregateOddEven {
 	
 	
 	public static void main (String[] args) {
-        int arr[] = {13,10,21,20, 22, 23, 24, 25, 26};
+        int[] arr = {13,10,21,20, 22, 23, 24, 25, 26};
  
         segregateEvenOdd(arr);
         System.out.print("Array after segregation ");
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i]+" ");
+		System.out.println(Arrays.toString(arr));
     }
 	
 	 static int[] segregateEvenOdd(int arr[]) {
-		 
 		 int count = 0 ;
 	        /* Initialize left and right indexes */
 	        int left = 0, right = arr.length - 1;
@@ -26,8 +26,7 @@ public class SeggregateOddEven {
 	            while (arr[right]%2 == 1 && left < right)
 	                right--;
 	 
-	            if (left < right)
-	            {
+	            if (left < right) {
 	                /* Swap arr[left] and arr[right]*/
 	                int temp = arr[left];
 	                arr[left] = arr[right];
@@ -35,7 +34,6 @@ public class SeggregateOddEven {
 	                left++;
 	                right--;
 	                count++;
-	                
 	            }
 	        }
 	        

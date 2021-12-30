@@ -1,40 +1,34 @@
 package arraysAndStrings;
 
+import java.util.Arrays;
+
 public class RotateArrayJuggling {
 
 	public static void main(String[] args) {
-		int[] A = {1,2,3,4,5,6,7,8};
+		int[] arr = {1,2,3,4,5,6,7,8};
 		int rTimes=2;
-		
-		int[] res = rotateArray(A, rTimes);
-		
-		for(int i=0; i<res.length;i++) {
-			System.out.print(res[i]+ " ");
-		}
-		
-		
-		
+		System.out.println(Arrays.toString(rotateArray(arr, rTimes)));
 	}
 	
 	
-	public static int[] rotateArray(int[] A, int rotate) {
+	public static int[] rotateArray(int[] arr, int rotate) {
 		int j, k, temp;
-		for (int i = 0; i < gcd(rotate, A.length); i++) {
+		for (int i = 0; i < gcd(rotate, arr.length); i++) {
 			/* move i-th values of blocks */
-			temp = A[i];
+			temp = arr[i];
 			j = i;
 			while (1 != 0) {
 				k = j + rotate;
-				if (k >= A.length)
-					k = k - A.length;
+				if (k >= arr.length)
+					k = k - arr.length;
 				if (k == i)
 					break;
-				A[j] = A[k];
+				arr[j] = arr[k];
 				j = k;
 			}
-			A[j] = temp;
+			arr[j] = temp;
 		}
-		return A;
+		return arr;
 	}
 	
 	/*
