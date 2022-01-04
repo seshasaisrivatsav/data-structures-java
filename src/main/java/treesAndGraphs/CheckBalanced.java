@@ -26,7 +26,6 @@ public class CheckBalanced {
 
 	public static int checkHeight(Node root) {
 		if (root == null) { return -1; } // base case
-
 		int leftHeight = checkHeight(root.leftChild);
 		if (leftHeight == Integer.MIN_VALUE) { return Integer.MIN_VALUE; }
 		int rightHeight = checkHeight(root.rightChild);

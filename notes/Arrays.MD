@@ -15,35 +15,38 @@
 | 13 | [longestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)  | sliding window - longestSubstringWithoutRepeatingChars |
 | 14 | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum | Leetcode |
 | 15 | [MaxSubarray](../src/main/java/arraysAndStrings/MaxSubarray.java) | largest sum - kadane's algo | Leetcode |
-| 16 | [CustomSortArrayEvenOdd](../src/main/java/arraysAndStrings/CustomSortArrayEvenOdd.java) | given an array sort it into even half and odd half|
-| 17 | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
-| 18 | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
-| 19 | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.|
-| 20 | [LongestCommonPrefix](../src/main/java/arraysAndStrings/LongestCommonPrefix.java) | Return longest common prefix string if an array of strings is given | LeetCode | 
-| 21 | [RomanToInt](../src/main/java/arraysAndStrings/RomanToInt.java) | Given a Roman Number, convert it to Int | Leetcode |
-| 22 | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
-| 23 | [RemoveDuplicatesSortedArray](../src/main/java/arraysAndStrings/RemoveDuplicatesSortedArray.java) | Remove duplicates from sorted array (use for loop and another variable) | Leetcode |
-| 24 | [CheckDuplicates](../src/main/java/arraysAndStrings/CheckDuplicates.java) | Check if an unsorted array has duplicates | Leetcode |
-| 25 | [BestTimeToBuyStock](../src/main/java/arraysAndStrings/BestTimeToBuyStock.java) | Given array, find max profit | Leetcode |
-| 26 | [HappyNumber](../src/main/java/arraysAndStrings/HappyNumber.java) | Determine if happy number | leetcode |
-| 27 | [SingleNumber](../src/main/java/arraysAndStrings/SingleNumber.java) | Find the number that occurs only once in an array | Leetcode |
-| 28 | [MissingRanges](../src/main/java/arraysAndStrings/MissingRanges.java) | Return missing ranges in given sorted array | Leetcode |
-| 29 | [SummaryRanges](../src/main/java/arraysAndStrings/SummaryRanges.java) | Return ranges in sorted array | Leetcode |
-| 30 | [MajorityElement](../src/main/java/arraysAndStrings/MajorityElement.java) | Return element in array which appears more than half times | Leetcode |
-| 31 | [FirstUniqueCharacterInString](../src/main/java/arraysAndStrings/FirstUniqueCharacterInString.java) | In a string first non repeating character | Leetcode 
-| 32 | [IndexOfStr](../src/main/java/arraysAndStrings/IndexOfStr.java) | Return first index of occurrence, -1 not found, 0 if empty | Leetcode |  
-| 33 | [MoveZeroes](../src/main/java/arraysAndStrings/MoveZeroes.java) | Move Zeroes to end of the array | Leetcode | 
-| 34 | [ClimbingStairsFibonacci](../src/main/java/arraysAndStrings/ClimbingStairsFibonacci.java) | Number of ways to climb N stairs with 1 or 2 steps at a time  | Leetcode |
-| 35 | [ConvertLettersToNumbersLikeExcel](../src/main/java/arraysAndStrings/ConvertLettersToNumbersLikeExcel.java) | Convert Excel column names like AA, AB to numbers. (hint 26 power) | Leetcode |
-| 36 | [MissingNumber](../src/main/java/arraysAndStrings/MissingNumber.java) | Given an array of numbers in a range, give missing number | Leetcode |
-| 37 | [PlusOne](../src/main/java/arraysAndStrings/PlusOne.java) | Given number represented by array, add 1 to it | Leetcode |
-| 38 | [SegregateOddEven](../src/main/java/arraysAndStrings/SegregateOddEven.java) | Segregate Odd and Even elements in an array | Leetcode |
-| 39 | [SpiralMatrix](../src/main/java/arraysAndStrings/SpiralMatrix.java) | Given a matrix, return/print it in spiral form | Leetcode |
-| 40 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 41 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 42 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 16 | [MaxSumMultipleSubarrayCheckSubarray](../src/main/java/arraysAndStrings/MaxSumMultipleSubarrayCheckSubarray.java) | Given an array and num, return true if there's 2 or more contiguous elements that are multiple of given number | Leetcode |
+| 17 | [ContiguousSubarrayWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays.java) | Given an array and num, return any subarray indices that adds to given number | GeeksForGeeks  |
+| 18 | [ContiguousSubarrayCountsWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayCountsWithGivenSum.java) | Given an array and a num, return number of sub arrays that add to given number | Leetcode |
+| 19 | [CustomSortArrayEvenOdd](../src/main/java/arraysAndStrings/CustomSortArrayEvenOdd.java) | given an array sort it into even half and odd half|
+| 20 | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
+| 21 | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
+| 22 | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.|
+| 23 | [LongestCommonPrefix](../src/main/java/arraysAndStrings/LongestCommonPrefix.java) | Return longest common prefix string if an array of strings is given | LeetCode | 
+| 24 | [RomanToInt](../src/main/java/arraysAndStrings/RomanToInt.java) | Given a Roman Number, convert it to Int | Leetcode |
+| 25 | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
+| 26 | [RemoveDuplicatesSortedArray](../src/main/java/arraysAndStrings/RemoveDuplicatesSortedArray.java) | Remove duplicates from sorted array (use for loop and another variable) | Leetcode |
+| 27 | [CheckDuplicates](../src/main/java/arraysAndStrings/CheckDuplicates.java) | Check if an unsorted array has duplicates | Leetcode |
+| 28 | [BestTimeToBuyStock](../src/main/java/arraysAndStrings/BestTimeToBuyStock.java) | Given array, find max profit | Leetcode |
+| 29 | [HappyNumber](../src/main/java/arraysAndStrings/HappyNumber.java) | Determine if happy number | leetcode |
+| 30 | [SingleNumber](../src/main/java/arraysAndStrings/SingleNumber.java) | Find the number that occurs only once in an array | Leetcode |
+| 31 | [MissingRanges](../src/main/java/arraysAndStrings/MissingRanges.java) | Return missing ranges in given sorted array | Leetcode |
+| 32 | [SummaryRanges](../src/main/java/arraysAndStrings/SummaryRanges.java) | Return ranges in sorted array | Leetcode |
+| 33 | [MajorityElement](../src/main/java/arraysAndStrings/MajorityElement.java) | Return element in array which appears more than half times | Leetcode |
+| 34 | [FirstUniqueCharacterInString](../src/main/java/arraysAndStrings/FirstUniqueCharacterInString.java) | In a string first non repeating character | Leetcode 
+| 35 | [IndexOfStr](../src/main/java/arraysAndStrings/IndexOfStr.java) | Return first index of occurrence, -1 not found, 0 if empty | Leetcode |  
+| 36 | [MoveZeroes](../src/main/java/arraysAndStrings/MoveZeroes.java) | Move Zeroes to end of the array | Leetcode | 
+| 37 | [ClimbingStairsFibonacci](../src/main/java/arraysAndStrings/ClimbingStairsFibonacci.java) | Number of ways to climb N stairs with 1 or 2 steps at a time  | Leetcode |
+| 38 | [ConvertLettersToNumbersLikeExcel](../src/main/java/arraysAndStrings/ConvertLettersToNumbersLikeExcel.java) | Convert Excel column names like AA, AB to numbers. (hint 26 power) | Leetcode |
+| 39 | [MissingNumber](../src/main/java/arraysAndStrings/MissingNumber.java) | Given an array of numbers in a range, give missing number | Leetcode |
+| 40 | [PlusOne](../src/main/java/arraysAndStrings/PlusOne.java) | Given number represented by array, add 1 to it | Leetcode |
+| 41 | [SegregateOddEven](../src/main/java/arraysAndStrings/SegregateOddEven.java) | Segregate Odd and Even elements in an array | Leetcode |
+| 42 | [SpiralMatrix](../src/main/java/arraysAndStrings/SpiralMatrix.java) | Given a matrix, return/print it in spiral form | Leetcode |
 | 43 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 44 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 45 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 46 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 47 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 
 
 

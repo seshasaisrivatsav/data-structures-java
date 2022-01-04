@@ -1,5 +1,7 @@
 package arraysAndStrings;
 
+import java.util.Arrays;
+
 /**
  * Leetcode
  * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
@@ -28,16 +30,26 @@ public class MaxSubarray {
     public static int getMaxSubArray(int[] arr) {
         if (arr.length == 1) { return arr[0]; }
 
-        int maxCurrent = arr[0];
-        int maxGlobal = arr[0];
+        int currMax = arr[0];
+        int globalMax = arr[0];
 
+        int[] indices = new int[2];
         for (int i=1; i<arr.length; i++) {
-            maxCurrent = Math.max(arr[i], (arr[i]+maxCurrent));
-            if (maxCurrent > maxGlobal) {
-                maxGlobal = maxCurrent;
+            if (arr[i] + currMax > arr[i]) {
+                currMax = currMax + arr[i];
+            } else {
+                indices[0] = i;
+                currMax = arr[i];
+            }
+            if (currMax > globalMax) {
+                indices[1] = i;
+                globalMax = currMax;
             }
         }
-        return maxGlobal;
+
+        System.out.println("Indices: " + Arrays.toString(indices));
+        System.out.println("Ranges: " + arr[indices[0]] + " " + arr[indices[1]]);
+        return globalMax;
     }
 
     public static int getMaxSubarrayRecursion(int[] arr) {

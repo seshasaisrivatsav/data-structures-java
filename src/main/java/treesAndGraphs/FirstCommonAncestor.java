@@ -23,6 +23,14 @@ public class FirstCommonAncestor {
 		root.right.right = new Node(13);
 		root.right.right.left = new Node(7);
 
+		/*
+				   3
+			  6     	8
+			2    11        13
+			   9   5	  7
+
+			LCA(5, 2) = 6
+		 */
 
 		System.out.println(lca(root, root.left.right.right, root.left.left ).value);
 	}

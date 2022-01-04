@@ -10,6 +10,7 @@ public class LongestSubstringWithoutRepeatingChars {
 
         System.out.println("Expected 3. Actual :" + getLongestSubstringLength_bruteForce("abcabcbb"));
         System.out.println("Expected 3. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcabcbb"));
+        System.out.println("Expected 4. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcabcdad"));
         System.out.println("Expected 9. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcdeefghijabc"));
 
 
