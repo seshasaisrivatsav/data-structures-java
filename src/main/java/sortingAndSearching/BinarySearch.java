@@ -3,8 +3,13 @@ package sortingAndSearching;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        System.out.println("expected: 0 actual: "  + binarySearchRecursive(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 1));
+        System.out.println("expected: 0 actual: "  + binarySearchRecursive(new int[]{1, 2, 3, 4, 5, 6, 7}, 1));
+        System.out.println("expected: 8 actual: "  + binarySearchRecursive(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8}, 8));
+        System.out.println("expected: 0 actual: "  + binarySearchRecursive(new int[]{7, 8, 9, 10, 11, 12, 13}, 7));
+        System.out.println("expected: 1 actual: "  + binarySearchRecursive(new int[]{7, 8, 9, 10, 11, 12, 13}, 8));
         System.out.println("expected: 8 actual: "  + binarySearchIterative(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8}, 8));
+        System.out.println("expected: 0 actual: "  + binarySearchIterative(new int[]{7, 8, 9, 10, 11, 12, 13}, 7));
+        System.out.println("expected: 1 actual: "  + binarySearchIterative(new int[]{7, 8, 9, 10, 11, 12, 13}, 8));
     }
     /**
      * Given a sorted array arr, find element's index

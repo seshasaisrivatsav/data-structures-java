@@ -29,8 +29,6 @@ https://leetcode.com/problems/subarray-sum-equals-k/
 public class ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays {
 
     public static void main(String[] args) {
-       //  /*
-
         int[] arr1 = {1, 4, 20, 3, 10, 5}; int sum1 = 33;
         int[] arr2 = {10, 2, -2, -20, 10}; int sum2 = -10;
         int[] arr3 = {-10, 0, 2, -2, -20, 10}; int sum3 = 20;

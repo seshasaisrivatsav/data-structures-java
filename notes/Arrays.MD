@@ -42,17 +42,20 @@
 | 40 | [PlusOne](../src/main/java/arraysAndStrings/PlusOne.java) | Given number represented by array, add 1 to it | Leetcode |
 | 41 | [SegregateOddEven](../src/main/java/arraysAndStrings/SegregateOddEven.java) | Segregate Odd and Even elements in an array | Leetcode |
 | 42 | [SpiralMatrix](../src/main/java/arraysAndStrings/SpiralMatrix.java) | Given a matrix, return/print it in spiral form | Leetcode |
-| 43 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 44 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 45 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 46 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 43 | [ArrayIntersection](../src/main/java/arraysAndStrings/ArrayIntersection.java) | Return array intersection of 2 arrays | Leetcode |
+| 44 | [ArrayIntersectionExactCount](../src/main/java/arraysAndStrings/ArrayIntersectionExactCount.java) | Return array intersection of 2 arrays , elements as many times as in the array | Leetcode |
+| 45 | [ArrayUnion](../src/main/java/arraysAndStrings/ArrayUnion.java) | Find union of arrays | Leetcode |
+| 46 | [MergeIntervals](../src/main/java/arraysAndStrings/MergeIntervals.java) | Given array of intervals, merge overapping intervals | Leetcode |
 | 47 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-
+| 48 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 49 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 50 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 51 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 52 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
+| 53 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
 
 
 ## Notes
-
-
 ### Iterating a hashmap
 - For keys and values  (.entrySet => entry.getKey, entry.getValue)
 ```java
@@ -84,6 +87,54 @@ for (Integer value: hashMap.values()) {
     sysout(entry.getKey() + " " + value);
 }
 
+```
+
+### Iterate array list
+```java
+    List<Integer> arrayList = new ArrayList<>();
+    arrayList.add(1);arrayList.add(2);arrayList.add(3);
+```
+#### With Iterator
+```java
+    Iterator it = arrayList.iterator();
+    while(it.hasNext()) {
+        System.out.println(it.next());
+    } 
+```
+#### With for each loop
+```java
+    for(Integer i: arrayList) {
+        System.out.println(i);
+    } 
+```
+#### With for loop
+Same thing can be done with while loop
+```java
+    for(int i=0; i<arrayList.size(); i++) {
+        System.out.println(arrayList.get(i));
+    } 
+```
+### Iterate hashset
+```java
+    HashSet<Integer> hs = new HashSet<>();
+    hs.add(1);hs.add(2);hs.add(3);
+```
+#### With iterator
+```java
+    Iterator<Integer> it = hs.iterator();
+    while(it.hasNext()) {
+        System.out.println(it.next());
+    }
+```
+#### With for-each loop 
+```java
+    hs.forEach(System.out::println);
+```
+#### With for loop
+```java
+     for (Integer curr: hs) {
+        System.out.println(curr);
+    }
 ```
 ## Sliding window
 ### [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java)
@@ -125,3 +176,41 @@ Sliding window of size 3
 ## Notes
 - For rotating an array (transpose + vertical flip)
 ![image](https://user-images.githubusercontent.com/19309898/127751865-418eff9f-0a88-4527-89bd-9bdfc5ad4e51.png)
+
+## Sorting a 2D array
+comparing integers
+```java
+        System.out.println(Integer.compare(1, 2)); // -1
+        System.out.println(Integer.compare(2, 1)); // 1
+```
+```java
+    Arrays.sort(arr, new Comparator<int[]>() {
+           @Override
+           public int compare(int[] o1, int[] o2) {
+               if (o1[0] > o2[0]) {
+                   return 1;
+               } else {
+                   return -1;
+               }
+           }
+   });
+```
+
+If the array only has 2 elements
+```java
+    Arrays.sort(intervals, (a, b) -> 
+         Integer.compare(a[0], b[0])
+     );
+```
+
+
+### Convert list to array
+```java
+    public static int[] convertLinkedListToArray(ArrayList<Integer> list) {
+        return list.toArray(new int[]);
+    }
+
+   // convert list of integers to array
+    LinkedList<int[]> linkedListofInt = new ArrayList<>();
+    linkedListOfInt.toArray(new int[linkedListofInt.size()][]);
+```
