@@ -6,8 +6,8 @@
 | 4 | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome | CTCI |
 | 5 | [CheckPalindromeNumberNoSpace](../src/main/java/arraysAndStrings/CheckPalindromeNumberNoSpace.java)  | Check if a number is palindrome without using extra space | Leetcode |
 | 6 | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
-| 7 | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count |
-| 8 | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
+| 7 | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count | CTCI |
+| 8 | [StringCompressionArray](../src/main/java/arraysAndStrings/StringCompressionArray.java) | Given a char, compress it to return in same array string with char and occurence count | Leetcode |
 | 9 | [ZeroMatrix](../src/main/java/arraysAndStrings/ZeroMatrix.java) | If an element of matrix is  zero, make the row and column zero|
 | 10 | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another |
 | 11 | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence |
@@ -46,7 +46,7 @@
 | 44 | [ArrayIntersectionExactCount](../src/main/java/arraysAndStrings/ArrayIntersectionExactCount.java) | Return array intersection of 2 arrays , elements as many times as in the array | Leetcode |
 | 45 | [ArrayUnion](../src/main/java/arraysAndStrings/ArrayUnion.java) | Find union of arrays | Leetcode |
 | 46 | [MergeIntervals](../src/main/java/arraysAndStrings/MergeIntervals.java) | Given array of intervals, merge overapping intervals | Leetcode |
-| 47 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 47 | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
 | 48 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 49 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 50 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |

@@ -17,8 +17,8 @@ public class StringCompression {
      * VVIP: Using StringBuilder for concatenation is better than using string
      *      As for string concat a new string copy is used and thus takes O(n2)
      *      With String Builder, simply creates resizable array and thus takes O(n)
-     * @param str
-     * @return
+     * @param str String
+     * @return Compressed string
      */
     public static String compressString(String str) {
         StringBuilder stringBuilder = new StringBuilder();
