@@ -6,14 +6,16 @@ public class RotateArrayJuggling {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5,6,7,8};
-		int rTimes=2;
+		int rTimes=5;
 		System.out.println(Arrays.toString(rotateArray(arr, rTimes)));
 	}
 	
 	
 	public static int[] rotateArray(int[] arr, int rotate) {
 		int j, k, temp;
+		System.out.println(gcd(rotate, arr.length));
 		for (int i = 0; i < gcd(rotate, arr.length); i++) {
+			System.out.println(Arrays.toString(arr));
 			/* move i-th values of blocks */
 			temp = arr[i];
 			j = i;
@@ -37,9 +39,10 @@ public class RotateArrayJuggling {
 	 * gcd(a,b) = gcd(b, a%b)
 	 */
 	public static int gcd(int a, int b) {
-		if(b==0)
+		if (b==0) {
 			return a;
-		else
+		} else {
 			return gcd(b, a%b);
+		}
 	}
 }
