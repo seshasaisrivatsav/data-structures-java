@@ -19,42 +19,49 @@ public class MergeTwoSortedLinkedLists {
 		System.out.println(Node.print(mergeTwoListsIterative(head1, head2)));
 	}
 
+	/**
+	 * Approach: Merge two sorted linked lists
+	 * 			Create a dummy 'prev' Node, and attach list1 to it
+	 * 			Save reference to 'prev' node as res
+	 * 			and while l1, l2 aren't null, iterate and keep changing
+	 * @param list1 Node
+	 * @param list2 Node
+	 * @return Node
+	 *
+	 * Time Complexity: O(m+n)
+	 * Space Complexity: O(1)
+	 */
 	public static Node mergeTwoListsIterative(Node list1, Node list2) {
-
 		if (list1 == null) { return list2; }
 		if (list2 == null) { return list1; }
+		Node prev = new Node(-100);
+		Node res = prev;
 
-
-		Node res = new Node(-100);
-		Node pointer = res;
-
-		while (list1 != null || list2 != null) {
-			if (list1!=null && list2!=null) {
-				if (list1.data <= list2.data) {
-					res.next = list1;
-					list1 = list1.next;
-				} else {
-					res.next = list2;
-					list2 = list2.next;
-				}
-				res = res.next;
+		while (list1!=null && list2!=null) {
+			if (list1.data <= list2.data) {
+				prev.next = list1;
+				list1 = list1.next;
+			} else {
+				prev.next = list2;
+				list2 = list2.next;
 			}
-			else if (list1!=null) {
-				res.next = list1;
-				break;
-			}
-			else if (list2!=null) {
-				res.next = list2;
-				break;
-			}
+			prev = prev.next;
 		}
-		return pointer.next;
+		if (list1!=null) {
+			prev.next = list1;
+		}
+		if (list2!=null) {
+			prev.next = list2;
+		}
+		return res.next;
 	}
+
 	// Recursive way. If N1 is null, return N2; If N2 is null, return N1.
 	// Node res
 	// if N1.data < N2.data; res=N1 res.next = fn(N1.next, N2)
 	// else res = N2 res.next = fn(N1, N2.next)
-	
+	// Time Complexity: O(M+n)
+	// Space Complexity: O(m+n)
     public static Node mergeTwoLists(Node l1, Node l2) {
         if (l1==null) return l2;
         if (l2==null) return l1;
