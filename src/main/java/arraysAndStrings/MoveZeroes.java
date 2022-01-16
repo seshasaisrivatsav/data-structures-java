@@ -14,8 +14,6 @@ import java.util.Arrays;
  */
 public class MoveZeroes {
     public static void main(String[] args) {
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Math.log10(Integer.MAX_VALUE)/Math.log10(3));
         int[] arr1 = { 0, 1, 0, 3, 12 };
         moveZeroes_initialApproach(arr1);;
         System.out.println(Arrays.toString(arr1));
@@ -23,6 +21,11 @@ public class MoveZeroes {
         int[] arr2 = { 0, 1, 0, 3, 12 };
         moveZeroes_efficientApproach(arr2);
         System.out.println(Arrays.toString(arr2));
+
+        int[] arr3 = {1};
+        moveZeroes_efficientApproach(arr3);
+        System.out.println(Arrays.toString(arr3));
+
     }
 
     /**
@@ -55,7 +58,6 @@ public class MoveZeroes {
             if (nums[fast] != 0) {
                 nums[slow] = nums[fast];
                 slow = slow + 1;
-                nums[fast] = 0;
             }
         }
 
