@@ -11,6 +11,13 @@ import static arraysAndStrings.MissingRanges.formatRange;
  *
  * You are given a sorted unique integer array nums.
  *
+ *  Approach: Have a pointer and keep going until you find a disconnect.
+ *            In each iteration, remember where the pointer is
+ *            if the pointers differ, then create range, or else, add one
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ *
  * Return the smallest sorted list of ranges that cover all the numbers in the array exactly.
  * That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
  *
@@ -47,7 +54,7 @@ public class SummaryRanges {
             while (i+1< nums.length && nums[i]+1==nums[i+1]) {
                 i++;
             }
-            if (nums[i]==nums[ptr]) {
+            if (i==ptr) {
                 res.add(String.valueOf(nums[i]));
             } else if (nums[i] > nums[ptr]) {
                 res.add(nums[ptr] + "->" +nums[i]);
