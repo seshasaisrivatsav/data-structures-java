@@ -5,6 +5,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/problems/contains-duplicate/
+ *
+ * ContainsDuplicate | contains duplicate
+ *
+ *  Method A: Use hashSet and return if value already exists TC: O(n) SC: O(n)
+ *
+ *  Method B: Sort the array + find dupes TC: O(n log n) + O(n) SC = O(1)
+ */
 public class CheckDuplicates {
     
     public static void main(String[] args){
