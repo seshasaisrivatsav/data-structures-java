@@ -16,15 +16,15 @@ package arraysAndStrings;
 public class IsUniqueString {
     
     public static void main(String[] args){
-        // Approach 1 - Without additional data structure
-        System.out.println(isUnique("zfgadzd"));
+        // With O(1) space O(n) time
+        System.out.println("Expected: false. Actual: " + isUnique("zxz"));
+        System.out.println("Expected: false. Actual: " + isUnique("defgd"));
+        System.out.println("Expected: false. Actual: " + isUnique("zfgadzd"));
+        System.out.println("Expected: true. Actual: " + isUnique("abcdefgh"));
 
-        // Approach 2 - With additional data structure
-        if (IsUniqueString.isUniqueAdditionalDataStructure("abcd1a")) {
-            System.out.println("is unique");
-        } else {
-            System.out.println("is not unique");
-        }
+        // With O(n) space O(n) time
+        System.out.println("Expected: false. Actual: " + isUniqueAdditionalDataStructure("abcd1a"));
+        System.out.println("Expected: true. Actual: " + isUniqueAdditionalDataStructure("abcdef"));
     }
 
     /**
@@ -60,8 +60,8 @@ public class IsUniqueString {
         }
 
         int checker = 0;
-        for (int i = 0; i < str.length(); i++) {
-            int val = str.charAt(i) - 'a';
+        for (char c: str.toCharArray()) {
+            int val = c - 'a';
             /*
             System.out.println("val: " + Integer.toBinaryString(val));
             System.out.println("checker: " + Integer.toBinaryString(checker));
@@ -70,7 +70,7 @@ public class IsUniqueString {
             if ((checker & (1 << val)) > 0) { // if a bit is found, it means we've previously seen the value
                 return false;
             }
-            checker |= (1 << val); // change checker to also have the diff checker = checker || (1<<str.charAt(i)-'a')
+            checker |= (1 << val); // change checker to also have the diff checker = checker | (1<<str.charAt(i)-'a')
         }
         return true;
     }
@@ -85,10 +85,10 @@ public class IsUniqueString {
      *  - 128 - 255 - Extended ASCII codes
      *
      *  Important - string.charAt gives the ASCII code
-     * @param str
-     * @return
+     * @param str String
+     * @return boolean true if the given string is unique
      */
-    public static boolean isUniqueAdditionalDataStructure(String str){
+    public static boolean isUniqueAdditionalDataStructure(String str) {
         if (str.length() > 256){
             return false;
         }
