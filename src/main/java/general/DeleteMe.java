@@ -5,6 +5,11 @@ import java.util.Map;
 
 public class DeleteMe {
     public static void main(String[] args) {
+        // String
+        String immutableString = "sesha";
+        System.out.println(immutableString.concat(" sai")); // outputs: sesha sai
+        System.out.println(immutableString); //outputs:  sesha
+
         // Index of test
         String str = "abbcdef";
         System.out.println("index of a in "+ str + " " + str.indexOf("a"));

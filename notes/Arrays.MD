@@ -47,8 +47,8 @@
 | 45 | [ArrayUnion](../src/main/java/arraysAndStrings/ArrayUnion.java) | Find union of arrays | Leetcode |
 | 46 | [MergeIntervals](../src/main/java/arraysAndStrings/MergeIntervals.java) | Given array of intervals, merge overapping intervals | Leetcode |
 | 47 | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
-| 48 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 49 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 48 | [ProductOfArrayExceptSelf](../src/main/java/arraysAndStrings/ProductOfArrayExceptSelf.java) | Given a nums array, return array of multiplied result except element at each point | Leetcode |
+| 49 | [AmazingStrings](../src/main/java/arraysAndStrings/AmazingStrings.java) | Given a string determine number of swaps needed to make it amazing | 2017 |
 | 50 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 51 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 52 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
@@ -66,7 +66,7 @@
 ```
 
 - Using entrySet (for )
-IMP: Make sure you write `.entrySet` other wise we won't get iterator
+IMP: Make sure you write `.entrySet` otherwise we won't get iterator
 ```java
 for (Map.Entry<String, Integer> entry: itemMap.entrySet()) {
      System.out.println(entry.getKey() + " " + entry.getValue);
