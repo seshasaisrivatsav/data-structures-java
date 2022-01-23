@@ -15,8 +15,7 @@ import java.util.*;
 
 public class ArrayIntersectionExactCount {
     /**
-     * Approach: Here we use a hash map to store smaller array and counts
-     *          Then we iterate along bigger array anf if the number exists, add it to result and decrement the count in HM
+     * Approach: HeinteresctionUsingHashMaparray anf if the number exists, add it to result and decrement the count in HM
      *
      * Time Complexity: O(n+m)
      * Space Complexity: O(min(m,n)) for the hashmap

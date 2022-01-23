@@ -3,6 +3,10 @@ package arraysAndStrings;
 import java.util.Arrays;
 import java.util.HashSet;
 
+/**
+ *
+ * Given two interger arrays, return an array of union
+ */
 public class ArrayUnion {
     public static void main(String[] args) {
         int[] arr1 = {1, 2,3 ,4, 5};

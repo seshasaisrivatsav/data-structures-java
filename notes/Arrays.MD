@@ -45,14 +45,21 @@
 | 43 | [ArrayIntersection](../src/main/java/arraysAndStrings/ArrayIntersection.java) | Return array intersection of 2 arrays | Leetcode |
 | 44 | [ArrayIntersectionExactCount](../src/main/java/arraysAndStrings/ArrayIntersectionExactCount.java) | Return array intersection of 2 arrays , elements as many times as in the array | Leetcode |
 | 45 | [ArrayUnion](../src/main/java/arraysAndStrings/ArrayUnion.java) | Find union of arrays | Leetcode |
-| 46 | [MergeIntervals](../src/main/java/arraysAndStrings/MergeIntervals.java) | Given array of intervals, merge overapping intervals | Leetcode |
+| 46 | [MergeIntervals](../src/main/java/arraysAndStrings/MergeIntervals.java) | Given array of intervals, merge overlapping intervals | Leetcode |
 | 47 | [RotateMatrix](../src/main/java/arraysAndStrings/RotateMatrix.java) | Given a 2D matrix clockwise and anticlockwise IN-PLACE |
 | 48 | [ProductOfArrayExceptSelf](../src/main/java/arraysAndStrings/ProductOfArrayExceptSelf.java) | Given a nums array, return array of multiplied result except element at each point | Leetcode |
 | 49 | [AmazingStrings](../src/main/java/arraysAndStrings/AmazingStrings.java) | Given a string determine number of swaps needed to make it amazing | 2017 |
-| 50 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 50 | [IsomorphicStrings](../src/main/java/arraysAndStrings/IsomorphicStrings.java) | Determine if two strings are isomorphic. Meaning if you swap characters in one, it can result in another string | Leetcode |
 | 51 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 52 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
-| 53 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
+| 52 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 53 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 54 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 55 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 56 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 57 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 58 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 59 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
+| 60 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
 
 
 ## Notes
