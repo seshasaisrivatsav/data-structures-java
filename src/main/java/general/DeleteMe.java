@@ -36,4 +36,24 @@ public class DeleteMe {
         }
         return -1;
     }
+
+    /**
+     * TO get max profit, we need to buy a stock at min price,
+     *                  sell at max profit
+     * @param prices
+     * @return
+     */
+    public int computeMaxProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+
+        for (int i=0; i<prices.length;i++) {
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            } else if (prices[i] - minPrice > maxProfit) {
+                maxProfit = prices[i] - minPrice;
+            }
+        }
+        return maxProfit;
+    }
 }

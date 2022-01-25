@@ -14,7 +14,7 @@ public class StringCompression {
     /**
      * Time Complexity: O(n)
      * Space Complexity: O(n)
-     * VVIP: Using StringBuilder for concatenation is better than using string
+     * V.V.I.P: Using StringBuilder for concatenation is better than using string
      *      As for string concat a new string copy is used and thus takes O(n2)
      *      With String Builder, simply creates resizable array and thus takes O(n)
      * @param str String

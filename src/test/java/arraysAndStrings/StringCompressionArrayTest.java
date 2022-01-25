@@ -24,23 +24,27 @@ Example 3:
     Output: Return 4, and the first 4 characters of the input array should be: ['a','b','1','2'].
     Explanation: The groups are 'a' and 'bbbbbbbbbbbb'. This compresses to 'ab12'.
      */
-    
-//    @Test // TODO: fix the test
+
+    @Test
     public void test_stringCompression() {
         char[] chars1 = {'a','a','b','b','c','c','c'};
-        int length = StringCompressionArray.compressChars(chars1);
-        System.out.println(Arrays.toString(chars1));
-        Assert.assertEquals(chars1, new char[]{'a', '2', 'b', '2', 'c', '3'});
+        StringCompressionArray.compressChars(chars1);
+        compareArray(new char[]{'a', '2', 'b', '2', 'c', '3'}, chars1);
 
 
         char[] chars2 = {'a'};
         StringCompressionArray.compressChars(chars2);
-        System.out.println(Arrays.toString(chars2));
-        Assert.assertEquals(chars2, new char[]{'a'});
+        Assert.assertArrayEquals(chars2, new char[]{'a'});
 
         char[] chars3 = {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
         StringCompressionArray.compressChars(chars3);
-        System.out.println(Arrays.toString(chars3));
-        Assert.assertEquals(chars3, new char[]{'a','b','1','2'});
+        char[] expected3 = {'a','b','1','2'};
+        compareArray(expected3, chars3);
+    }
+
+    public void compareArray(char[] expected, char[] actual) {
+        for (int i=0; i<expected.length; i++) {
+            Assert.assertEquals(actual[i], expected[i]);
+        }
     }
 }
