@@ -51,8 +51,8 @@
 | 49 | [AmazingStrings](../src/main/java/arraysAndStrings/AmazingStrings.java) | Given a string determine number of swaps needed to make it amazing | 2017 |
 | 50 | [IsomorphicStrings](../src/main/java/arraysAndStrings/IsomorphicStrings.java) | Determine if two strings are isomorphic. Meaning if you swap characters in one, it can result in another string | Leetcode |
 | 51 | [FindMinInRotatedSortedArray](../src/main/java/arraysAndStrings/FindMinInRotatedSortedArray.java) | Find min in a rotated sorted array in O(log n) time | Leetcode |
-| 52 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 53 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 52 | [ThreeSum](../src/main/java/arraysAndStrings/ThreeSum.java) | ThreeSum - extension of 2sum | Leetcode |
+| 53 | [TwoSumSorted](../src/main/java/arraysAndStrings/TwoSumSorted.java) | TwoSum problem where given array is  | Leetcode |
 | 54 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 55 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 56 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |

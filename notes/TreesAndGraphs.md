@@ -21,7 +21,7 @@
 | 17 | [SymmetricTree](../src/main/java/treesAndGraphs/SymmetricTree.java) | Check if a given tree is symmetric around center | Leetcode |
 | 18 | [SortedArrayToBinarySearchTree](../src/main/java/treesAndGraphs/SortedArrayToBinarySearchTree.java) | Convert an integer list in sorted order to BST with height | Leetcode |
 | 19 | [NumberOfIslands](../src/main/java/treesAndGraphs/NumberOfIslands.java) | Determine the islands formed by 1s in a matrix | Leetcode |
-| 20 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
+| 20 | [TwoSumInBST](../src/main/java/treesAndGraphs/TwoSumInBST.java) | Two sum version in BST | Leetcode |
 | 21 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
 | 22 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
 | 23 | [xxx](../src/main/java/treesAndGraphs/xxx.java) | Desc | Source |
