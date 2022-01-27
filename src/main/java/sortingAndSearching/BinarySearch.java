@@ -13,6 +13,8 @@ public class BinarySearch {
     }
     /**
      * Given a sorted array arr, find element's index
+     * Time Complexity: O(log n)
+     * Space Complexity: O(log n)
      * @param arr int[] arr
      * @param element int element
      * @return element found
@@ -32,6 +34,8 @@ public class BinarySearch {
 
     /**
      * Given a sorted array, find element's index
+     * Time Complexity: O(log N)
+     * Space Complexity: O(1)
      * @param arr int[]
      * @param element int
      * @return index of element

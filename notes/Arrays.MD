@@ -50,7 +50,7 @@
 | 48 | [ProductOfArrayExceptSelf](../src/main/java/arraysAndStrings/ProductOfArrayExceptSelf.java) | Given a nums array, return array of multiplied result except element at each point | Leetcode |
 | 49 | [AmazingStrings](../src/main/java/arraysAndStrings/AmazingStrings.java) | Given a string determine number of swaps needed to make it amazing | 2017 |
 | 50 | [IsomorphicStrings](../src/main/java/arraysAndStrings/IsomorphicStrings.java) | Determine if two strings are isomorphic. Meaning if you swap characters in one, it can result in another string | Leetcode |
-| 51 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 51 | [FindMinInRotatedSortedArray](../src/main/java/arraysAndStrings/FindMinInRotatedSortedArray.java) | Find min in a rotated sorted array in O(log n) time | Leetcode |
 | 52 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 53 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 54 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
