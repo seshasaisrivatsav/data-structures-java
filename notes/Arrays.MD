@@ -53,7 +53,7 @@
 | 51 | [FindMinInRotatedSortedArray](../src/main/java/arraysAndStrings/FindMinInRotatedSortedArray.java) | Find min in a rotated sorted array in O(log n) time | Leetcode |
 | 52 | [ThreeSum](../src/main/java/arraysAndStrings/ThreeSum.java) | ThreeSum - extension of 2sum | Leetcode |
 | 53 | [TwoSumSorted](../src/main/java/arraysAndStrings/TwoSumSorted.java) | TwoSum problem where given array is  | Leetcode |
-| 54 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 54 | [TwoSumLessThanK](../src/main/java/arraysAndStrings/TwoSumLessThanK.java) | find two nums less than k | Leetcode |
 | 55 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 56 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 57 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
