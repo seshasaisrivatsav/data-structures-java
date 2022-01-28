@@ -1,9 +1,6 @@
 package arraysAndStrings;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * 3 Sum
@@ -47,15 +44,8 @@ public class ThreeSum {
         System.out.println("Expected: [[-2, 0, 2],[-2, 1, 1]] actual: " + Arrays.toString(threeSum.threeSum_twoPointerApproach(nums3).toArray()));
     }
 
-    /**
-     * Approach:
-     * @param nums
-     * @return
-     */
-    public List<List<Integer>> threeSum_noSortApproach(int[] nums) {
-        return null;
-    }
 
+    ///////////////////// vvvvv  Approach 1:  Sort + two pointer vvvvv ///////////////////
     /**
      *
      *  Time Complexity: O(n2) = O(n2 + n log n)
@@ -117,6 +107,36 @@ public class ThreeSum {
             }
         }
     }
+    ///////////////////// ^^^^  Approach 1:  Sort + two pointer ^^^^^ ///////////////////
+
+
+    ///////////////////// vvvvv   Sort + two pointer vvvvv ///////////////////
+    /**
+     * Approach:
+     *          - We use a hashset, where we put combination of three values into hashset to avoid duplicates
+     *          - values in combination should be ordered (asc) otherwise we can have results with same values in diff positions
+     *          - we use hashset dups to skip duplicates in outer loop
+     *          - ins
+     * @param nums int[]
+     * @return List<List<Integer>> list of numbers that add up to 0
+     */
+    public List<List<Integer>> threeSum_noSortApproach(int[] nums) {
+        Set<List<Integer>> res = new HashSet<>();
+        Set<Integer> dups = new HashSet<>();
+        Map<Integer, Integer> seen = new HashMap<>();
+
+        for (int i=0; i<nums.length; i++) {
+            if (!dups.contains(nums[i])) {
+                dups.add(nums[i]);
+                for (int j=1; j< nums.length; i++) {
+                    int complement = -1 * (nums[i] + nums[j]);
+//                    if (seen.containsKey())
+                }
+            }
+        }
+        return new ArrayList<>(res);
+    }
+
 
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();

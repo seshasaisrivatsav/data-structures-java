@@ -1,5 +1,6 @@
 package arraysAndStrings;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -19,15 +20,28 @@ import java.util.HashMap;
 public class TwoSumLessThanK {
 
     public static void main(String[] args) {
+        int[] nums1 = { 10, 20, 30 };
+        System.out.println("Expected: -1 Actual: " + twoSumLessThanK(nums1, 15));
 
+        int[] nums2 = { 34,23,1,24,75,33,54,8 };
+        System.out.println("Expected: -1 Actual: " + twoSumLessThanK(nums2, 60));
     }
 
     public static int twoSumLessThanK(int[] nums, int k) {
-        int res = 0;
+        int res = -1;
+        Arrays.sort(nums);
+        int start = 0;
+        int end = nums.length-1;
         HashMap<Integer, Integer> hm = new HashMap<>();
-        for (int i=0; i < nums.length; i++) {
-            return 1;
+        while (start < end) {
+            int currSum = nums[start] + nums[end];
+            if (currSum < k) {
+                res = Math.max(res, currSum);
+                start ++;
+            } else {
+                end --;
+            }
         }
-        return 1;
+        return res;
     }
 }
