@@ -10,97 +10,19 @@ public class MergeThreeSortedArrays {
         int[] arr1 = { 1, 4, 9, 13, 16, 17 };
         int[] arr2 = { 2, 5, 8, 10, 12, 15, 19 };
         int[] arr3 = { 3, 6, 7, 11, 14, 18, 20 };
-        System.out.println("Expected: [1, 2, 3...20] Actual: " + Arrays.toString(mergeThreeArrays_myInitialApproach(arr1, arr2, arr3)));
+        System.out.println("Expected: [1, 2, 3...20] Actual: " + Arrays.toString(mergeThreeSortedArrays(arr1, arr2, arr3)));
 
         int[] arr4 = {1, 2, 3};
         int[] arr5 = {4};
         int[] arr6 = {5, 6, 7, 8};
-        System.out.println("Expected: [1, 2, 3, 4, 5, 6, 7, 8] Actual: " + Arrays.toString(mergeThreeArrays_myInitialApproach(arr4, arr5, arr6)));
-    }
-    public static int[] mergeThreeArrays_modified(int[] arr1, int[] arr2, int[] arr3) {
-        int i=0; int j=0; int k=0;
+        System.out.println("Expected: [1, 2, 3, 4, 5, 6, 7, 8] Actual: " + Arrays.toString(mergeThreeSortedArrays(arr4, arr5, arr6)));
 
-        int resPtr=0;
-        int[] res = new int[arr1.length+arr2.length+arr3.length];
-        while (i<arr1.length && j<arr2.length && k<arr3.length) {
-            // arr1 i has smallest
-            if (arr1[i] < arr2[j] && arr1[i] <arr3[k]) {
-                res[resPtr] = arr1[i];
-                i++;
-            }
-            // arr2 j has smallest
-            else if (arr2[j]<arr1[i] && arr2[j]<arr3[k]) {
-                res[resPtr] = arr2[j];
-                j++;
-            }
-            // arr3 k has the smallest
-            else {
-                res[resPtr] = arr3[k];
-                k++;
-            }
-        }
-        while (i<arr1.length && j<arr2.length && k<arr3.length) {
-            if (i<arr1.length && j<arr2.length && k<arr3.length) {
-                // arr1 i has smallest
-                if (arr1[i] < arr2[j] && arr1[i] <arr3[k]) {
-                    res[resPtr] = arr1[i];
-                    i++;
-                }
-                // arr2 j has smallest
-                else if (arr2[j]<arr1[i] && arr2[j]<arr3[k]) {
-                    res[resPtr] = arr2[j];
-                    j++;
-                }
-                else {
-                    res[resPtr] = arr3[k];
-                    k++;
-                }
-            } else if (i<arr1.length && j<arr2.length || j<arr2.length && k<arr3.length ||  k<arr3.length && i<arr1.length) {
-                if (i<arr1.length && j<arr2.length) {
-                    if (arr1[i] < arr2[j]) {
-                        res[resPtr] = arr1[i];
-                        i++;
-                    } else {
-                        res[resPtr] = arr2[j];
-                        j++;
-                    }
-                }
-                if (j<arr2.length && k<arr3.length) {
-                    if(arr2[j] < arr3[k]) {
-                        res[resPtr] = arr2[j];
-                        j++;
-                    } else {
-                        res[resPtr] = arr3[k];
-                        k++;
-                    }
-                }
-                if (i<arr1.length && k<arr3.length) {
-                    if (arr1[i] < arr3[k]) {
-                        res[resPtr] = arr1[i];
-                        i++;
-                    } else {
-                        res[resPtr] = arr3[k];
-                        k++;
-                    }
-                }
-            } else {
-                if (i<arr1.length) {
-                    res[resPtr] = arr1[i];
-                    i++;
-                }
-                if (j<arr2.length) {
-                    res[resPtr] = arr2[j];
-                    j++;
-                }
-                if (k<arr3.length) {
-                    res[resPtr] = arr3[k];
-                    k++;
-                }
-            }
-            resPtr++;
-        }
-        return res;
+        int[] arr7 = { 1, 5, 6};
+        int[] arr8 = {};
+        int[] arr9 = {2, 3, 4};
+        System.out.println("Expected: [1, 2, 3, 4, 5, 6] Actual: " + Arrays.toString(mergeThreeSortedArrays(arr7, arr8, arr9)));
     }
+
     /**
      * Time Complexity: O(arr1.length + arr2.length + arr3.length)
      * Space Complexity: O(arr1.length + arr2.length + arr3.length)
@@ -109,71 +31,84 @@ public class MergeThreeSortedArrays {
      * @param arr3 int[] sorted arr3
      * @return int[] sorted with above 3
      */
-    public static int[] mergeThreeArrays_myInitialApproach(int[] arr1, int[] arr2, int[] arr3) {
-        int i=0; int j=0; int k=0;
+    public static int[] mergeThreeSortedArrays(int[] arr1, int[] arr2, int[] arr3) {
+        int[] res = new int[arr1.length + arr2.length + arr3.length];
+        int i=0; int j=0; int k=0; int p=0;
 
-        int resPtr=0;
-        int[] res = new int[arr1.length+arr2.length+arr3.length];
-        while (i<arr1.length || j<arr2.length || k<arr3.length) {
-            if (i<arr1.length && j<arr2.length && k<arr3.length) {
-                // arr1 i has smallest
-                if (arr1[i] < arr2[j] && arr1[i] <arr3[k]) {
-                    res[resPtr] = arr1[i];
-                    i++;
-                }
-                // arr2 j has smallest
-                else if (arr2[j]<arr1[i] && arr2[j]<arr3[k]) {
-                    res[resPtr] = arr2[j];
-                    j++;
-                }
-                else {
-                    res[resPtr] = arr3[k];
-                    k++;
-                }
-            } else if (i<arr1.length && j<arr2.length || j<arr2.length && k<arr3.length ||  k<arr3.length && i<arr1.length) {
-                if (i<arr1.length && j<arr2.length) {
-                    if (arr1[i] < arr2[j]) {
-                        res[resPtr] = arr1[i];
-                        i++;
-                    } else {
-                        res[resPtr] = arr2[j];
-                        j++;
-                    }
-                }
-                if (j<arr2.length && k<arr3.length) {
-                    if(arr2[j] < arr3[k]) {
-                        res[resPtr] = arr2[j];
-                        j++;
-                    } else {
-                        res[resPtr] = arr3[k];
-                        k++;
-                    }
-                }
-                if (i<arr1.length && k<arr3.length) {
-                    if (arr1[i] < arr3[k]) {
-                        res[resPtr] = arr1[i];
-                        i++;
-                    } else {
-                        res[resPtr] = arr3[k];
-                        k++;
-                    }
-                }
+        // When all 3 elements are present
+        while (i < arr1.length && j < arr2.length && k < arr3.length) {
+            // case 1: arr1 has smallest
+            if ((arr1[i] < arr2[j]) && (arr1[i] < arr3[k])) {
+                res[p] = arr1[i];
+                i++;
+            } else if ((arr2[j] < arr1[i]) && (arr2[j] < arr3[k])) {
+                // case 2: arr 2 has smallest
+                res[p] = arr2[j];
+                j++;
             } else {
-                if (i<arr1.length) {
-                    res[resPtr] = arr1[i];
-                    i++;
-                }
-                if (j<arr2.length) {
-                    res[resPtr] = arr2[j];
-                    j++;
-                }
-                if (k<arr3.length) {
-                    res[resPtr] = arr3[k];
-                    k++;
-                }
+                // case 3: arr3 has smallest
+                res[p] = arr3[k];
+                k++;
             }
-            resPtr++;
+            p++;
         }
+
+        // When elements are present in 1, 2
+        while (i < arr1.length && j < arr2.length) {
+            if (arr1[i] < arr1[j]) {
+                res[p] = arr1[i];
+                i++;
+            } else {
+                res[p] = arr2[j];
+                j++;
+            }
+            p++;
+        }
+
+        // When elements are present in 2, 3
+        while (j < arr2.length && k < arr3.length) {
+            if (arr2[j] < arr3[k]) {
+                res[p] = arr2[j];
+                j++;
+            } else {
+                res[p] = arr3[k];
+                k++;
+            }
+            p++;
+        }
+
+        // when elements are present in 1 3
+        while (i < arr1.length && k < arr3.length) {
+            if (arr1[i] < arr3[k]) {
+                res[p] = arr1[i];
+                i++;
+            } else {
+                res[p] = arr3[k];
+                k++;
+            }
+            p++;
+        }
+        // When elements are present in 1
+        while (i < arr1.length) {
+            res[p] = arr1[i];
+            i++;
+            p++;
+        }
+        // When elements are present in 2
+        while (j < arr2.length) {
+            res[p] = arr2[j];
+            j++;
+            p++;
+        }
+        // When elements are present in 3
+        while (k < arr3.length) {
+            res[p] = arr3[k];
+            k++;
+            p++;
+        }
+
         return res;
     }
+
+
 }
