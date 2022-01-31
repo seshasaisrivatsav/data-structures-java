@@ -54,8 +54,8 @@
 | 52 | [ThreeSum](../src/main/java/arraysAndStrings/ThreeSum.java) | ThreeSum - extension of 2sum | Leetcode |
 | 53 | [TwoSumSorted](../src/main/java/arraysAndStrings/TwoSumSorted.java) | TwoSum problem where given array is  | Leetcode |
 | 54 | [TwoSumLessThanK](../src/main/java/arraysAndStrings/TwoSumLessThanK.java) | find two nums less than k | Leetcode |
-| 55 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 56 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 55 | [KthLargestElementInArray](../src/main/java/arraysAndStrings/KthLargestElementInArray.java) | Return Kth largest element from unsorted array | Leetcode |
+| 56 | [NLowestElementsInTwoSortedArrays](../src/main/java/arraysAndStrings/NLowestElementsInTwoSortedArrays.java) | Given two sorted arrays, return n sorted elements  | Misc |
 | 57 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 58 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 59 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
