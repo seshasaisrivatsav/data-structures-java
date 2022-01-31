@@ -2,12 +2,20 @@ package sortingAndSearching;
 
 import java.util.Arrays;
 
+/**
+ * Given three sorted arrays, merge them
+ */
 public class MergeThreeSortedArrays {
     public static void main(String[] args) {
-        int[] arr1 = { 1, 4, 9, 13, 16 };
-        int[] arr2 = { 2, 5, 10, 15, 19 };
-        int[] arr3 = { 3, 6, 11, 14, 20 };
-        System.out.println(Arrays.toString(mergeThreeArrays_myInitialApproach(arr1, arr2, arr3)));
+        int[] arr1 = { 1, 4, 9, 13, 16, 17 };
+        int[] arr2 = { 2, 5, 8, 10, 12, 15, 19 };
+        int[] arr3 = { 3, 6, 7, 11, 14, 18, 20 };
+        System.out.println("Expected: [1, 2, 3...20] Actual: " + Arrays.toString(mergeThreeArrays_myInitialApproach(arr1, arr2, arr3)));
+
+        int[] arr4 = {1, 2, 3};
+        int[] arr5 = {4};
+        int[] arr6 = {5, 6, 7, 8};
+        System.out.println("Expected: [1, 2, 3, 4, 5, 6, 7, 8] Actual: " + Arrays.toString(mergeThreeArrays_myInitialApproach(arr4, arr5, arr6)));
     }
     public static int[] mergeThreeArrays_modified(int[] arr1, int[] arr2, int[] arr3) {
         int i=0; int j=0; int k=0;
@@ -96,10 +104,10 @@ public class MergeThreeSortedArrays {
     /**
      * Time Complexity: O(arr1.length + arr2.length + arr3.length)
      * Space Complexity: O(arr1.length + arr2.length + arr3.length)
-     * @param arr1
-     * @param arr2
-     * @param arr3
-     * @return
+     * @param arr1 int[] sorted arr1
+     * @param arr2 int[] sorted arr2
+     * @param arr3 int[] sorted arr3
+     * @return int[] sorted with above 3
      */
     public static int[] mergeThreeArrays_myInitialApproach(int[] arr1, int[] arr2, int[] arr3) {
         int i=0; int j=0; int k=0;

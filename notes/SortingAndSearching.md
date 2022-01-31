@@ -10,7 +10,7 @@
 | 6 | [BubbleSort](../src/main/java/sortingAndSearching/BubbleSort.java) | BubbleSort | CTCI |
 | 7 | [InsertionSort](../src/main/java/sortingAndSearching/InsertionSort.java) | InsertionSort | CTCI |
 | 8 | [SelectionSort](../src/main/java/sortingAndSearching/SelectionSort.java) | SelectionSort | CTCI|
-| 9 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
+| 9 | [MergeThreeSortedArrays](../src/main/java/sortingAndSearching/MergeThreeSortedArrays.java) | Merge 3 sorted arrays | Misc |
 | 10 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
 | 11 | [xxx](../src/main/java/sortingAndSearching/xxx.java) | Desc | Source |
 

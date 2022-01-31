@@ -58,8 +58,13 @@
 | 56 | [NLowestElementsInTwoSortedArrays](../src/main/java/arraysAndStrings/NLowestElementsInTwoSortedArrays.java) | Given two sorted arrays, return n sorted elements  | Misc |
 | 57 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 58 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 59 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
-| 60 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
+| 59 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 60 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 61 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 62 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 63 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 64 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
+| 65 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
 
 
 ## Notes
