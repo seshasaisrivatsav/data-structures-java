@@ -56,7 +56,7 @@
 | 54 | [TwoSumLessThanK](../src/main/java/arraysAndStrings/TwoSumLessThanK.java) | find two nums less than k | Leetcode |
 | 55 | [KthLargestElementInArray](../src/main/java/arraysAndStrings/KthLargestElementInArray.java) | Return Kth largest element from unsorted array | Leetcode |
 | 56 | [NLowestElementsInTwoSortedArrays](../src/main/java/arraysAndStrings/NLowestElementsInTwoSortedArrays.java) | Given two sorted arrays, return n sorted elements  | Misc |
-| 57 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 57 | [BestTimeToBuyAndSellStockII](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockII.java) | Given array of prices - find max profit if you can buy and sell stocks on different days | Leetcode |
 | 58 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 59 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 60 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
