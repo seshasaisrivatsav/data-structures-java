@@ -61,8 +61,9 @@
 | 59 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 60 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 61 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 62 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 63 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 62 | [ReplaceElementsWithGreatestOnRight](../src/main/java/arraysAndStrings/ReplaceElementsWithGreatestOnRight.java) | Replace element with greatest on right in array | Leetcode |
+| 63 | [MaximumDifferenceInArray](../src/main/java/arraysAndStrings/MaximumDifferenceInArray.java) | Find Max difference of nums in array - similar to stocks | Leetcode |
+| 64 | [MaxDistHousesDiffColors](../src/main/java/arraysAndStrings/MaxDistHousesDiffColors.java) | Given array of nums, return max distance between two houses with different colors | Leetcode |
 | 64 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
 | 65 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
 
