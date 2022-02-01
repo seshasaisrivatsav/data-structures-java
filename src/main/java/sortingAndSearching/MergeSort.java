@@ -37,14 +37,15 @@ public class MergeSort {
 		System.out.println(Arrays.toString(res));
 	}
 
-
+	// ------------ vvv Recursive Merge sort  vvv ----------- //
 	/**
 	 * Step 1: divide the unsorted list into n sublists, each containing one element
 	 * Step 2: repeatedly merge sublists to produce new sorted sublists
-	 * @param arr
-	 * @return
+	 * @param arr int[] arr
+	 * @param start int starting index
+	 * @param end int ending index
+	 * @return int[] merged array
 	 */
-	// Dividing the array
 	public static int[] mergeSort(int[] arr, int start, int end) {
 		if (start < end) {
 			int mid = (start + end) / 2;
@@ -86,4 +87,21 @@ public class MergeSort {
 		}
 		return res;
 	}
+	// ------------ ^^^ Recursive Merge sort  ^^^ ----------- //
+
+
+	// ------------ vvv Iterative Merge sort  vvv ----------- //
+
+	// TODO: Iterative merge sort
+	/**
+	 * https://www.baeldung.com/cs/non-recursive-merge-sort
+	 * Approach:
+	 *
+	 * @param arr int[]
+	 * @return int[] merged
+	 */
+	public static int[] mergeSort_iterative(int[] arr) {
+		return null;
+	}
+	// ------------ ^^^ Iterative Merge sort  ^^^ ----------- //
 }
