@@ -27,7 +27,7 @@
 | 25 | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
 | 26 | [RemoveDuplicatesSortedArray](../src/main/java/arraysAndStrings/RemoveDuplicatesSortedArray.java) | Remove duplicates from sorted array (use for loop and another variable) | Leetcode |
 | 27 | [CheckDuplicates](../src/main/java/arraysAndStrings/CheckDuplicates.java) | Check if an unsorted array has duplicates | Leetcode |
-| 28 | [BestTimeToBuyStock](../src/main/java/arraysAndStrings/BestTimeToBuyStock.java) | Given array, find max profit | Leetcode |
+| 28 | [BestTimeToBuyAndSellStockWith1BuySell](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockWith1BuySell.java) | Given array, find max profit | Leetcode |
 | 29 | [HappyNumber](../src/main/java/arraysAndStrings/HappyNumber.java) | Determine if happy number | leetcode |
 | 30 | [SingleNumber](../src/main/java/arraysAndStrings/SingleNumber.java) | Find the number that occurs only once in an array | Leetcode |
 | 31 | [MissingRanges](../src/main/java/arraysAndStrings/MissingRanges.java) | Return missing ranges in given sorted array | Leetcode |
@@ -56,10 +56,10 @@
 | 54 | [TwoSumLessThanK](../src/main/java/arraysAndStrings/TwoSumLessThanK.java) | find two nums less than k | Leetcode |
 | 55 | [KthLargestElementInArray](../src/main/java/arraysAndStrings/KthLargestElementInArray.java) | Return Kth largest element from unsorted array | Leetcode |
 | 56 | [NLowestElementsInTwoSortedArrays](../src/main/java/arraysAndStrings/NLowestElementsInTwoSortedArrays.java) | Given two sorted arrays, return n sorted elements  | Misc |
-| 57 | [BestTimeToBuyAndSellStockII](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockII.java) | Given array of prices - find max profit if you can buy and sell stocks on different days | Leetcode |
-| 58 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 59 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
-| 60 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 57 | [BestTimeToBuyAndSellStockAnyBuySells](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockAnyBuySells.java) | Given array of prices - find max profit if you can buy and sell stocks on different days | Leetcode |
+| 58 | [BestTimeToBuyAndSellStockAtMost2BuySells](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockAtMost2BuySells.java) | Given array of prices - find max profit if you can make two transactions | Leetcode |
+| 59 | [BestTimeToBuyAndSellStockAtMostKBuySells](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockAtMostKBuySells.java) | Given array of proces - find max profit if you can make at most k transactions | Leetcode |
+| 60 | [BestTimeToBuyAndSellStockWithCooldown](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockWithCooldown.java) | xx | Leetcode |
 | 61 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
 | 62 | [ReplaceElementsWithGreatestOnRight](../src/main/java/arraysAndStrings/ReplaceElementsWithGreatestOnRight.java) | Replace element with greatest on right in array | Leetcode |
 | 63 | [MaximumDifferenceInArray](../src/main/java/arraysAndStrings/MaximumDifferenceInArray.java) | Find Max difference of nums in array - similar to stocks | Leetcode |

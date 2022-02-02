@@ -1,6 +1,8 @@
 package arraysAndStrings;
 
 /**
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems
+ *
  * You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
  *
  *  - On each day, you may decide to buy and/or sell the stock.
@@ -29,7 +31,7 @@ package arraysAndStrings;
  *
  *  Companies: Facebook, Amazon, Microsoft, Adobe, Google, Apple
  */
-public class BestTimeToBuyAndSellStockII {
+public class BestTimeToBuyAndSellStockAnyBuySells {
     public static void main(String[] args) {
         int[] prices1 = {7, 1, 5, 3, 6, 4};
         int[] prices2 = {1, 2, 3, 4, 5};
@@ -40,6 +42,18 @@ public class BestTimeToBuyAndSellStockII {
         System.out.println("Expected: 0 Actual: " + maxProfit(prices3)); // 0 profit
     }
 
+    // See notes or https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75931/Easiest-JAVA-solution-with-explanations
+    // K = Infinity
+    int getMaxProfit_newDPWay(int[] prices) {
+        int t_ik0 = 0;
+        int t_ik1 = Integer.MIN_VALUE;
+        for (int price: prices) {
+            int t_ik0_old = t_ik0;
+            t_ik0 = Math.max(t_ik0, t_ik1 + price);
+            t_ik1 = Math.max(t_ik1, t_ik0_old - price);
+        }
+        return t_ik0;
+    }
     /**
      * Approach: Sum of all positive differences
      *   - We need to consider every peak immediately following a valley to maximize the profit

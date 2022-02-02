@@ -17,6 +17,8 @@ public class DeleteMe {
 
         System.out.println(firstUniqueCharacter("leetcode"));
 
+        collectionTest();
+
     }
 
 
@@ -140,5 +142,43 @@ public class DeleteMe {
         } else {
             return mid;
         }
+    }
+
+    static class Animal {
+        String name;
+        String type;
+        public Animal(String name) {
+            this.name = name;
+            this.type = "Animal";
+        }
+
+        public Animal() {
+
+        }
+    }
+
+    static class Dog extends Animal {
+        String type;
+        public Dog(String name) {
+            super();
+            this.name = name;
+            this.type = "DOG";
+        }
+    }
+
+    public static void collectionTest() {
+        // Collection -> List Interface -> Array List Class
+        // Collection<X> where X = Generic
+        Collection<Animal> values = new ArrayList<>(); // By default it can be of any time
+        values.add(new Animal("animal"));
+        values.add(new Dog("dog"));
+        Iterator<Animal> animalIterator = values.iterator();
+        while (animalIterator.hasNext()) {
+            System.out.println(animalIterator.next().getClass().getName());
+        }
+        Set<Integer> nums = new TreeSet<>(); // Tree set will keep order
+        // Map => Key value
+        // Generic
+        Collection<Integer> vales = new ArrayList<>();
     }
 }

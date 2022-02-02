@@ -10,7 +10,7 @@ import java.util.Arrays;
  *
  * Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
  */
-public class BestTimeToBuyAndSellStockDifferentDay {
+public class BestTimeToBuyAndSellStockWith1BuySell {
     public static void main(String[] args) {
         System.out.println("Expected: 5. Actual: " + getMaxProfit(new int[] {7,1,5,3,6,4}));
         System.out.println("Expected: 0. Actual: " + getMaxProfit(new int[] {7,6,4,3,1}));
@@ -18,6 +18,19 @@ public class BestTimeToBuyAndSellStockDifferentDay {
         System.out.println("Expected: [1, 6] Actual: " + Arrays.toString(getMaxProfitBuySellValues(new int[] {7,1,5,3,6,4})));
         System.out.println("Expected: [0, 0] Actual: " + Arrays.toString(getMaxProfitBuySellValues(new int[] {7,6,4,3,1})));
     }
+
+    // Refer Notes / https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems
+    // k = 1
+    int getMaxProfit_dynamic(int[] prices) {
+        int t_i10 = 0;
+        int t_i11 = Integer.MIN_VALUE;
+        for (int price: prices) {
+            t_i10 = Math.max(t_i10, t_i11 + price);
+            t_i11 = Math.max(t_i11, -price);
+        }
+        return t_i10;
+    };
+
 
     /**
      * Time Complexity: O(n)
