@@ -47,7 +47,14 @@ public class InOrderTraversal {
         System.out.println(Arrays.toString(inOrderTraversalRecursive(tree2).toArray()));
     }
 
-    // https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+    /**
+     * Approach:
+     *      https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+     *      Keep going left and if root not null add to stack
+     *  Time Complexity: O(N) - No of nodes
+     * @param root Node
+     * @return List<Integer> result
+     */
     public static List<Integer> inorderTraversal_iterative(Node root) {
         Stack<Node> stack = new Stack<>();
         List<Integer> res = new ArrayList<>();

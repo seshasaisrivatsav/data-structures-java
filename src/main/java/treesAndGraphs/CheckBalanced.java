@@ -17,8 +17,8 @@ public class CheckBalanced {
 	 * Approach 1: recurse on the tree
 	 * 	Time Complexity: O(N)
 	 * 	Space Complexity: O(H) - height of tree
-	 * @param root
-	 * @return
+	 * @param root Node
+	 * @return boolean true if true is balanced
 	 */
 	public static boolean isBalanced_fast(Node root) {
 		return checkHeight(root) != Integer.MIN_VALUE;
@@ -28,14 +28,16 @@ public class CheckBalanced {
 		if (root == null) { return -1; } // base case
 		int leftHeight = checkHeight(root.leftChild);
 		if (leftHeight == Integer.MIN_VALUE) { return Integer.MIN_VALUE; }
+
 		int rightHeight = checkHeight(root.rightChild);
 		if (rightHeight == Integer.MIN_VALUE) { return Integer.MIN_VALUE; }
+
 		int heightDiffabs = Math.abs(leftHeight - rightHeight);
 
 		if (heightDiffabs > 1) {
 			return Integer.MIN_VALUE;
 		} else {
-			return Math.max(leftHeight, rightHeight) + 1;
+			return 1 + Math.max(leftHeight, rightHeight);
 		}
 	}
 

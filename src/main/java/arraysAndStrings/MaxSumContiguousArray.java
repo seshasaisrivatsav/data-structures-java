@@ -15,9 +15,9 @@ public class MaxSumContiguousArray {
     /**
      * Approach 1: Using sliding window
      * Time Complexity: O(n)
-     * @param arr
-     * @param windowSize
-     * @return
+     * @param arr int[] array of numbers
+     * @param windowSize int representing window size
+     * @return int representing maximum sum
      */
     public static int getMaxSum_windowSliding(int[] arr, int windowSize) {
         int arrayLength = arr.length;
@@ -40,8 +40,8 @@ public class MaxSumContiguousArray {
     }
     /**
      * Time complexity: O(n*k), where k = total contiguous items
-     * @param arr
-     * @return int
+     * @param arr int[]
+     * @return int max sum in given sub array length
      */
     public static int getMaxSum_bruteForce(int[] arr, int contiguousLength) {
         int max = Integer.MIN_VALUE;

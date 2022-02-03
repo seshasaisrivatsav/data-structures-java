@@ -1,20 +1,20 @@
 | # | Problem  | Description | Source |
 | :------ |:---------------| :-----| :-----|
-| 1 | [IsUniqueString](../src/main/java/arraysAndStrings/IsUniqueString.java)  | check if string is unique without using DS |
-| 2 | [CheckPermutation](../src/main/java/arraysAndStrings/CheckPermutation.java) | Return true if two strings are permutations of one other |
-| 3 | [URLify](../src/main/java/arraysAndStrings/URLify.java) | In place replacement of spaces with %20 |
+| 1 | [IsUniqueString](../src/main/java/arraysAndStrings/IsUniqueString.java)  | check if string is unique without using DS | CTCI |
+| 2 | [CheckPermutation](../src/main/java/arraysAndStrings/CheckPermutation.java) | Return true if two strings are permutations of one other | CTCI |
+| 3 | [URLify](../src/main/java/arraysAndStrings/URLify.java) | In place replacement of spaces with %20 | CTCI |
 | 4 | [PalindromePermutation](../src/main/java/arraysAndStrings/PalindromePermutation.java)  | Given a string determine if it's a palindrome | CTCI |
 | 5 | [CheckPalindromeNumberNoSpace](../src/main/java/arraysAndStrings/CheckPalindromeNumberNoSpace.java)  | Check if a number is palindrome without using extra space | Leetcode |
-| 6 | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another |
-| 7 | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurence count | CTCI |
+| 6 | [OneAway](../src/main/java/arraysAndStrings/OneAway.java) | Detect if two strings are 1 edit away from one another | CTCI |
+| 7 | [StringCompression](../src/main/java/arraysAndStrings/StringCompression.java) | Given a string, compress it to return a string with char and occurrence count | CTCI |
 | 8 | [StringCompressionArray](../src/main/java/arraysAndStrings/StringCompressionArray.java) | Given a char, compress it to return in same array string with char and occurence count | Leetcode |
-| 9 | [ZeroMatrix](../src/main/java/arraysAndStrings/ZeroMatrix.java) | If an element of matrix is  zero, make the row and column zero|
-| 10 | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another |
-| 11 | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence |
-| 12 | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target |
+| 9 | [ZeroMatrix](../src/main/java/arraysAndStrings/ZeroMatrix.java) | If an element of matrix is  zero, make the row and column zero | Leetcode |
+| 10 | [StringRotation](../src/main/java/arraysAndStrings/StringRotation.java) | Given two strings check if one is a rotation of another | CTCI |
+| 11 | [ReverseStringAndSentence](../src/main/java/arraysAndStrings/ReverseStringAndSentence.java) | Reverse a string. Reverse a sentence | CTCI |
+| 12 | [TwoSum](../src/main/java/arraysAndStrings/TwoSum.java)  | determine if sum of two elements in array matches up to a target | Leetcode |
 | 13 | [longestSubstringWithoutRepeatingChars](../src/main/java/arraysAndStrings/LongestSubstringWithoutRepeatingChars.java)  | sliding window - longestSubstringWithoutRepeatingChars |
 | 14 | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum | Leetcode |
-| 15 | [MaxSubarray](../src/main/java/arraysAndStrings/MaxSubarray.java) | largest sum - kadane's algo | Leetcode |
+| 15 | [MaxSubarray](../src/main/java/arraysAndStrings/MaxSubarray.java) | largest sum -  variant 1: kadane's algo. variant 2: divide and conquer | Leetcode |
 | 16 | [MaxSumMultipleSubarrayCheckSubarray](../src/main/java/arraysAndStrings/MaxSumMultipleSubarrayCheckSubarray.java) | Given an array and num, return true if there's 2 or more contiguous elements that are multiple of given number | Leetcode |
 | 17 | [ContiguousSubarrayWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays.java) | Given an array and num, return any subarray indices that adds to given number | GeeksForGeeks  |
 | 18 | [ContiguousSubarrayCountsWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayCountsWithGivenSum.java) | Given an array and a num, return number of sub arrays that add to given number | Leetcode |

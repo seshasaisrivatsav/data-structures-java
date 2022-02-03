@@ -7,15 +7,15 @@ public class ReverseStringAndSentenceTest {
 
     @Test
     public void test_reverseSentence() {
-        String actual = ReverseStringAndSentence.reverseSentence("crazy fox jumps into a well");
+        String actual = ReverseStringAndSentence.reverseSentence_stringBuilder("crazy fox jumps into a well");
         Assert.assertEquals("well a into jumps fox crazy", actual);
 
-        Assert.assertEquals("reverse", ReverseStringAndSentence.reverseSentence("reverse"));
+        Assert.assertEquals("reverse", ReverseStringAndSentence.reverseSentence_stringBuilder("reverse"));
     }
 
     @Test
     public void test_reverseString() {
-        Assert.assertEquals("esrever", ReverseStringAndSentence.reverseString("reverse"));
-        Assert.assertEquals("catdog", ReverseStringAndSentence.reverseString("g o d t a c"));
+        Assert.assertEquals("esrever", ReverseStringAndSentence.reverseString_stringBuilder_removeSpace("reverse"));
+        Assert.assertEquals("catdog", ReverseStringAndSentence.reverseString_stringBuilder_removeSpace("g o d t a c"));
     }
 }

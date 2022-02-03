@@ -5,7 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * https://leetcode.com/problems/set-matrix-zeroes/
+ *
  * Given an MxN matrix, if an element is 0, make the entire row and column zero
+ *
+ * A straightforward solution using O(mn) space is probably a bad idea.
+ * A simple improvement uses O(m + n) space, but still not the best solution.
+ * Could you devise a constant space solution?
  */
 public class ZeroMatrix {
     public static void main(String[] args) {
@@ -26,6 +32,7 @@ public class ZeroMatrix {
                 {1, 3, 3, 6, 4},
         };
         zeroMatrix_noExtraSpace(matrix2);
+        System.out.println("----------------");
         for (int i=0; i<matrix2.length; i++) {
             System.out.println(Arrays.toString(matrix2[i]));
         }
@@ -33,8 +40,11 @@ public class ZeroMatrix {
 
     /**
      * Approach: rather than using extra space, we use the matrix first row as row array
-     *          and first coloulm as column array
-     * @param matrix
+     *          and first column as column array
+     * Space Complexity: O(MN)
+     * Time Complexity: O(1)
+     *
+     * @param matrix int[][]
      */
     public static void zeroMatrix_noExtraSpace(int[][] matrix) {
         boolean rowHasZero = false;
@@ -56,7 +66,8 @@ public class ZeroMatrix {
             }
         }
 
-        // iterate through matrix and store
+        // Iterate through matrix and check for zero in remaining matrix and store in first row and col
+        // Note: Both pointers run from 1 to length
         for (int i=1; i<matrix.length; i++) {
             for (int j=1; j<matrix[0].length; j++) {
                 if (matrix[i][j]==0) {
@@ -66,32 +77,31 @@ public class ZeroMatrix {
             }
         }
 
-        // nullify rows based on values in first column
-        for (int i=1; i<matrix.length; i++) {
-            if (matrix[i][0] == 0) {
-                nullifyRow(matrix, i);
-            }
-        }
-
-        // nullify cols based on values in first row
+        // nullify cols based on values in first row (order of nullification of rows or columns doesn't matter)
         for (int i=1; i<matrix[0].length; i++) {
             if (matrix[0][i] == 0) {
                 nullifyColumn(matrix, i);
             }
         }
 
+        // nullify rows based on values in first column (order of nullification of rows or columns doesn't matter)
+        for (int i=1; i<matrix.length; i++) {
+            if (matrix[i][0] == 0) {
+                nullifyRow(matrix, i);
+            }
+        }
+
         if(rowHasZero) {
             nullifyRow(matrix,0);
         }
+
         if(columnHasZero) {
             nullifyColumn(matrix,0);
         }
     }
 
     static void nullifyRow(int[][] matrix, int row) {
-        for (int i=0; i<matrix[row].length; i++) {
-            matrix[row][i] = 0;
-        }
+        Arrays.fill(matrix[row], 0);
     }
 
     static void nullifyColumn(int[][] matrix, int col) {
@@ -107,8 +117,8 @@ public class ZeroMatrix {
      *
      * Time Complexity: O(MxN) ~ O(N2)
      * Space Complexity: O(m+n)
-     * @param matrix
-     * @return
+     * @param matrix int[]
+     * @return int[][] matrix
      */
     public static int[][] zeroMatrix_moreSpace(int[][] matrix) {
         ArrayList<Integer> rows = new ArrayList<>();

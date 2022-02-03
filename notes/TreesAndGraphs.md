@@ -97,7 +97,7 @@ class Node {
 - Start at root or any arbitrarily selected node and explore each branch before moving on to next branch
 - Preferred when we want to visit every node in graph
 - Simpler
-- Time Complexity = O(V) where V = number of Verticies / Nodes
+- Time Complexity = O(V) where V = number of Vertices / Nodes
 ```java
     void dfs(Node root) {
         if (root == null) return null;
@@ -170,7 +170,7 @@ BFS
 2
 ```
 
-### Birdectional Saerch
+### Bidirectional Search
 - Used to find shortest path between source and destination
 - It runs two simultaneous BFS 
 - When searches collide we find the path

@@ -1,12 +1,9 @@
 package treesAndGraphs;
 
-
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
 public class RouteBetweenNodes {
-
     /**
      * Approach: Uses breadth first search as
      *  - can be useful to find shortest path
@@ -20,7 +17,7 @@ public class RouteBetweenNodes {
      * @return true if path exists between source and destination
      */
     public static boolean routeExists(Graph graph, int source, int destination) {
-        boolean visited[] = new boolean[graph.getSize()]; // Created a visited array with Nodes number size
+        boolean[] visited = new boolean[graph.getSize()]; // Created a visited array with Nodes number size
 
         LinkedList<Integer> queue = new LinkedList<Integer>();
 
@@ -94,10 +91,10 @@ public class RouteBetweenNodes {
     /**
      * Check if a valid path exists given 2d array of edges
      * @param n
-     * @param edges
-     * @param start
-     * @param end
-     * @return
+     * @param edges int[][] edges of a graph
+     * @param start int start node
+     * @param end int end node
+     * @return boolean if path exists
      */
     public boolean validPath(int n, int[][] edges, int start, int end) {
 

@@ -3,18 +3,26 @@ package arraysAndStrings;
 import java.util.Arrays;
 
 /**
- * Leetcode
+ * https://leetcode.com/problems/maximum-subarray/
  * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
  *
- *  Algorithm: Kadane's algorithm
- *      - The idea is that at ith element, the subArray either consists of just i or previous subarray + i
- *      - We use two variables currentMax, globalMax
- *      - we initialize both with arr[0]
+ * Example 1:
  *
- * Very well explained https://youtu.be/86CQq3pKSUw
- * https://leetcode.com/problems/maximum-subarray
- * Time Complexity: O(N)
- * Space Complexity: O(1)
+ * Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+ * Output: 6
+ * Explanation: [4,-1,2,1] has the largest sum = 6.
+ * Example 2:
+ *
+ * Input: nums = [1]
+ * Output: 1
+ * Example 3:
+ *
+ * Input: nums = [5,4,-1,7,8]
+ * Output: 23
+ *
+ * Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+ *
+ * Companies: Amazon, LinkedIn, Apple, Microsoft, Google, Adobe, Cisco, Facebook, Salesforce
  */
 public class MaxSubarray {
     public static void main(String[] args) {
@@ -27,7 +35,48 @@ public class MaxSubarray {
         System.out.println("Expected: 23 Actual: " + getMaxSubarrayRecursion(new int[] {5, 4, -1, 7, 8})); // whole array
     }
 
+    /**
+     * Algorithm: Kadane's algorithm
+     *       - The idea is that at ith element, the subArray either consists of just i or previous subarray + i
+     *       - We use two variables currentMax, globalMax
+     *       - we initialize both with arr[0]
+     *  Time Complexity: O(N)
+     *  Space Complexity: O(1)
+     *  Very well explained https://youtu.be/86CQq3pKSUw
+     * @param arr int[] arr
+     * @return int representing max sum
+     */
     public static int getMaxSubArray(int[] arr) {
+        if (arr.length == 1) { return arr[0]; }
+
+        int maxCurrent = arr[0];
+        int maxGlobal = arr[0];
+
+        for (int i=1; i<arr.length; i++) {
+            // At each step, we either choose curr if it gives us more than max curr
+            // V.V.I.P Otherwise, we start from that position by setting maxCurrent to arr[i]
+            if (arr[i] + maxCurrent > arr[i]) {
+                maxCurrent = arr[i] + maxCurrent;
+            } else {
+                maxCurrent = arr[i];
+            }
+            if (maxCurrent > maxGlobal) {
+                maxGlobal = maxCurrent;
+            }
+
+            // Above two can be simplified to
+            // maxCurrent = Math.max(arr[i], arr[i]+maxCurrent);
+            // maxGlobal = Math.max(maxCurrent, maxGlobal);
+        }
+        return maxGlobal;
+    }
+
+    /**
+     * Return the start and end indices of the max sub array
+     * @param arr int[]
+     * @return int max sum
+     */
+    public static int getMaxSubArray_indicesAndRanges(int[] arr) {
         if (arr.length == 1) { return arr[0]; }
 
         int currMax = arr[0];

@@ -1,37 +1,52 @@
 package arraysAndStrings;
 
 /**
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ *
  * Return the length of longest substring without repeating characters
  * abcdabcgab = abcd, bcda, cda, bcgab = 5
+ * Example 1:
+ *
+ * Input: s = "abcabcbb"
+ * Output: 3
+ * Explanation: The answer is "abc", with the length of 3.
+ * Example 2:
+ *
+ * Input: s = "bbbbb"
+ * Output: 1
+ * Explanation: The answer is "b", with the length of 1.
+ * Example 3:
+ *
+ * Input: s = "pwwkew"
+ * Output: 3
+ * Explanation: The answer is "wke", with the length of 3.
+ * Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ *
+ *  Companies: Amazon, MS, FB, Adobe, Google, Apple, SF
  */
 public class LongestSubstringWithoutRepeatingChars {
 
     public static void main(String[] args) {
-
         System.out.println("Expected 3. Actual :" + getLongestSubstringLength_bruteForce("abcabcbb"));
         System.out.println("Expected 3. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcabcbb"));
         System.out.println("Expected 4. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcabcdad"));
         System.out.println("Expected 9. Actual :" + getLongestSubstringLength_slidingWindow_n2("abcdeefghijabc"));
-
-
-
         System.out.println("Expected 3. Actual :" + getLongestSubstringLength_slidingWindow_n("abcabcbb"));
         System.out.println("Expected 9. Actual :" + getLongestSubstringLength_slidingWindow_n("abcdeefghijabc"));
-
     }
 
     /**
      * Approach 1: Using window sliding, the problem can be solved in linear time
      * Whenever we see a repetition, we move the window till the repeated string
-     * @param str
-     * @return
+     * @param str String
+     * @return int length of longest substring string
      */
     public static int getLongestSubstringLength_slidingWindow_n(String str) {
         if (str.isEmpty()) { return 0; }
         if (str.length()==1) { return 1; }
 
-        String temp = "";
-        int maxLength = -1;
+        String temp = "";  // Initialize temp to ""
+        int maxLength = -1; // Initialize max length to -1
 
         /*
             abcabcbb temp  = "", ml=-1
@@ -42,12 +57,12 @@ public class LongestSubstringWithoutRepeatingChars {
                    bca ml = 3
          */
         for (char c: str.toCharArray()) {
-            String curr = String.valueOf(c);
+            String curr = String.valueOf(c); // For each String character in given string
 
-            if (temp.contains(curr)) {
+            if (temp.contains(curr)) { // If the temp string contains(curr), we cut the string until that, using substring
                 temp = temp.substring(temp.indexOf(curr) + 1); // sliding
             }
-            temp = temp + curr;
+            temp = temp + curr; // and add current string to temp
             maxLength = Math.max(temp.length(), maxLength);
         }
         return maxLength;
@@ -57,8 +72,8 @@ public class LongestSubstringWithoutRepeatingChars {
     /**
      * Window sliding with
      *  Time Complexity: O(n^2)
-     * @param str
-     * @return
+     * @param str String
+     * @return int length of longest substring
      */
     public static int getLongestSubstringLength_slidingWindow_n2(String str) {
         if (str.isEmpty()) return 0;

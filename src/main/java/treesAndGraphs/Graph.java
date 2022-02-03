@@ -1,4 +1,4 @@
-package DFS;
+package treesAndGraphs;
 
 import java.util.LinkedList;
 
@@ -22,6 +22,9 @@ public class Graph {
 	
 	//
 	public LinkedList<Integer> getNeighbors(int node) {
+		if (node >= adj.length) {
+			return null;
+		}
 		return adj[node];
 	}
 	

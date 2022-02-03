@@ -1,4 +1,4 @@
-package graphs;
+package treesAndGraphs;
 import java.util.*;
 import java.util.Iterator;
 
