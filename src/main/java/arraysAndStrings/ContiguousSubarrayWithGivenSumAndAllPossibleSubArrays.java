@@ -26,7 +26,7 @@ import java.util.List;
  *     Output: No subarray with given sum exists
  *     Explanation: There is no subarray with the given sum
  */
-public class ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays {
+public class ContiguousSubarrayWithGivenSumAndAllPossibleSubArrays {
 
     public static void main(String[] args) {
         int[] arr1 = {1, 4, 20, 3, 10, 5}; int sum1 = 33;
@@ -75,14 +75,14 @@ public class ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays {
      * Sub-arrays with given sum K may start at any point and end at any point BUT startIndex <= endIndex
      *  - We will maintain a currSum = Which is the prefix value
      *  - as we iterate right, we update currSum
-     *  - at each iteration we compare currSum with K, if they're equal it means a sub-array exists
+     *  - at each iteration we check if currSum with K, if they're equal it means a sub-array exists
      *  - we also keep a hashMap to store (currSum-SumK), index
      *      IMP: Where ever we find currSum-SumK in our map, there is a sub array from next index till the current Index's point
      * Time Complexity: O(n)
      * Space Complexity: O(n)
-     * @param nums
-     * @param sumK
-     * @return
+     * @param nums int[]
+     * @param sumK int
+     * @return int[] with indices that add up to sumK
      */
     public static int[] getSubarrayWithGivenSum_hashmap(int[] nums, int sumK) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();

@@ -74,12 +74,14 @@ public class StringCompressionArray {
      * @return int representing the new length of compressed
      */
     public static int compressChars(char[] chars) {
-        int i=0;
-        int j=0;
+        int i=0; // pointer that counts => fast
+        int j=0; // the pointer that saves char and count => slow
         while (i < chars.length) {
             char currChar = chars[i];
             int count=0;
             // iterate until you find a different character
+            // a  b c
+            //    ij
             while (i < chars.length && chars[i]==currChar) {
                 i++;
                 count++;

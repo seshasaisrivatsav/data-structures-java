@@ -9,8 +9,9 @@ public class ReverseStringAndSentence {
     
     public static void main(String[] args){
         // String reversal
+        System.out.println(reverseString_stringBuilder_removeSpace("abcdefg"));
         System.out.println(reverseString_stringBuilder_removeSpace("abra   ca"));
-        System.out.println(reverseString_inPlace("in place string reversal"));
+        System.out.println(reverseString_charArray("in place string reversal"));
 
         // Sentence reversal
         System.out.println(reverseSentence_stringBuilder("this is a nice     string"));
@@ -20,9 +21,9 @@ public class ReverseStringAndSentence {
     /**
      * Reverse a string by remove space
      * Time Complexity: O(N)
-     * Space Complexity: O(N) - result space used
+     * Space Complexity: O(1) - if result space is not considered used
      *  Approach: Use String builder
-     *            Iterate from reverse and append to answer if character is not eyual to ' '
+     *            Iterate from reverse and append to answer if character is not equal to ' '
      * @param str String
      * @return String reversed
      */
@@ -38,11 +39,11 @@ public class ReverseStringAndSentence {
 
     /**
      * Time Complexity: O(N)
-     * Space Complexity: O(1) - if result isn't added
+     * Space Complexity: O(1) - if result space is not considered used
      * @param string String
      * @return String reversed
      */
-    public static String reverseString_inPlace(String string) {
+    public static String reverseString_charArray(String string) {
         char[] stringChars = string.toCharArray();
         int start = 0;
         int end = stringChars.length-1;
@@ -55,19 +56,6 @@ public class ReverseStringAndSentence {
         }
         return new String(stringChars);
     }
-
-    /*
-            given: this is new
-            expected: new is this
-
-            step 1:
-            wen si sith
-
-            step 2:
-            new is this
-     */
-
-
 
     /**
      * Approach:
@@ -119,5 +107,37 @@ public class ReverseStringAndSentence {
         // After the final loop the first word will be left over
         return result.append(str).toString();
     }
-    
+
+
+    /**
+     * Reverse sentence and remove extra chars
+     * @param str
+     * @return
+     */
+    public static String reverseSentence(String str) {
+        if (str.length()==0 || str.length() ==1) {return str;}
+        char[] chars = str.toCharArray();
+        reverseCharString(chars, 0, chars.length-1);
+        int i = 0; int j=0;
+        while (i < chars.length) {
+            if (chars[i] == ' ') {
+                reverseCharString(chars, j, i-1);
+                j = i+1;
+            }
+            i++;
+        }
+
+        // for the last iterative
+        reverseCharString(chars, j, chars.length-1);
+        return String.valueOf(chars).replaceAll("\\s+", " " );
+    }
+    private static void reverseCharString(char[] chars, int start, int end) {
+        while (start <= end) {
+            char curr = chars[start];
+            chars[start] = chars[end];
+            chars[end] = curr;
+            start ++;
+            end --;
+        }
+    }
 }

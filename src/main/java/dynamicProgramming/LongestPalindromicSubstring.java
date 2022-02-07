@@ -1,11 +1,31 @@
 package dynamicProgramming;
 
-import java.util.Arrays;
-import java.util.Iterator;
-
 /**
- * Given a string, return the longest palindromic substring in it
  * From Leetcode: https://leetcode.com/problems/longest-palindromic-substring/
+ *
+ * Given a string, return the longest palindromic substring in it
+ * Given a string s, return the longest palindromic substring in s.
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: s = "babad"
+ * Output: "bab"
+ * Explanation: "aba" is also a valid answer.
+ * Example 2:
+ *
+ * Input: s = "cbbd"
+ * Output: "bb"
+ *
+ *
+ * Constraints:
+ *
+ * 1 <= s.length <= 1000
+ * s consist of only digits and English letters.
+ *
+ * Companies: Amazon, Microsoft, Adobe, Facebook, Google, Apple, Salesforce, Oracle
+ *
  */
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
@@ -26,10 +46,6 @@ public class LongestPalindromicSubstring {
      *      Base Cases
      *          1. P(i,i) = true
      *          2. P(i, i+1) == (Si == Si+1)
-     *
-     *
-     *
-     * <a href="file:../../../notes/DynamicProgramming.md" Dynamic Programming</a>
      *
      * https://youtu.be/UflHuQj6MVA
      * @param str String
@@ -83,9 +99,7 @@ public class LongestPalindromicSubstring {
                 }
             }
         }
-
         return str.substring(startIndex, startIndex+maxPalindromeLength);
-
     }
 
     public static boolean isPalindrome(String str) {

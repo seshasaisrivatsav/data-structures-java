@@ -49,10 +49,16 @@ public class ContiguousSubarrayCountsWithGivenSum {
 
     /**
      * Ideology is same as ContiguousSubarrayWithGivenSum with the following modifications
-     *  - If
-     * @param nums
-     * @param sumK
-     * @return
+     * Approach: Cummulative sum represented by Sumi upto ith index
+     *          Sum i - Sum j = k
+     *
+     *         In the hashmap, we will store
+     *                  Sum i , No. Of occurence of the sum
+     *  Space Complexity: O(n)
+     *  Time Complexity: O(N)
+     * @param nums int[]
+     * @param sumK int
+     * @return int number of sub arrays that add up to sumK
      */
     public static int countSubarraysThatAddtoGivenSum(int[] nums, int sumK) {
         int count = 0;

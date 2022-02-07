@@ -5,6 +5,7 @@ package arraysAndStrings;
  * Write a function to find the longest common prefix string amongst an array of strings.
  * https://en.wikipedia.org/wiki/LCP_array
  * https://www.interviewbit.com/blog/longest-common-prefix/
+ * https://leetcode.com/problems/longest-common-prefix/
  */
 public class LongestCommonPrefix {
     public static void main(String[] args) {
@@ -40,22 +41,23 @@ public class LongestCommonPrefix {
         for (int i=0; i<strings[0].length(); i++) { // Iterate through String1
             char c = strings[0].charAt(i);
             for (int j=1; j<strings.length; j++) { // Iterate from String2 to StringN
-                if ((i== strings[j].length()) || (strings[j].charAt(i) != c)) {
+                if ((i == strings[j].length()) || (strings[j].charAt(i) != c)) {
                     return strings[0].substring(0, i);
                 }
             }
         }
         return strings[0];
     }
+
     /**
-     * LCP (S1.... Sn) =LCP(  LCP( LCP(S1, S2), S3), .... SN)
+     * LCP (S1.... Sn) =LCP(LCP( LCP(S1, S2), S3), .... SN)
      * Algorithm
      *      - Iterate from S1 to Sn
      *      - For ith iteration LCP (S1...Si) can be obtained
      *      - If LCP is empty string, exit early and return empty string
      *      - Else continue
-     * @param strings
-     * @return
+     * @param strings string[] list of string
+     * @return String = Longest common
      */
     public static String lcp_horizontalScanning(String[] strings) {
         if (strings.length==0) return "";

@@ -16,12 +16,12 @@
 | 14 | [MaxSumContiguousArray](../src/main/java/arraysAndStrings/MaxSumContiguousArray.java) | sliding window - max contiguous sum | Leetcode |
 | 15 | [MaxSubarray](../src/main/java/arraysAndStrings/MaxSubarray.java) | largest sum -  variant 1: kadane's algo. variant 2: divide and conquer | Leetcode |
 | 16 | [MaxSumMultipleSubarrayCheckSubarray](../src/main/java/arraysAndStrings/MaxSumMultipleSubarrayCheckSubarray.java) | Given an array and num, return true if there's 2 or more contiguous elements that are multiple of given number | Leetcode |
-| 17 | [ContiguousSubarrayWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayWithGivenSumAndAllPossibleSubarrays.java) | Given an array and num, return any subarray indices that adds to given number | GeeksForGeeks  |
+| 17 | [ContiguousSubarrayWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayWithGivenSumAndAllPossibleSubArrays.java) | Given an array and num, return any subarray indices that adds to given number | GeeksForGeeks  |
 | 18 | [ContiguousSubarrayCountsWithGivenSum](../src/main/java/arraysAndStrings/ContiguousSubarrayCountsWithGivenSum.java) | Given an array and a num, return number of sub arrays that add to given number | Leetcode |
 | 19 | [CustomSortArrayEvenOdd](../src/main/java/arraysAndStrings/CustomSortArrayEvenOdd.java) | given an array sort it into even half and odd half|
-| 20 | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams|
+| 20 | [CheckAnagram](../src/main/java/arraysAndStrings/CheckAnagram.java) | check if given two strings are anagrams |
 | 21 | [LeftRotateArray](../src/main/java/arraysAndStrings/LeftRotateArray.java) | LeftRotateArray|
-| 22 | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.|
+| 22 | [MinimumAbsoluteDifference](../src/main/java/arraysAndStrings/MinimumAbsoluteDifference.java) | Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements | |
 | 23 | [LongestCommonPrefix](../src/main/java/arraysAndStrings/LongestCommonPrefix.java) | Return longest common prefix string if an array of strings is given | LeetCode | 
 | 24 | [RomanToInt](../src/main/java/arraysAndStrings/RomanToInt.java) | Given a Roman Number, convert it to Int | Leetcode |
 | 25 | [ValidParentheses](../src/main/java/arraysAndStrings/ValidParentheses.java) | Given string representing brackets, return if it's valid | Leetcode |
@@ -60,12 +60,20 @@
 | 58 | [BestTimeToBuyAndSellStockAtMost2BuySells](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockAtMost2BuySells.java) | Given array of prices - find max profit if you can make two transactions | Leetcode |
 | 59 | [BestTimeToBuyAndSellStockAtMostKBuySells](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockAtMostKBuySells.java) | Given array of proces - find max profit if you can make at most k transactions | Leetcode |
 | 60 | [BestTimeToBuyAndSellStockWithCooldown](../src/main/java/arraysAndStrings/BestTimeToBuyAndSellStockWithCooldown.java) | xx | Leetcode |
-| 61 | [xx](../src/main/java/arraysAndStrings/xx.java) | xx | xx |
+| 61 | [FirstNonRepeatedCharacter](../src/main/java/arraysAndStrings/FirstNonRepeatedCharacter.java) | Return first non repeated character | Leetcode |
 | 62 | [ReplaceElementsWithGreatestOnRight](../src/main/java/arraysAndStrings/ReplaceElementsWithGreatestOnRight.java) | Replace element with greatest on right in array | Leetcode |
 | 63 | [MaximumDifferenceInArray](../src/main/java/arraysAndStrings/MaximumDifferenceInArray.java) | Find Max difference of nums in array - similar to stocks | Leetcode |
 | 64 | [MaxDistHousesDiffColors](../src/main/java/arraysAndStrings/MaxDistHousesDiffColors.java) | Given array of nums, return max distance between two houses with different colors | Leetcode |
-| 64 | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
-| 65 | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
+| 65 | [SortedSquares](../src/main/java/arraysAndStrings/SortedSquares.java) | Given sorted array, return square of nums | Leetcode |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [xx](../src/main/java/arraysAndStrings/xx.java) |xx| xx |
+| xx | [LetterCombinationsOfPhoneNumber](../src/main/java/arraysAndStrings/LetterCombinationsOfPhoneNumber.java) | Backtracking - Given string containing digits, return all possible letter combinations that number could represent | Leetcode |
+| xx | [N Queens Placement Problem](../src/main/java/arraysAndStrings/NQueensPlacementBackTracking.java) | TODO | xx |
 
 
 ## Notes

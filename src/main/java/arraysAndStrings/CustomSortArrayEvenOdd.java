@@ -16,9 +16,9 @@ public class CustomSortArrayEvenOdd {
 		int end = arr.length-1;
 		int start = 0;
 		int swaps = 0; // if you wanted to return how many swaps are needed
-		while(end > start) {
-			while(arr[start]%2 == 0 && end>start) start++;
-			while(arr[end]%2 == 1 && end>start) end--;
+		while(start < end) {
+			while(arr[start]%2 == 0 && start<end) start++;
+			while(arr[end]%2 == 1 && start<end) end--;
 
 			if(start<end) {
 				int temp = arr[start];
