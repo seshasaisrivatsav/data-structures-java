@@ -23,8 +23,8 @@ public class PascalsTriangle {
      *  1 2 1
      *  1 3 3 1
      *  1 4 6 4 1
-     * @param numOfRows
-     * @return
+     * @param numOfRows int number of rows
+     * @return List<List<Integer>> List of list where ith list represents ith row in pascal's triangle
      */
     public static List<List<Integer>> printPascalTriangle(int numOfRows) {
         List<List<Integer>> triangle = new ArrayList<>();

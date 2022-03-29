@@ -36,8 +36,8 @@ public class ClimbingStairs {
      *
      *  Time Complexity: O(N)
      *  Space Complexity: O(N)
-     * @param top
-     * @return
+     * @param top int
+     * @return int
      */
     public static int climbStairs(int top) {
         if (top == 1 || top== 2) {
