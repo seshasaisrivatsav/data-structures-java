@@ -44,15 +44,22 @@ public class CoinChange {
         System.out.println("Expected: -1 Actual" + getMinCoins_bottomUp(5, new int[]{2 }));
     }
     /**
-     * In this approach we build solutions with previous knowledge
+     * In this approach we build solutions with previous knowledge = Bottom up
      *
-     * Steps
-     *  - Initialize an array dp of size sum+1, where dp[i] represents minimum coins needed to make i
-     *  - Base case: dp[0] = minimum number of coins to make 0 = 0
-     *  - Initialization: dp[i] where i=1 to i=sum+1 is + INFINITY (as we look for min, initialize with max)
+     * - We store the results in an array
+     * - We create an array dp of size amt+1
+     * - Where dp[i] = denotes the minimum number of coins needed to make i
+     * - dp[amt] - gives us the result
      *
-     *  Bottom approach
+     *  Base case
+     *      - dp[0] = 0  as minimum amount of coins needed to make sum 0 are 0
+     *      - we can fill the rest of the array with sum+1 or max value as we're looking for minimum
      *
+     *  The way we arrived at this solution is by following patterns
+     *      - to find dp[i]
+     *      - for each coin c1, c2, ... cj.. ..cn
+     *      - We find Min(dp[i], dp[i-cj] + 1)
+     *      - if we previously found dp[i-cj] and when 1 is added to it as we're choosing it and if it
      *
      * Time Complexity:
      *      Amt = A = given sum / amount
@@ -68,11 +75,8 @@ public class CoinChange {
      */
     public static int getMinCoins_bottomUp(int amt, int[] coins) {
         int[] dp = new int[amt+1];
-
         Arrays.fill(dp, amt+1);
-
         dp[0] = 0; // base case
-
         // The outer for loop computers minimum coins needed for respective amt
         for (int i=1; i<=amt; i++) {
             // Inner for loop looks at coins
@@ -82,7 +86,6 @@ public class CoinChange {
                 }
             }
         }
-
         return dp[amt] > amt ? -1 : dp[amt];
     }
 }
