@@ -47,7 +47,7 @@ public class BestTimeToBuyStock {
     }
 
     // k = k
-    public int getMaxProfit_k(int k, int[] prices) {
+    public int getMaxProfit_k (int k, int[] prices) {
         if (k >= prices.length) {
             int T_ik0 = 0, T_ik1 = Integer.MIN_VALUE;
 

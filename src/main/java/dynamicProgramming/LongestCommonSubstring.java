@@ -18,7 +18,7 @@ package dynamicProgramming;
  *      Explanation:
  *      The longest common substring is “abcdez” and is of length 6.
  *
- * Dynamic Programming Approach:
+ * Dynamic Programming Approach: (bottom up approach)
  *  Given: str1 and str2
  *         i = pointer that follows str1
  *         j = pointer that follows str2
