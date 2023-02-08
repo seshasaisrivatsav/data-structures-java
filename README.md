@@ -1,9 +1,8 @@
 <h1>Data Structures in Java</h1>
 
 <p>
-  This is the repository that has solutions to various data structures and algorithm problems.
-  I started to solve CTCI (Cracking the coding interview), HackerRank, LeetCode etc in JAVA.
-  I hope that the problem solving skills acquired help me land a job and also improve my thinking and coding skills.
+  This repository has solutions to various data structures and algorithm problems from CTCI (Cracking the coding interview), HackerRank, LeetCode etc in JAVA.
+  Hope that the problem solving skills thus acquired help me/people land a job and improve analytical thinking and coding skills.
 </p>
 
 | DS and Algo |

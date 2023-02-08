@@ -7,8 +7,7 @@ package arraysAndStrings;
  * Assumption:
  *  = string contains characters from `a` to `z`
  *  = integers are stored using 32 bits
- * https://www.geeksforgeeks.org/efficiently-check-string-duplicates-without-using-additional-data-structure/
- *
+ * <a href="https://www.geeksforgeeks.org/efficiently-check-string-duplicates-without-using-additional-data-structure/">...</a>
  * Notes
  *  = ASCII characters are 8 bits
  *  = UNICODE characters are 16 bits

@@ -9,7 +9,6 @@ import java.util.Arrays;
  *      - Two strings are permutations IFF they've same characters
  *      - Ask interviewer for case sensitivity
  *      - Check if we need to disregard spaces
- *
  *  Approach 1: Build a character count array based on string 1 and decrement the count in it from string 2 and return
  *              false if the count is less than 0
  *  Approach 2: Sort both strings and compare them. (Complex as some sorts might take n2 and we need more memory)

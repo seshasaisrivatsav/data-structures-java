@@ -2,6 +2,7 @@
 https://leetcode.com/problems/sudoku-solver/
 */
 
+package backtracking;
 class SudokuSolver {
     public void solveSudoku(char[][] board) {
         solve(board);
