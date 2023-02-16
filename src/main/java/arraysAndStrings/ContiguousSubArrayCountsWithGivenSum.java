@@ -3,7 +3,7 @@ package arraysAndStrings;
 import java.util.HashMap;
 
 // https://leetcode.com/problems/subarray-sum-equals-k/
-public class ContiguousSubarrayCountsWithGivenSum {
+public class ContiguousSubArrayCountsWithGivenSum {
 
 
     public static void main(String[] args) {

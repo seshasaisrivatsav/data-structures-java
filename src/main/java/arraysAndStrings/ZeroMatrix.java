@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/set-matrix-zeroes/
+ * <a href="https://leetcode.com/problems/set-matrix-zeroes/">...</a>
  *
  * Given an MxN matrix, if an element is 0, make the entire row and column zero
  *
@@ -21,8 +21,8 @@ public class ZeroMatrix {
                 {10, 15, 19, 22},
         };
         int[][] res = zeroMatrix_moreSpace(matrix);
-        for (int i=0; i<res.length; i++) {
-            System.out.println(Arrays.toString(res[i]));
+        for (int[] re : res) {
+            System.out.println(Arrays.toString(re));
         }
 
         int[][] matrix2 = {
@@ -33,8 +33,8 @@ public class ZeroMatrix {
         };
         zeroMatrix_noExtraSpace(matrix2);
         System.out.println("----------------");
-        for (int i=0; i<matrix2.length; i++) {
-            System.out.println(Arrays.toString(matrix2[i]));
+        for (int[] ints : matrix2) {
+            System.out.println(Arrays.toString(ints));
         }
     }
 
@@ -121,7 +121,7 @@ public class ZeroMatrix {
      * @return int[][] matrix
      */
     public static int[][] zeroMatrix_moreSpace(int[][] matrix) {
-        ArrayList<Integer> rows = new ArrayList<>();
+        List<Integer> rows = new ArrayList<>();
         List<Integer> cols = new ArrayList<>();
         for (int i=0; i<matrix.length; i++) {
             for(int j=0; j<matrix[i].length; j++) {

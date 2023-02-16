@@ -23,8 +23,8 @@ import java.util.List;
  *     0 and 3 is 10 + 2 - 2 - 20 = -10
  *
  *     Input: arr[] = {-10, 0, 2, -2, -20, 10}, sum = 20
- *     Output: No subarray with given sum exists
- *     Explanation: There is no subarray with the given sum
+ *     Output: No sub-array with given sum exists
+ *     Explanation: There is no sub-array with the given sum
  */
 public class ContiguousSubarrayWithGivenSumAndAllPossibleSubArrays {
 

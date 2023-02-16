@@ -3,7 +3,7 @@ package arraysAndStrings;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/maximum-subarray/
+ * <a href="https://leetcode.com/problems/maximum-subarray/">...</a>
  * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
  *
  * Example 1:
@@ -42,9 +42,18 @@ public class MaxSubarray {
      *       - we initialize both with arr[0]
      *  Time Complexity: O(N)
      *  Space Complexity: O(1)
-     *  Very well explained https://youtu.be/86CQq3pKSUw
+     *  Very well explained <a href="https://youtu.be/86CQq3pKSUw">video</a>
      * @param arr int[] arr
      * @return int representing max sum
+     * Example:
+     *                      | -> start iterating from the second element after setting maxCurr, maxGlobal as first element initially
+     *                -2,   1,  -3,  4,  -1,   2,   1,  -5,   4
+     *   maxCurrent   -2    1   -2   4    3    5    6    1    5
+     *   maxGlobal    -2    1    1   4    4    5    6    6    6
+     * At each step we check
+     *          - if arr[i] + maxCurr > arr[i], assign it to maxCurr, or just choose arr[i] as maxCurr
+     *    Then
+     *          - if maxCurr > maxGlobal, replace it
      */
     public static int getMaxSubArray(int[] arr) {
         if (arr.length == 1) { return arr[0]; }

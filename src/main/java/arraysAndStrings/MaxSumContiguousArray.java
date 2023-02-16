@@ -1,7 +1,7 @@
 package arraysAndStrings;
 
 /**
- *  find number of elements needed to give a largest sum of 5 consecutive elements
+ * Find number of elements needed to give the largest sum of 5 consecutive elements
  * @link Arrays.md
  */
 public class MaxSumContiguousArray {

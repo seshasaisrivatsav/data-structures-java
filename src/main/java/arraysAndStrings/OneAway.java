@@ -5,7 +5,6 @@ package arraysAndStrings;
  *  1. Insert
  *  2. Remove
  *  3. Replace
- *
  *  Write a function to check they're one or zero edits away
  */
 public class OneAway {

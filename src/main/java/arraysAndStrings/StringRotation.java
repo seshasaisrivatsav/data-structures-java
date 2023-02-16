@@ -3,8 +3,8 @@ package arraysAndStrings;
 /**
  * Given two strings s1 and s2 write code to check if s2 is a rotation of s1 using only one call to `isSubstring`
  * `isSubstring` => Assume you've this method to check if a word is a substring of another
- *
- * [Solution Article](https://medium.com/@jschapir/cracking-the-coding-interview-is-string-2-a-rotated-version-of-string-1-a02c9ec81f58)
+ * --
+ * [Solution Article](<a href="https://medium.com/@jschapir/cracking-the-coding-interview-is-string-2-a-rotated-version-of-string-1-a02c9ec81f58">...</a>)
  */
 public class StringRotation {
 
@@ -59,7 +59,7 @@ public class StringRotation {
         }
 
 
-        // iterate through LONGER string
+        // iterate through LONGER S1 string
         int smallStringPointer = 0;
         for (int i=0; i<s1.length(); i++) { // S1 = Longer String
             if (smallStringPointer == s2.length()) { // S2 = Smaller String

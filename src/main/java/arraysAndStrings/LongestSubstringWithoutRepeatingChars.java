@@ -3,7 +3,7 @@ package arraysAndStrings;
 import java.util.HashMap;
 
 /**
- * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Source</a>
  *
  * Return the length of longest substring without repeating characters
  * abcdabcgab = abcd, bcda, cda, bcgab = 5
@@ -48,7 +48,7 @@ public class LongestSubstringWithoutRepeatingChars {
      * Space Complexity: O(1)
      *
      * @param str String
-     * @return int length of longest substring string
+     * @return int length of the longest substring string
      */
     public static int getLongestSubstringLength_slidingWindow_n(String str) {
         if (str.isEmpty()) { return 0; }
@@ -58,7 +58,7 @@ public class LongestSubstringWithoutRepeatingChars {
         int maxLength = 0;
 
         /*
-            abcabcbb temp  = "", ml=-1
+            abcabcbb temp  = "", ml=0
             temp = a, ml = 1
             temp = ab ml = 2
             temp = abc ml = 3
@@ -69,9 +69,10 @@ public class LongestSubstringWithoutRepeatingChars {
             String curr = String.valueOf(c); // For each String character in given string
 
             if (temp.contains(curr)) { // If the temp string contains(curr), we cut the string until that, using substring
+                // Since indexOf Returns the first occurrence of the given character, we always search for curr from the start
                 temp = temp.substring(temp.indexOf(curr) + 1); // sliding
             }
-            temp = temp + curr; // and add current string to temp // The compiler would convert this + to use string builder and it generates same bite code
+            temp = temp + curr; // and add current string to temp // The compiler would convert this + to use string builder and it generates same byte code
             maxLength = Math.max(temp.length(), maxLength);
         }
         return maxLength;

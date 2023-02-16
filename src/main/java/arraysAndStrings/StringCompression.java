@@ -3,6 +3,18 @@ package arraysAndStrings;
 /**
  *  String compression to count repeated characters. If the resultant string is bigger than original string, return original string
  *  Eg: aabcccccaaa => a2b1c5a3
+ * --
+ *  StringBuilder V/S String
+ *  In Java, both String and StringBuilder are used to handle strings, but they have some key differences.
+ * String is an immutable class, meaning that once a String object is created, its value cannot be changed.
+ * Any operation that appears to modify a String object actually creates a new String object with the new value.
+ * This can have performance implications when working with large strings, as each time a modification is made, a new String object must be created.
+ * On the other hand, StringBuilder is a mutable class, meaning that its value can be changed after it is created.
+ * It provides a more efficient way of building strings, as it only needs to allocate memory once and then can append or insert values directly into the existing buffer.
+ * This can lead to much better performance when working with large strings, as only a single object needs to be created and modified.
+ * In general, it is recommended to use StringBuilder when you need to build strings, and to use String when you have a string that will not change.
+ * However, it's important to keep in mind that StringBuilder is not thread-safe, meaning that if you need to access the same StringBuilder from multiple threads, you will need to add synchronization to ensure that the operations are thread-safe.
+ * In summary, the main difference between String and StringBuilder is that String is immutable and StringBuilder is mutable.
  *
  */
 public class StringCompression {
