@@ -13,15 +13,9 @@ public class RomanToInt {
 		System.out.println("MCMXCIV = 1994: Output: " + romanToStringFast("MCMXCIV"));
 	}
 
-	/**
-	 * Time Complexity: O(1)
-	 * Space Complexity: O(1)
-	 * @param str string representing Roman number
-	 * @return integer represent decimal
-	 */
-	public static int romanToStringFast(String str) {
 
-		HashMap<String, Integer> romanMap = new HashMap<>();
+	static HashMap<String, Integer> romanMap = new HashMap<>();
+	static {
 		romanMap.put("I", 1);
 		romanMap.put("V", 5);
 		romanMap.put("X", 10);
@@ -36,7 +30,19 @@ public class RomanToInt {
 		romanMap.put("XC", 90);
 		romanMap.put("CD", 400);
 		romanMap.put("CM", 900);
+	}
 
+	/**
+	 * Time Complexity: O(1)
+	 * Space Complexity: O(1)
+	 * Algorithm
+	 * 	- We take a pointer and as long as it is less than the string length we iterate through it
+	 * 			- if i < str.length() -1 (this is used to check two characters) then we get map value and move i by 2 and continue to next iteration
+	 * 		  - if double sybmol doesn't exist we get i to i+1 sub string and increment i by 1
+	 * @param str string representing Roman number
+	 * @return integer represent decimal
+	 */
+	public static int romanToStringFast(String str) {
 		int res=0;
 		int i=0;
 		while (i<str.length()) {
@@ -54,6 +60,11 @@ public class RomanToInt {
 		return res;
 	}
 
+	/**
+	 * Approach 2
+	 * @param str String
+	 * @return int
+	 */
 	public static int romanToString(String str) {
 		int res=0;
 		HashMap<Character, Integer> romanMap = new HashMap<>();
