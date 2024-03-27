@@ -4,25 +4,18 @@ public static Document sortDocument(Document document, String propertyCode) {
             for (Map.Entry<String, Object> entry : document.entrySet()) {
                 String key = entry.getKey();
                 Object value = entry.getValue();
-                if (key.equalsIgnoreCase("_class")) {
-                    continue;
-                }
                 if (!(value instanceof String)) {
                     if (value instanceof Document) {
-                      
                         value = sortDocument((Document) value, propertyCode);
                     } else if (value instanceof ArrayList<?>) {
                         value = sortListOfElements((ArrayList<?>) value, propertyCode);
                     }
                 }
-
                 if (value != null) sortedMap.put(key, value);
             }
-
-            // Create a new Document from the sortedMap
             return new Document(sortedMap);
         } catch (Exception ex) {
-            log.error("Exception occurred while sorting document: {}", ex.getMessage());
+            
         }
         return document;
     }
@@ -52,7 +45,7 @@ public static Document sortDocument(Document document, String propertyCode) {
             }
             return sortedElements;
         } catch (IllegalArgumentException ex) {
-            throw new IllegalArgumentException(("Exception occurred while sorting list of elements {}"), ex);
+            
         }
 
     }
