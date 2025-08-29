@@ -13,7 +13,7 @@
 | 9 | [Palindrome](../src/main/java/linkedLists/Palindrome.java) | Check if a given list is palindrome|
 | 10 | [Intersection](../src/main/java/linkedLists/Intersection.java) | Given two LLs find the intersection point  | CTCI/Leetcode |
 | 11 | [FindCycle](../src/main/java/linkedLists/FindCycle.java) | Find cycle if it's present in LL |
-| 12 | [FindMidInLL](../src/main/java/linkedLists/FindMidInLL.java) | Two pointer technique to find mid |
+| 12 | [FindMidInLL](../src/main/java/linkedLists/FindMidInLL.java) | Two pointer technique to find mid | [LeetCode](https://leetcode.com/submissions/detail/1752661418/) |
 | 13 | [CompareLinkedLists](../src/main/java/linkedLists/CompareLinkedLists.java) | Return true if 2 LL are equal values |
 | 14 | [DeleteNodeAtPosition](../src/main/java/linkedLists/DeleteNodeAtPosition.java) | Delete node at given position |
 | 15 | [InsertNodeAtEnd](../src/main/java/linkedLists/InsertNodeAtEnd.java) | Add Node at end of linked List |

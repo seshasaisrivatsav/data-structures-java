@@ -1,5 +1,8 @@
 package linkedLists;
 
+/**
+ * https://leetcode.com/submissions/detail/1752661418/
+ */
 public class FindMidInLL {
 	public static void main(String[] args) {
 		Node evenLL = Node.listToLinkedList(new int[] {1, 2, 3, 4});
@@ -11,14 +14,11 @@ public class FindMidInLL {
    }
    
    public static Node findMid(Node head) {
-	   Node slow, fast;
-	   fast = slow = head; // Initialize both slow and fast pointers to head
-	   while(slow!=null && fast!=null) {
-		   if(fast.next==null || fast.next.next==null) {
-			   break;
-		   }
-		   slow=slow.next;
-		   fast=fast.next.next;
+	   if (head==null) return head;
+	   Node slow = head, fast = head;
+	   while(fast!=null && fast.next!=null) {
+		   slow = slow.next;
+		   fast = fast.next.next;
 	   }
 	   return slow;
    }
