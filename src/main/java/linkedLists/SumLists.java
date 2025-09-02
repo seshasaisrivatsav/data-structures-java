@@ -8,6 +8,14 @@ import java.util.Arrays;
  */
 public class SumLists {
 
+     public class ListNode {
+         int val;
+         ListNode next;
+         ListNode() {}
+         ListNode(int val) { this.val = val; }
+         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     }
+
     public static void main(String[] args){
         Node num1 = Node.listToLinkedList(new int[] {7, 1, 6});
         Node num2 = Node.listToLinkedList(new int[] {5, 9, 2});
@@ -197,5 +205,109 @@ public class SumLists {
         head.next.next = head;
         head.next = null;
         return rest;
+    }
+
+
+    /**
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode addTwoNumbers_betterLooking(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode tracker = dummy;
+        int carry = 0;
+
+        while (l1!=null || l2!=null || carry > 0) {
+
+            int a = l1==null? 0: l1.val;
+            int b = l2==null? 0: l2.val;
+            int currSum = a + b + carry;
+            dummy.next  = new ListNode(currSum%10);
+            dummy = dummy.next;
+            carry = currSum / 10;
+
+            if (l1!=null) {
+                l1 = l1.next;
+            }
+            if (l2!=null) {
+                l2 = l2.next;
+            }
+
+        }
+        return tracker.next;
+    }
+    public ListNode addTwoNumbersMyInitialApproach(ListNode l1, ListNode l2) {
+        ListNode l1Seek = l1;
+        ListNode l2Seek = l2;
+
+        int ptr1 =0;
+        int ptr2 =0;
+
+        while(l1Seek!=null) {
+            ptr1++;
+            l1Seek = l1Seek.next;
+        }
+        while(l2Seek!=null) {
+            ptr2++;
+            l2Seek = l2Seek.next;
+        }
+
+        ListNode largeNode;
+        ListNode smallNode;
+        ListNode resultNode = new ListNode(0);
+        ListNode resultNodeHead = resultNode;
+
+        if (ptr1>ptr2) {
+            largeNode = l1;
+            smallNode = l2;
+        } else {
+            largeNode = l2;
+            smallNode = l1;
+        }
+
+
+        boolean carry = false;
+
+        while(smallNode!=null) {
+            int res = smallNode.val + largeNode.val;
+            if (carry) {
+                res  = res + 1;
+            }
+            if (res > 9) {
+                carry = true;
+                res = res%10;
+            } else {
+                carry = false;
+            }
+            resultNode.next = new ListNode(res);
+            resultNode = resultNode.next;
+            smallNode = smallNode.next;
+            largeNode = largeNode.next;
+        }
+
+        while(largeNode!=null) {
+            int largeRes = 0;
+            if (carry) {
+                largeRes = largeNode.val +  largeRes + 1;
+            } else {
+                largeRes  = largeNode.val + largeRes;
+            }
+            if (largeRes > 9) {
+                carry = true;
+                largeRes = largeRes %10;
+            } else {
+                carry = false;
+            }
+            resultNode.next = new ListNode(largeRes);
+            resultNode = resultNode.next;
+            largeNode = largeNode.next;
+        }
+
+        if(carry) {
+            resultNode.next = new ListNode(1);
+        }
+
+        return resultNodeHead.next;
     }
 }
